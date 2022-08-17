@@ -1,0 +1,29 @@
+// image url setting
+@function path($path) {
+  @return map-get($path-set, $path);
+}
+
+@function urlPath($pathName, $img) {
+  @return url(path($pathName) + $img);
+}
+
+// z Index setting
+@function zIndex($layer) {
+  @return map-get($zIndex-set, $layer);
+}
+
+$base-size: 16;
+
+@function rem($target, $context: $base-size) {
+  @return ($target / $context) * 1rem;
+}
+
+@function em($target, $context: $base-size) {
+  @return ($target / $context) * 1em;
+}
+
+@function childEm($target, $parent) {
+  @return ($target / $parent) * 1em;
+}
+
+// ex: @include childEmSize(16, 30);

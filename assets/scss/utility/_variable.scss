@@ -1,0 +1,33 @@
+/*---------------------------- COLOR ----------------------------*/
+$m-color: #a5c544;
+$ms-color: #3c7d38;
+$s-color: #a5c544;
+$c-black: #333;
+$c-green: green;
+$c-orange: orange;
+$c-yellow: yellow;
+$gray : #999;
+$main : #294eb6;
+$sky:#61a8ff;
+/*---------------------------- 반응형 ----------------------------*/
+$b-web: 1200px;
+$b-tab: 900px;
+$b-mo: 600px;
+$b-sm-mo: 360px;
+
+$zIndex-set: (
+  popup: 100,
+  fixed: 20,
+  header: 10,
+  double: 2,
+  default: 1,
+  zero: 0,
+  minus: -1,
+);
+
+$path-set: (
+  icon: "../img/icon/",
+  img: "../img/",
+  logo: "../img/logo/",
+  object: "../img/object/",
+);

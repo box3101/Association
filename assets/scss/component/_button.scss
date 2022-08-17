@@ -1,0 +1,122 @@
+/* =================== BUTTON =================== */
+.btn,button,input.btn{
+  display: inline-block;
+  position: relative;
+  top: 0;
+  cursor: pointer;
+  transition: 0.25s ease-in-out;
+  border-radius: 0.625rem;
+  font: 500 1rem/1 "Noto Sans KR";
+  box-sizing: border-box;
+  color: #fff;
+  &:hover,&.hover{ 
+    top: -0.3125rem;
+		// box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.15);
+  }
+  &.w100{
+    width: 100%;
+  }
+}
+
+$btn-colors: (
+  bg-default: (
+    bg-color: transparent,
+    color:$c-black,
+    bd-color: #333,
+  ),
+  bg-white:(
+    bg-color:#fff,
+    color:$main,
+    bd-color:#fff,
+  ),
+  bg-main: (
+    bg-color: $ms-color,
+  ),
+  bg-green: (
+    bg-color: $c-green,
+  ),
+  bg-yellow:(
+    bg-color: $c-yellow,
+    color:$c-black,
+  ),
+  bg-gray:(
+    bg-color : #f0f0f0,
+    color: #333,
+    border: #f0f0f0,
+  )
+);
+
+@each $key, $value in $btn-colors {
+  .#{$key} {
+    background-color: map-get($value, bg-color);
+    color: map-get($value, color)!important;
+    border: 0.0625rem solid map-get($value, bd-color);
+  }
+}
+
+$btn-sizes: (
+  size-xsm:(
+    padding: 0.3125rem,
+    size: 0.625rem,
+  ),
+  size-sm: (
+    padding: 0.625rem 1.25rem,
+    size : 1rem,
+  ),
+  size-mid: (
+    padding: 0.725rem 1.875rem,
+    size : 1.225rem,
+  ),
+  size-lg: (
+    padding:1.25rem 3.75rem,
+    size : 1.125rem,
+    font-w : 400,
+  ),
+  size-xlg: (
+    padding: 2.5rem,
+    size:1.5625rem,
+  )
+);
+
+@each $key, $value in $btn-sizes {
+  .#{$key} {
+    padding: map-get($value, padding)!important;
+    font-size: map-get($value, size)!important;
+    font-weight: map-get($value, font-w)!important;
+  }
+}
+
+$btn-radius: (
+  r-none:(
+    radius: 0px,
+  ),
+  r-sm: (
+    radius: 0.3125rem,
+  ),
+  r-mid: (
+    radius: 1.25rem,
+  ),
+  r-lg: (
+    radius: 1.875rem,
+  ),
+);
+
+@each $key, $value in $btn-radius {
+  .#{$key} {
+    border-radius: map-get($value, radius)!important;
+  }
+}
+
+.btn.btn-outline {
+  background: transparent;
+  border: 1px solid #5f8ee4;
+  color: #333!important;
+}
+
+.btn.btn-disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+//////////////////////////////////// //BUTTON TYPE ////////////////////////////////////
+/// 

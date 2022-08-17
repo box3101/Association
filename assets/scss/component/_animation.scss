@@ -1,0 +1,17 @@
+/* =================== animation =================== */
+// obj
+.obj{
+  position: absolute;
+  display: inline-block; width: 9.375rem; height: 9.375rem; background: $m-color; border: 1.875rem solid $m-color; border-radius: 50%;
+  animation: drop ease-in-out 3s infinite;
+}
+
+.obj-sm{
+  position: absolute;
+  right: 6.25rem; top: 0.625rem;
+  display: inline-block; width: 3.125rem; height: 3.125rem; background: transparent; border: 0.625rem solid $m-color; border-radius: 50%;
+  animation: drop ease-in-out 2.5s infinite;
+}
+
+@keyframes drop {0%{top:0rem} 50% {top: 1.875rem;} 100% {top: 0rem;} }
+

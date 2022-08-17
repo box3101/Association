@@ -1,0 +1,76 @@
+/* =================== footer =================== */
+.footer{
+  &__top{
+    background: #f6f6f6;
+    .inner{
+      display: flex;
+      align-items: center; justify-content: space-between;
+      height: 3.125rem;
+    }
+    .lef{
+      ul{
+        opacity: 1;
+        display: flex;
+        margin-left: -0.9375rem;
+        li{
+          opacity: 1; padding: 0 0.9375rem;
+          position: relative;
+          @include make-after{
+            @extend %make-bar;
+            right: -0.125rem!important;
+          }
+          a{
+            opacity: 1;
+            font-size: 1rem; font-weight: 500;
+          }
+          &:last-of-type{
+            @include make-after{
+              display: none;
+            }
+          }
+        }
+      }
+    }
+    .ref{
+      ul{
+        display: flex;
+        margin-right:  -0.4375rem;
+        li{
+          padding: 0 0.4375rem; box-sizing: border-box;
+          a{
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+  &__bot{
+    padding: 2.9375rem 0;
+    .inner{
+      display: flex;
+      align-items: center; justify-content: space-between;
+      .lef{
+        display: flex; align-items: center;
+        .f-logo{
+          margin-right: 4.1875rem;
+          img{
+            width: 21.875rem;
+          }
+        }
+        address{
+          font-size: 0.875rem; color: $gray; line-height: 1.6;
+        }
+      }
+      .ref{
+        opacity: 1; align-self: flex-end;
+        select{
+          padding: 0.4375rem 0.625rem;
+          background: #f6f6f6;
+          font-size: 0.875rem;
+          font-weight: 500;
+          padding-right: 6.875rem;
+        }
+      }
+    }
+  }
+}
