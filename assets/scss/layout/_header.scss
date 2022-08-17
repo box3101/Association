@@ -3,7 +3,7 @@
 .header{
   &__top{
     height: 4.375rem;
-    border-bottom: 0.0625rem solid #aaaaaa;
+    border-bottom: 1px solid #aaaaaa;
     .flex{height: 100%;}
     h1.logo{
       line-height: 1;position: relative; top:-0.125rem;
@@ -16,7 +16,7 @@
         position: relative;
         .search-bar{
           width: 13.875rem; height: 1.6875rem; border-radius: 0.3125rem;
-          border: 0.0625rem solid $gray; padding-left: 0.6875rem; font-size: 0.875rem; color: $gray;
+          border: 1px solid $gray; padding-left: 0.6875rem; font-size: 0.875rem; color: $gray;
         }
         .search-btn{
           position: absolute; right: 0.625rem; top: 53%; transform: translateY(-50%); width: 1.5rem; height: 1.4375rem;
@@ -30,7 +30,7 @@
           position: relative;
           a{
             img{
-              position: relative; top: 0.0625rem;
+              position: relative; top: 1px;
             }
             span{
               display: inline-block;
@@ -138,7 +138,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 0.0625rem solid #c8c8c8;
+  border-bottom: 1px solid #c8c8c8;
   padding: 0 1.25rem;
 }
 
@@ -149,7 +149,7 @@
 .mobile-menu .list {}
 
 .mobile-menu .list>li {
-  border-bottom: 0.0625rem solid #dcdcdc;
+  border-bottom: 1px solid #dcdcdc;
 }
 
 .mobile-menu .list>li>a {

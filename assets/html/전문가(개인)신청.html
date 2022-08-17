@@ -168,14 +168,14 @@
             </a>
             <ul>
               <li><a href="./STD-R&D사업소개.html">STD-R&D 사업소개</a></li>
-              <li><a href="./STD-R&D규정(양식)">규정(양식)</a></li>
+               <li><a href="./STD-R&D규정(양식).html">규정(양식)</a></li>
               <li><a href="./STD-R&D모집공고.html">STD-R&D 모집공고</a></li>
               <li><a href="./STD-R&D수행공고.html">STD-R&D 수행공고</a></li>
               <li><a href="./STD-R&D보고서.html">STD-R&D 보고서</a></li>
             </ul>
           </li>
           <li class="gnb__list">
-            <a href="./R&D표준교육.html" class="gnb__item">
+            <a href="./R&D표준교육안내.html" class="gnb__item">
               R&D 표준교육
             </a>
             <ul>
@@ -273,7 +273,7 @@
             </a>
             <ul class="sub-menu">
               <li><a href="./STD-R&D사업소개.html">STD-R&D 사업소개</a></li>
-              <li><a href="./STD-R&D규정(양식)">규정(양식)</a></li>
+               <li><a href="./STD-R&D규정(양식).html">규정(양식)</a></li>
               <li><a href="./STD-R&D모집공고.html">STD-R&D 모집공고</a></li>
               <li><a href="./STD-R&D수행공고.html">STD-R&D 수행공고</a></li>
               <li><a href="./STD-R&D보고서.html">STD-R&D 보고서</a></li>
@@ -423,19 +423,19 @@
                     <td>
                       <div class="form-radio-wrap">
                         <div class="form-radio flex gap5">
-                          <input type="radio" name="chk1_01" value="1" id="a1"> 
+                          <input type="radio" name="chk1_01" value="1" id="a1">
                           <label for="a1">
                             학사
                           </label>
-                          <input type="radio" name="chk1_01" value="1" id="a2"> 
+                          <input type="radio" name="chk1_01" value="1" id="a2">
                           <label for="a2">
                             석사
                           </label>
-                          <input type="radio" name="chk1_01" value="1" id="a3"> 
+                          <input type="radio" name="chk1_01" value="1" id="a3">
                           <label for="a3">
                             박사
                           </label>
-                          <input type="radio" name="chk1_01" value="1" id="a4"> 
+                          <input type="radio" name="chk1_01" value="1" id="a4">
                           <label for="a4">
                             기타
                           </label>
@@ -454,7 +454,7 @@
                     <th scope="row">주소</th>
                     <td colspan="3">
                       <div class="flex gap5">
-                        <input type="button" class="address" value="주소검색" onclick="goPopup();">
+                        <input type="button" class="btn address" value="주소검색" onclick="goPopup();">
                         <input type="text" id="roadAddrPart1" placeholder="경기도 군포시 금포로">
                         <input type="text" id="roadAddrPart1" placeholder="123동 201호">
                       </div>
@@ -545,7 +545,25 @@
                   </tr>
                   <tr>
                     <th colspan="2" scope="row">첨부파일</th>
-                    <td colspan="3"><a href="#"><img src="../content/images/common/첨부파일.png" alt="첨부파일" /></a> </td>
+                    <td colspan="3"><a href="#">
+                        <dd class="ffd">
+                          <!-- 첨부파일 -->
+                          <div class="file-upload-wrap">
+                            <div class="file-upload">
+                              <div class="file-box flex gap5">
+                                <div class="file-select">
+                                  <div class="file-select-name" id="noFile">파일 없음</div>
+                                  <input type="file" name="chooseFile" id="chooseFile" class="chooseFile">
+                                  <div class="file-select-button" id="fileName">파일 찾기</div>
+                                </div>
+                                <!-- 첨부파일 추가 -->
+                                <button type="button" class="add-btn  btn size-mid bg-main">+ 추가</button>
+                                <button type="button" class="remove-file btn size-mid bg-red">- 삭제</button>
+                              </div>
+                            </div>
+                          </div>
+                        </dd>
+                    </td>
                   </tr>
                 </tbody>
               </table>
@@ -567,7 +585,7 @@
               </div>
             </h4>
             </p>
-            <div class="btn-set mt20 txt-r">
+            <div class="btn-set mt20 txt-c">
               <a href="#" class="reset2">취소</a>
               <a href="#" class="submit3">저장</a>
             </div>

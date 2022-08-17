@@ -22,6 +22,47 @@ $(function () {
     // subPanel();
     // cdPopup();
     comTab();
+    comFile();
+  }
+
+  function comFile() {
+    $(".add-btn").on("click", function (e) {
+      e.preventDefault();
+      $(this).parents(".file-upload-wrap").append(
+        `<div class="file-upload">
+          <div class="file-box flex gap5">
+            <div class="file-select">
+              <div class="file-select-name" id="noFile">파일 없음</div>
+              <input type="file" name="chooseFile" id="chooseFile" class="chooseFile">
+              <div class="file-select-button" id="fileName">파일 찾기</div>
+            </div>
+            <!-- 첨부파일 삭제 -->
+            <button type="button" class="remove-file btn size-mid bg-red">- 삭제</button>
+        </div>
+      </div>`
+      );
+    });
+
+    $(document).on("click", ".remove-file", function (e) {
+      e.preventDefault();
+      $(this).parents(".file-upload").remove();
+    });
+
+    $(function () {
+      $(document).on("click", '.file-upload' , function () {
+        $(this).find(".chooseFile").on('change', function () {
+          var filename = $(this).val();
+          if (/^\s*$/.test(filename)) {
+            $(this).parents(".file-upload").removeClass('active');
+            $(this).siblings("#noFile").text("파일 없음");
+          }
+          else {
+            $(this).parents(".file-upload").addClass('active');
+            $(this).siblings("#noFile").text(filename.replace("C:\\fakepath\\", ""));
+          }
+        });
+      });
+    });
   }
 
   // datepicker
@@ -30,7 +71,7 @@ $(function () {
     $(".datePicker").each(function () {
       $(this).datepicker({
         autoHide: true,
-        format:"yyyy-mm-dd",
+        format: "yyyy-mm-dd",
       });
     });
   }
@@ -41,7 +82,7 @@ $(function () {
     $(".open-mb-nav").on("click", function () {
       $("body, html").css({ "overflow-y": "hidden" });
     });
-    $(".mobile-menu .close").on("click",function(){
+    $(".mobile-menu .close").on("click", function () {
       $("body, html").css({ "overflow-y": "auto" });
     });
   }

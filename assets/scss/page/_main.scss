@@ -45,7 +45,7 @@ section{padding: 2.1875rem 0;}
       margin: 1.5625rem 0rem;
       position: relative;
       @include make-after{
-        width: 0.0625rem; height: 2.5rem; background: #fff;
+        width: 1px; height: 2.5rem; background: #fff;
         text-align: center; margin: 0 auto;
       }
     }
@@ -61,8 +61,8 @@ section{padding: 2.1875rem 0;}
   .swiper-pagination-bullet{
     height: 0.5rem; background: #b5b5b5; width: 1.3125rem; border-radius: 0.625rem; margin: 0 0.5rem;
     opacity: 1; transition: all 0.4s ease-in-out;
-    box-shadow: 0.0625rem 0.125rem 0.3125rem 0rem rgba(8, 7, 43, 0.9);
-    text-shadow: 0.0625rem 0.125rem 0.3125rem rgba(8, 7, 43, 0.9);
+    box-shadow: 1px 0.125rem 0.3125rem 0rem rgba(8, 7, 43, 0.9);
+    text-shadow: 1px 0.125rem 0.3125rem rgba(8, 7, 43, 0.9);
   }
   .swiper-pagination-bullet-active{
     width: 7.375rem; background: #fff;
@@ -254,7 +254,7 @@ section{padding: 2.1875rem 0;}
       margin-top: 6.25rem;
       @extend %box-shadow2; color: #6ba8ff!important;
       img{
-        position: relative; top: -0.0625rem;
+        position: relative; top: -1px;
       }
     }
   }

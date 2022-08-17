@@ -221,7 +221,7 @@
         </div>
         <ul class="list">
           <li>
-            <a href="" class="gnb__item">
+            <a href="#none" class="gnb__item">
               사업소개
             </a>
             <ul class="sub-menu">
@@ -235,7 +235,7 @@
             </ul>
           </li>
           <li>
-            <a href="" class="gnb__item">
+            <a href="#none" class="gnb__item">
               표준성과 정보
             </a>
             <ul class="sub-menu">
@@ -246,7 +246,7 @@
             </ul>
           </li>
           <li>
-            <a href="" class="gnb__item">
+            <a href="#none" class="gnb__item">
               협력기관
             </a>
             <ul class="sub-menu">
@@ -256,7 +256,7 @@
             </ul>
           </li>
           <li>
-            <a href="" class="gnb__item">
+            <a href="#none" class="gnb__item">
               표준화동향조사
             </a>
             <ul class="sub-menu">
@@ -268,7 +268,7 @@
             </ul>
           </li>
           <li>
-            <a href="" class="gnb__item">
+            <a href="#none" class="gnb__item">
               STD-R&D
             </a>
             <ul class="sub-menu">
@@ -280,7 +280,7 @@
             </ul>
           </li>
           <li>
-            <a href="" class="gnb__item">
+            <a href="#none" class="gnb__item">
               R&D 표준교육
             </a>
             <ul class="sub-menu">
@@ -292,7 +292,7 @@
             </ul>
           </li>
           <li>
-            <a href="" class="gnb__item">
+            <a href="#none" class="gnb__item">
               알림마당
             </a>
             <ul class="sub-menu">
@@ -357,7 +357,7 @@
             <li class="last">
               <span>
                 <a href="#">
-                  과제정보 검색</a>
+                  표준성과 검색</a>
               </span>
             </li>
           </ul>
@@ -367,14 +367,12 @@
       <div class="section2">
         <div class="inner">
           <div class="section2__had">
-            <p>
-              표준성과 상세화면(국제)
-            </p>
+            <p>표준화동향조사 모집공고</p>
           </div>
-          <div class="sectino2_-body">
+          <div class="section2__body">
             <div class="tbl-type12">
               <table summary="">
-                <caption>표준성과 상세화면</caption>
+                <caption>표준화동향조사 모집공고</caption>
                 <colgroup>
                   <col width="20%" />
                   <col width="30%" />
@@ -383,63 +381,132 @@
                 </colgroup>
                 <tbody>
                   <tr>
-                    <th scope="row">표준성과 명</th>
-                    <td>ICT 표준 OOO</td>
-                    <th scope="row">표준화기구명</th>
-                    <td>국립전파연구원</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">표준번호</th>
-                    <td>KS X 3279 2020-0001</td>
-                    <th scope="row">표준채택(승인) 날짜</th>
-                    <td>2022.07.25</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">제안기관</th>
-                    <td>한국표준협회</td>
-                    <th scope="row">제안자</th>
-                    <td>홍길동</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">제/개정 구분</th>
-                    <td>제정</td>
-                    <th scope="row">기여율</th>
-                    <td>100 %</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">표준기술 요약</th>
-                    <td colspan="3"></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="tbl-type12 mt10">
-              <table summary="">
-                <caption>과제정보 상세</caption>
-                <colgroup>
-                  <col width="20%" />
-                  <col width="30%" />
-                  <col width="20%" />
-                  <col width="30%" />
-                </colgroup>
-                <tbody>
-                  <tr>
-                    <th scope="row">과제명</th>
-                    <td>ICT 표준 과제</td>
-                    <th scope="row">과제 번호</th>
+                    <th scope="row">모집년도</th>
                     <td>
-                      <div class="tableButton">
-                        ASD001
-                        <button type="button" class="btnView">상세보기</button>
+                      <select title="모집년도" class="wx100">
+                        <option>전체</option>
+                        <option>2022</option>
+                        <option>2021</option>
+                        <option>2020</option>
+                      </select>
+                    </td>
+                    <th scope="row">모집차수</th>
+                    <td>
+                      <select title="모집차수" class="wx80">
+                        <option>전체</option>
+                        <option>1</option>
+                        <option>2</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">접수기간</th>
+                    <td class="flex gap5 align-center">
+                      <div class="flex al-center">
+                        <input type="text" class="form-input form-date datePicker" placeholder="2022-08-01">
+                        &nbsp;~&nbsp;
+                        <input type="text" class="form-input form-date datePicker" placeholder="2022-08-01">
+                      </div>
+                    </td>
+                    <th scope="row">진행구분</th>
+                    <td>
+                      <div class="form-radio-wrap">
+                        <div class="form-radio">
+                          <input type="radio" id="a1" name="chk1_01" value="1" checked>
+                          <label for="a1">
+                            대기중 &nbsp;&nbsp;
+                          </label>
+                          <input type="radio" id="a2" name="chk1_01" value="2">
+                          <label for="a2">
+                            모집중 &nbsp;&nbsp;
+                          </label>
+                          <input type="radio" id="a3" name="chk1_01" value="3">
+                          <label for="a3">
+                            모집완료 &nbsp;&nbsp;
+                          </label>
+                        </div>
                       </div>
                     </td>
                   </tr>
                 </tbody>
               </table>
             </div>
+            <div class="btn-set mt20 txt-r">
+              <a href="#" class="reset2">초기화</a>
+              <a href="#" class="submit3"><span>검색</span></a>
+            </div>
+            <div class="board_top  jc mt50">
+              <div>
+                <span>4</span> 건이 검색되었습니다.
+              </div>
+              <p class="sample-txt">
+                샘플데이터 입니다.
+              </p>
+            </div>
+            <div class="scroll-tbl-wrap">
+              <div>
+                <div class="tbl-type14">
+                  <table summary="모집공고 목록">
+                    <caption>모집공고 목록</caption>
+                    <colgroup>
+                      <col width="30px">
+                      <col width="70px">
+                      <col width="50px">
+                      <col width="500px">
+                      <col width="130px">
+                      <col width="250px">
+                      <col width="80px">
+                      <col width="80px">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th scope="col">NO</th>
+                        <th scope="col">모집년도</th>
+                        <th scope="col">모집차수</th>
+                        <th scope="col">공고내용</th>
+                        <th scope="col">공고일자</th>
+                        <th scope="col">모집기간</th>
+                        <th scope="col">진행현황</th>
+                        <th scope="col">모집신청</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>2022</td>
+                        <td>2</td>
+                        <td><a href="./표준화동향조사모집공고상세화면.html" target="_blank">2022년 R&D 사업화 표준연계 사업에 따른 표준화동향조사 시행계획을 다음과
+                          같이
+                          공고하오니, 동 사업에 참여하여 표준화동향조사 서비스를 지원받고자 하는 연구기관·기업은 공고에 따라 신청서를 제출하여 주시기 바랍니다.</a></td>
+                      <td>2022-07-29</td>
+                      <td>2022-08-01 ~ 2022-08-31</td>
+                      <td>대기중</td>
+                      <td><a href="./표준화동향조사모집신청.html" target="_blank">신청하기</a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="paging">
+              <a href="#" class="first">처음</a>
+              <a href="#" class="prev">이전</a>
+              <span>1</span>
+              <a href="#">2</a>
+              <a href="#">3</a>
+              <a href="#">4</a>
+              <a href="#">5</a>
+              <a href="#">6</a>
+              <a href="#">7</a>
+              <a href="#">8</a>
+              <a href="#">9</a>
+              <a href="#" class="next">다음</a>
+              <a href="#" class="last">마지막</a>
+            </div>
           </div>
         </div>
       </div>
+
     </div>
     <!-- sub-content eee -->
 

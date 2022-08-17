@@ -221,7 +221,7 @@
         </div>
         <ul class="list">
           <li>
-            <a href="" class="gnb__item">
+            <a href="#none" class="gnb__item">
               사업소개
             </a>
             <ul class="sub-menu">
@@ -235,7 +235,7 @@
             </ul>
           </li>
           <li>
-            <a href="" class="gnb__item">
+            <a href="#none" class="gnb__item">
               표준성과 정보
             </a>
             <ul class="sub-menu">
@@ -246,7 +246,7 @@
             </ul>
           </li>
           <li>
-            <a href="" class="gnb__item">
+            <a href="#none" class="gnb__item">
               협력기관
             </a>
             <ul class="sub-menu">
@@ -256,7 +256,7 @@
             </ul>
           </li>
           <li>
-            <a href="" class="gnb__item">
+            <a href="#none" class="gnb__item">
               표준화동향조사
             </a>
             <ul class="sub-menu">
@@ -268,7 +268,7 @@
             </ul>
           </li>
           <li>
-            <a href="" class="gnb__item">
+            <a href="#none" class="gnb__item">
               STD-R&D
             </a>
             <ul class="sub-menu">
@@ -280,7 +280,7 @@
             </ul>
           </li>
           <li>
-            <a href="" class="gnb__item">
+            <a href="#none" class="gnb__item">
               R&D 표준교육
             </a>
             <ul class="sub-menu">
@@ -292,7 +292,7 @@
             </ul>
           </li>
           <li>
-            <a href="" class="gnb__item">
+            <a href="#none" class="gnb__item">
               알림마당
             </a>
             <ul class="sub-menu">
@@ -338,8 +338,8 @@
 
 
     <!-- sub-content -->
-    <div id="sub" class="sub-contents">
-      <div id="content-location" class="content-location">
+    <div id="sub contents" class="sub-contents">
+      <div id="content-location" class="sub content-location">
         <div class="content-location-inner">
           <ul>
             <li class="home">
@@ -357,89 +357,151 @@
             <li class="last">
               <span>
                 <a href="#">
-                  과제정보 검색</a>
+                  표준성과 검색</a>
               </span>
             </li>
           </ul>
         </div>
       </div>
-
-      <div class="section2">
-        <div class="inner">
-          <div class="section2__had">
-            <p>
-              표준성과 상세화면(국제)
-            </p>
-          </div>
-          <div class="sectino2_-body">
-            <div class="tbl-type12">
-              <table summary="">
-                <caption>표준성과 상세화면</caption>
-                <colgroup>
-                  <col width="20%" />
-                  <col width="30%" />
-                  <col width="20%" />
-                  <col width="30%" />
-                </colgroup>
-                <tbody>
-                  <tr>
-                    <th scope="row">표준성과 명</th>
-                    <td>ICT 표준 OOO</td>
-                    <th scope="row">표준화기구명</th>
-                    <td>국립전파연구원</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">표준번호</th>
-                    <td>KS X 3279 2020-0001</td>
-                    <th scope="row">표준채택(승인) 날짜</th>
-                    <td>2022.07.25</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">제안기관</th>
-                    <td>한국표준협회</td>
-                    <th scope="row">제안자</th>
-                    <td>홍길동</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">제/개정 구분</th>
-                    <td>제정</td>
-                    <th scope="row">기여율</th>
-                    <td>100 %</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">표준기술 요약</th>
-                    <td colspan="3"></td>
-                  </tr>
-                </tbody>
-              </table>
+      <div id="contents" class="sub">
+        <div class="section2">
+          <div class="inner">
+            <div class="section2__had">
+              <p>표준화동향조사 보고서</p>
             </div>
-            <div class="tbl-type12 mt10">
-              <table summary="">
-                <caption>과제정보 상세</caption>
-                <colgroup>
-                  <col width="20%" />
-                  <col width="30%" />
-                  <col width="20%" />
-                  <col width="30%" />
-                </colgroup>
-                <tbody>
-                  <tr>
-                    <th scope="row">과제명</th>
-                    <td>ICT 표준 과제</td>
-                    <th scope="row">과제 번호</th>
-                    <td>
-                      <div class="tableButton">
-                        ASD001
-                        <button type="button" class="btnView">상세보기</button>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+            <div class="section2__body">
+              <div class="tbl-type12">
+                <table summary="">
+                  <caption>표준화동향조사 보고서</caption>
+                  <colgroup>
+                    <col width="20%" />
+                    <col width="30%" />
+                    <col width="20%" />
+                    <col width="30%" />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th scope="row">발행년도</th>
+                      <td>
+                        <select title="모집년도" class="wx100">
+                          <option>전체</option>
+                          <option>2022</option>
+                          <option>2021</option>
+                          <option>2020</option>
+                        </select>
+                      </td>
+                      <th scope="row">보고서명</th>
+                      <td><input type="text" title="제안자" /></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">과제명</th>
+                      <td><input type="text" title="제안자" /></td>
+                      <th scope="row">과제번호</th>
+                      <td><input type="text" title="제안자" /></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">연구책임자</th>
+                      <td><input type="text" title="제안자" /></td>
+                      <th scope="row">발행자</th>
+                      <td><input type="text" title="제안자" /></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="btn-set mt20 txt-r">
+                <a href="#" class="reset2">초기화</a>
+                <a href="#" class="submit3"><span>검색</span></a>
+              </div>
+              <div class="board_top  jc mt50">
+                <div>
+                  <span>2</span> 건이 검색되었습니다.
+                </div>
+                <p class="sample-txt">
+                  샘플데이터 입니다.
+                </p>
+              </div>
+              <div class="scroll-tbl-wrap">
+                <div>
+                  <div class="tbl-type14">
+                    <table summary="보고서 목록">
+                      <caption>보고서 목록</caption>
+                      <colgroup>
+                        <col width="30px">
+                        <col width="60px">
+                        <col width="200px">
+                        <col width="200px">
+                        <col width="120px">
+                        <col width="80px">
+                        <col width="80px">
+                        <col width="80px">
+                        <col width="120px">
+                        <col width="100px">
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th scope="col">NO</th>
+                          <th scope="col">발행년도</th>
+                          <th scope="col">보고서명</th>
+                          <th scope="col">과제명</th>
+                          <th scope="col">과제번호</th>
+                          <th scope="col">연구책임자</th>
+                          <th scope="col">발행자</th>
+                          <th scope="col">등록자</th>
+                          <th scope="col">연락처</th>
+                          <th scope="col">첨부파일</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>2022</td>
+                          <td>표준화동향조사 보고서1</td>
+                          <td><a href="과제정보 상세화면.html" target="_blank">동향조사 수행과제1</a></td>
+                          <td>ASD0001</td>
+                          <td>김연구</td>
+                          <td>이발행</td>
+                          <td>박등록</td>
+                          <td> </td>
+                          <td>다운로드</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>2022</td>
+                          <td>표준화동향조사 보고서2</td>
+                          <td><a href="과제정보 상세화면.html" target="_blank">동향조사 수행과제2</a></td>
+                          <td>ASD0001</td>
+                          <td>김연구</td>
+                          <td>이발행</td>
+                          <td>박등록</td>
+                          <td> </td>
+                          <td>다운로드</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                </div>
+              </div>
+              <div class="paging">
+                <a href="#" class="first">처음</a>
+                <a href="#" class="prev">이전</a>
+                <span>1</span>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a href="#">7</a>
+                <a href="#">8</a>
+                <a href="#">9</a>
+                <a href="#" class="next">다음</a>
+                <a href="#" class="last">마지막</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
+
     </div>
     <!-- sub-content eee -->
 
