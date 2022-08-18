@@ -192,6 +192,9 @@ section{padding: 2.1875rem 0;}
       margin-top: 1.125rem;
       .img{
         margin-right: 0.3125rem;
+        img{
+          width: 5.625rem;
+        }
       }
       li:nth-of-type(1){
         a{
@@ -255,7 +258,7 @@ section{padding: 2.1875rem 0;}
       margin-top: 6.25rem;
       @extend %box-shadow2; color: #6ba8ff!important;
       img{
-        position: relative; top: -1px;
+        position: relative; top: -1px; width: 0.6875rem;
       }
     }
   }
@@ -436,9 +439,11 @@ section{padding: 2.1875rem 0;}
   .search-menu .inquiry-box:after{width: 10rem; height: 5rem;}
   .search-menu .inquiry-box .txt{word-break: keep-all;}
   .search-menu .lef > .txt{line-height:1.5; font-size: 1.4rem;}
-  .reference .list .lef .com-tab{flex-wrap: wrap;}
-  .reference .list .lef li{flex:1 1 48%;}
-  .reference .list .lef li a{font-size: 2rem;}
+  .reference .list .lef{overflow-x: scroll;}
+  .reference .list .lef .com-tab{flex-wrap: nowrap;    white-space: nowrap; width: 33rem; }
+  // .reference .list .lef li{flex:1 1 48%;}
+  .reference .list .lef li a{font-size: 1.5rem; }
+  .reference .list .lef li.on a{font-size: 1.5rem;}
   .reference .list .ref ul li{flex:1 1 100%!important;}
   .reference .list .ref ul li .img img{height: auto;}
   .footer__top .ref{display: none;}
@@ -452,4 +457,6 @@ section{padding: 2.1875rem 0;}
   .footer__bot .inner .ref{align-self: center;}
   .footer__bot .inner .ref select{width: 100%;}
   section{padding: 1.5rem 0;}
+  #reference .tab-box.on {overflow-x: scroll;}
+  #reference .tab-box.on ul {flex-wrap: nowrap; white-space: nowrap; width: 55rem;}
 }

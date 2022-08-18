@@ -4192,6 +4192,8 @@ section {
     margin-top: 1.125rem; }
     .search-menu .lef .link-menu .img {
       margin-right: 0.3125rem; }
+      .search-menu .lef .link-menu .img img {
+        width: 5.625rem; }
     .search-menu .lef .link-menu li:nth-of-type(1) a {
       font-size: 2rem;
       font-weight: bold;
@@ -4276,7 +4278,8 @@ section {
     color: #6ba8ff !important; }
     .search-menu .inquiry-box .btn img {
       position: relative;
-      top: -1px; }
+      top: -1px;
+      width: 0.6875rem; }
 
 /* =================== edu-info  =================== */
 .edu-info .inner .list {
@@ -4499,14 +4502,19 @@ section {
     line-height: 1.5;
     font-size: 1.4rem; }
 
-  .reference .list .lef .com-tab {
-    flex-wrap: wrap; }
+  .reference .list .lef {
+    overflow-x: scroll; }
 
-  .reference .list .lef li {
-    flex: 1 1 48%; }
+  .reference .list .lef .com-tab {
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    width: 33rem; }
 
   .reference .list .lef li a {
-    font-size: 2rem; }
+    font-size: 1.5rem; }
+
+  .reference .list .lef li.on a {
+    font-size: 1.5rem; }
 
   .reference .list .ref ul li {
     flex: 1 1 100% !important; }
@@ -4548,7 +4556,15 @@ section {
     width: 100%; }
 
   section {
-    padding: 1.5rem 0; } }
+    padding: 1.5rem 0; }
+
+  #reference .tab-box.on {
+    overflow-x: scroll; }
+
+  #reference .tab-box.on ul {
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    width: 55rem; } }
 .sub-banner {
   width: 100%;
   height: 17.5rem; }
