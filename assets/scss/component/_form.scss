@@ -269,9 +269,9 @@ input{color: #333;opacity: 1;}
     @include make-after {
       display: block;
       position: absolute;
-      width: 0.375rem; height: 0.375rem;
+      width: 0.5rem; height: 0.5rem;
       border-radius: 50%;
-      left: 0.25rem;
+      left: 0.1875rem;
       top: 50%;
       /* left: 50%; */
       transform: translateY(-48%);
@@ -308,6 +308,11 @@ input{color: #333;opacity: 1;}
 .filebox.bs3-primary label { color: #fff; background-color: #337ab7; border-color: #2e6da4; }
 
 /* =================== TABLE =================== */
+table td a:hover{
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-position: under;
+}
 .list-table {
   width: 100%;
   margin: 0.625em auto 1.975em;

@@ -36,7 +36,7 @@
   .flex-w25>*{ flex: 1 1 50%;  width: calc(50% - 15px);}
   .flex-w33>*{ flex: 1 1 100%; width: 100%;}
   .flex-w50>*{ flex: 1 1 100%!important; width: 100%;}
-  .flex-w16>*{ flex:0 1 calc(50% - 10px)!important; }
+  .flex-w16>*{ flex:0 1 calc(33.3% - 10px)!important; }
 }
 
 $flex-al-option: (
@@ -186,60 +186,62 @@ $text-option: (
 
 /* =================== FLEX 여백 =================== */
 .gap5{
-  gap: 5px;
+  gap: 0.3125rem;
+  input{flex:1;}
   .btn{
     flex: 0 0 30%;
-    max-width: 100px;
+    max-width: 6.25rem;
 
-    @include media(1200px){
-      flex:0 0 100%; max-width: 100%; height: 2.625rem;
+    @include media(75rem){
+      flex:0 0 100%; max-width: 100%; height: 42px;
+     
     }
   }
 }
-.gap10{gap: 10px;}
-.gap15{gap: 15px; }
-.gap20{gap: 20px;}
-.gap30{gap: 30px;}
+.gap10{gap: 0.625rem;}
+.gap15{gap: 0.9375rem; }
+.gap20{gap: 1.25rem;}
+.gap30{gap: 1.875rem;}
 
 @media (max-width:$b-web){
-  .gap5{gap: 5px; margin-right: 0px;}
-  .gap10{gap: 10px; margin-right: 0px;}
-  .gap15{gap: 15px; margin-right: 0px;}
-  .gap20{gap: 20px; margin-right: 0px;}
-  .gap30{gap: 30px; margin-right: 0px;}
+  .gap5{gap: 0.3125rem; margin-right: 0rem;}
+  .gap10{gap: 0.625rem; margin-right: 0rem;}
+  .gap15{gap: 0.9375rem; margin-right: 0rem;}
+  .gap20{gap: 1.25rem; margin-right: 0rem;}
+  .gap30{gap: 1.875rem; margin-right: 0rem;}
 }
 
 
 /* navi */
-#navi {position:fixed; left:50px; top:50%; transform:translateY(-50%); z-index:5;
+#navi {position:fixed; left:4.125rem; top:50%; transform:translateY(-50%); z-index:5;
   @include make-before{
     position: absolute;
-    left: 5px;
-    width: 2px; height: 82%; background: #afc5ff;
+    left: 0.3125rem;
+    width: 0.125rem; height: 82%; background: #afc5ff;
     top: 50%; transform: translateY(-50%);
   }
 }
 #navi>li>a {
   position: relative;
-  transition:0.5s; top: 5px;
-  height: 45px; display: flex; align-items: center;
+  transition:0.5s; top: 0.3125rem;
+  height: 2.8125rem; display: flex; align-items: center;
   @include make-after{
     position: absolute; left: 0; top:50%; transform: translateY(-50%);
-    display:block; width:12px; height:12px; 
+    display:block; width:0.75rem; height:0.75rem; 
     border-radius: 50%;  background: #afc5ff;
     transition:0.5s;
   }
   span{
-    padding-left: 20px;
-    color: $gray; font-size: 18px; font-weight: 500;
+    padding-left: 1.25rem;
+    color: $gray; font-size: 1.125rem; font-weight: 500;
     display: block; height: 100%;
-    position: relative; top: 9px;
+    position: relative; top: 0.5625rem;
   }
 }
 #navi>li.on>a{
   @include make-after{
-     width: 15px; height: 15px; background: #fff;
-     border: 2px solid #afc5ff; box-sizing: border-box;
+     width: 0.9375rem; height: 0.9375rem; background: #fff;
+     border: 0.125rem solid #afc5ff; box-sizing: border-box;
      left:-1px;
   }
   span{

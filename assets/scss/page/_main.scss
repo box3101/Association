@@ -142,6 +142,7 @@ section{padding: 2.1875rem 0;}
             align-items: center;
             img{
               max-width: 12.1875rem;
+              transform: scale(.8);
             }
           }
           .txt{
@@ -161,8 +162,8 @@ section{padding: 2.1875rem 0;}
       font-size: 3rem; font-weight: bold; line-height: 1; color: #333;
     }
     >.txt{
-      margin-top: 2.1375rem;
-      font-size: 1.5rem; line-height: 1; color: #666666; font-weight: 300;
+      margin-top: 1.5375rem;
+      font-size: 1.5375rem; line-height: 1; color: #666666; font-weight: 300;
     }
     .search-bar{
       position: relative;
@@ -243,7 +244,7 @@ section{padding: 2.1875rem 0;}
       @include bg-url("img","bg-inq.png","cover");
       right: 0.9375rem; bottom:0.9375rem;
     }
-    padding: 2.5rem 1.875rem; height: 22.4rem;
+    padding: 2.5rem 1.875rem; height: 21.8rem;
     box-sizing: border-box;
     @extend %box-shadow2;
     @extend %txt-shadow; border-radius: 0.9375rem;
@@ -285,8 +286,10 @@ section{padding: 2.1875rem 0;}
             display: inline-block; width: 7.5rem;
           }
           a{
-            display: inline-block;
+            display: inline-block; width: 100%; height: 100%;
+            img{
             margin-top: 0.625rem;
+            }
           }
       }
     }
@@ -327,7 +330,7 @@ section{padding: 2.1875rem 0;}
       }
       a{
         display: inline-block;
-        font-size: 2.25rem; color: #777777; text-align: left;
+        font-size: 2rem; color: #777777; text-align: left;
         @include make-before{
           left: -1.875rem; transition: all 0.4s ease-in-out;
           top: 50%; transform: translateY(-50%);
@@ -390,9 +393,10 @@ section{padding: 2.1875rem 0;}
  }
 }
 
+#sub{font-size: 16px;}
 
 @media (max-width:$b-web){
-  html{font-size: 14px;}
+  html,#sub{font-size: 14px;}
   #navi{display: none;}
   .iqr-btn{display: none;}
   .hot-menu{right: 0;}
@@ -405,11 +409,11 @@ section{padding: 2.1875rem 0;}
   .reference .list .lef li.on a:after{width: 100%;}
 }
 @media (max-width:$b-tab){
-  html{font-size: 13px;}
+  html,#sub{font-size: 13px;}
 }
 @media (max-width:$b-mo){
-  html{font-size: 12px;}
-  .header__top h1.logo img{width: 23.0625rem;}
+  html,#sub{font-size: 12px;}
+  .header__top h1.logo img{width: 25.0625rem;}
   .visual__txt-wrap .tit{
     font-weight: 300;
     color: #fff;
@@ -447,4 +451,5 @@ section{padding: 2.1875rem 0;}
   .footer__bot .inner .ref select{padding-right: 0;}
   .footer__bot .inner .ref{align-self: center;}
   .footer__bot .inner .ref select{width: 100%;}
+  section{padding: 1.5rem 0;}
 }
