@@ -2902,6 +2902,7 @@ background: -webkit-linear-gradient(135deg,  #92a8ff 0%,#61a8ff 100%) ; /* Chrom
   animation-name: rollOut;
 }
 .iqr-btn{
+  display: none;
   position: fixed; right: 12px; bottom: 80px; z-index: 99;
   img{
     width: 3.875rem;

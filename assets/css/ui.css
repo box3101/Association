@@ -3921,6 +3921,7 @@ a[data-fancybox="gallery"] {
   animation-name: rollOut; }
 
 .iqr-btn {
+  display: none;
   position: fixed;
   right: 12px;
   bottom: 80px;
