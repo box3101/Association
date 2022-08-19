@@ -3928,6 +3928,34 @@ a[data-fancybox="gallery"] {
   .iqr-btn img {
     width: 3.875rem; }
 
+.float-btn {
+  position: absolute;
+  top: 700px;
+  right: 155px;
+  z-index: 9999;
+  animation: dongdong;
+  animation-duration: .7s;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-iteration-count: infinite; }
+
+@keyframes dongdong {
+  0% {
+    transform: translateY(0); }
+  100% {
+    transform: translateY(-10px); } }
+@media screen and (max-width: 1172px) {
+  .float-btn {
+    right: 20px; } }
+@media screen and (max-width: 1024px) {
+  .float-btn {
+    display: none;
+    top: 70%;
+    right: 20px; } }
+@media screen and (max-width: 480px) {
+  .float-btn {
+    top: 68%;
+    right: 10px; } }
 .go-top {
   display: block;
   position: fixed;

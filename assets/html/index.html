@@ -929,15 +929,64 @@
     <!-- navi eee -->
 
     <!-- go-top -->
-    <a href="#" class="iqr-btn">
-      <img src="../img/inquiry-btn.png" alt="">
-    </a>
     <div class="go-top">
       <a href=".header" title="위로 이동">
         <span class="hidden">상단으로</span>
       </a>
     </div>
     <!-- //go-top -->
+
+    <!-- 문의하기 float btn -->
+    <div class="float-btn">
+      <a href="#" target="_blank"><img src="../img/inquiry-btn.png" alt="문의하기"></a>
+    </div>
+
+    <script>
+      $(function () {
+        var curent = $(".float-btn").offset().top;
+        var scrollTop = $(document).scrollTop();
+
+
+        $(window).scroll(function () {
+          if (scrollTop < curent) {
+            scrollTop = 110;
+          }
+          $(".float-btn").stop();
+          $(".float-btn").animate({ "top": (scrollTop + 700) });
+        });
+
+
+        $(function () {
+          if ($(window).width() > 1550) {
+
+            $(window).scroll(function () {
+              var scrollTop = $(document).scrollTop();
+              if (scrollTop < 110) {
+                scrollTop = 110;
+              }
+              $(".float-btn").stop();
+              $(".float-btn").animate({ "top": (scrollTop + 700) });
+            });
+          }
+
+
+          else if ($(window).width() <= 1550) {
+            $(window).scroll(function () {
+              var scrollTop = $(document).scrollTop();
+              if (scrollTop < 110) {
+                scrollTop = 110;
+              }
+              $(".float-btn").stop();
+              $(".float-btn").animate({ "top": (scrollTop + 700) });
+            });
+          }
+
+        });
+
+
+      });
+    </script>
+    <!-- 문의하기 float btn -->
 
   </main>
   <!-- 메인이 들어가는 부분 eee -->
