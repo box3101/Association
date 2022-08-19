@@ -245,8 +245,8 @@ input{color: #333;opacity: 1;}
     }
 
     &:checked + label::after {
-      background-color: #008dff !important;
-      border: 1px solid #008dff !important;
+      background: #008dff;
+      border-color: #008dff;
     }
   }
 
@@ -267,14 +267,13 @@ input{color: #333;opacity: 1;}
     }
 
     @include make-after {
-      display: block;
-      position: absolute;
-      width: 0.4rem; height: 0.5rem;
-      border-radius: 50%;
-      left: 0.1875rem;
-      top: 50%;
-      /* left: 50%; */
-      transform: translateY(-48%);
+    display: block;
+    position: absolute;
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    left: 0.1875rem;
+    top: 0.2rem;
     }
 
     @include make-before {

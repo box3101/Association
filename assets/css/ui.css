@@ -501,8 +501,8 @@ input {
       background-color: #fff;
       border-color: #ccc; }
     .form-radio input[type="radio"]:checked + label::after {
-      background-color: #008dff !important;
-      border: 1px solid #008dff !important; }
+      background: #008dff;
+      border-color: #008dff; }
   .form-radio span {
     font-size: 1.05rem; }
   .form-radio label {
@@ -520,13 +520,11 @@ input {
       display: block;
       display: block;
       position: absolute;
-      width: 0.4rem;
-      height: 0.5rem;
+      width: 0.6rem;
+      height: 0.6rem;
       border-radius: 50%;
       left: 0.1875rem;
-      top: 50%;
-      /* left: 50%; */
-      transform: translateY(-48%); }
+      top: 0.2rem; }
     .form-radio label:before {
       content: "";
       display: block;
