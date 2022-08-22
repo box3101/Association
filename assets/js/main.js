@@ -66,7 +66,7 @@ $(function () {
     });
     /*// faq 220726  */
   }
-  
+
   function comFile() {
     $(".add-btn").on("click", function (e) {
       e.preventDefault();
