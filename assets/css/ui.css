@@ -1609,8 +1609,6 @@ a[data-fancybox="gallery"] {
     line-height: 1;
     position: relative;
     top: -0.125rem; }
-    .header__top h1.logo img {
-      width: 44.0625rem; }
   .header__top .ref .input-box {
     position: relative; }
     .header__top .ref .input-box .search-bar {
@@ -7137,7 +7135,8 @@ h3 {
   padding-left: 2.5rem;
   color: #333;
   position: relative;
-  margin-top: 2rem; }
+  margin-top: 2rem;
+  font-size: 1.5rem; }
 
 .guide .guideBx .title:before {
   display: none; }
@@ -7379,7 +7378,7 @@ caption {
   display: block;
   overflow: hidden;
   width: 100%;
-  max-width: 80rem;
+  max-width: 86.5rem;
   margin: 0 auto; }
 
 .content-location .content-location-inner > ul {
