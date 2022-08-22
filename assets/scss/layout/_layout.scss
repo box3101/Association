@@ -191,6 +191,7 @@ $text-option: (
     flex:1;
     @include media(75rem){
       flex:auto;
+      width: 100%!important;
     }
   }
   .btn{

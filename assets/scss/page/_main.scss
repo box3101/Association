@@ -410,6 +410,18 @@ section{padding: 2.1875rem 0;}
   .reference .list .lef li{flex:1; text-align: center;}
   .reference .list .ref ul li{flex:1 1 calc(33% - 15px);}
   .reference .list .lef li.on a:after{width: 100%;}
+  .footer__top .ref{display: none;}
+  .footer__bot .inner .lef{flex-direction: column;}
+  .footer__bot .inner .lef .f-logo{margin-right: 0; margin-bottom: 29px;}
+  .footer__bot .inner{flex-direction: column;}
+  .footer__bot .inner .lef address {text-align: center;}
+  .footer__bot .inner .lef address br{display: none;}
+  .footer__bot .inner .ref{margin-top: 10px;align-items: center;width: 55%;}
+  .footer__bot .inner .ref select{padding-right: 0;}
+  .footer__bot .inner .ref{align-self: center;}
+  .footer__bot .inner .ref select{width: 100%;}
+  section{padding: 1.5rem 0;}
+  .flex.gap5.align-center .flex.al-center,.flex.gap5,.flex.al-center{width: 100%;}
 }
 @media (max-width:$b-tab){
   html,#sub{font-size: 13px;}
@@ -446,15 +458,5 @@ section{padding: 2.1875rem 0;}
   .reference .list .lef li.on a{font-size: 1.5rem;}
   .reference .list .ref ul li{flex:1 1 100%!important;}
   .reference .list .ref ul li .img img{height: auto;}
-  .footer__top .ref{display: none;}
-  .footer__bot .inner .lef{flex-direction: column;}
-  .footer__bot .inner .lef .f-logo{margin-right: 0; margin-bottom: 29px;}
-  .footer__bot .inner{flex-direction: column;}
-  .footer__bot .inner .lef address {text-align: center;}
-  .footer__bot .inner .lef address br{display: none;}
-  .footer__bot .inner .ref{margin-top: 10px;align-items: center;width: 55%;}
-  .footer__bot .inner .ref select{padding-right: 0;}
-  .footer__bot .inner .ref{align-self: center;}
-  .footer__bot .inner .ref select{width: 100%;}
-  section{padding: 1.5rem 0;}
+
 }
