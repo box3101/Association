@@ -68,7 +68,7 @@ textarea {
 
 /* Style */
 html {
-  font-size: 16px; }
+  font-size: 15px; }
 
 body {
   overflow-x: hidden; }
@@ -7069,7 +7069,7 @@ body.nopage .wrapper {
   position: relative;
   padding: 1.25rem;
   padding-top: 1.875rem;
-  margin-top: 1.25rem; }
+  margin-top: 2.25rem; }
 
 .new-box-style > strong {
   display: inline-block;
