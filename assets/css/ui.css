@@ -5814,7 +5814,7 @@ table {
 
 .tbl-type12 tbody td {
   min-height: 3.4375rem;
-  padding: 0.3125rem 0.9375rem;
+  padding: 0.6125rem 0.9375rem;
   font-size: 1.125rem;
   color: #999;
   border-top: 1px solid #ccc;
@@ -7417,6 +7417,9 @@ caption {
 
 .dv-mobile .content-location {
   display: none; }
+
+.flex.gap5.align-center .flex.al-center {
+  width: 100%; }
 
 @media (max-width: 1200px) {
   .tbl-type12 tbody td {
