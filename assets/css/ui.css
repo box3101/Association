@@ -4537,7 +4537,11 @@ section {
             color: #333333;
             display: flex;
             align-items: center;
-            position: relative; }
+            position: relative;
+            padding-right: 40px;
+            word-break: keep-all; }
+            .ready-wrap .bg03 .inner .faq-wrap .faq-section dt svg {
+              flex: 0 0 25px; }
             .ready-wrap .bg03 .inner .faq-wrap .faq-section dt:after {
               content: "";
               display: block;
