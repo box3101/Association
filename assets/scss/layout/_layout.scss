@@ -187,13 +187,18 @@ $text-option: (
 /* =================== FLEX 여백 =================== */
 .gap5{
   gap: 0.3125rem;
-  input{flex:1;}
+  input{
+    flex:1;
+    @include media(75rem){
+      flex:auto;
+    }
+  }
   .btn{
     flex: 0 0 30%;
     max-width: 6.25rem;
 
     @include media(75rem){
-      flex:0 0 100%; max-width: 100%; height: 42px;
+      flex:0 0 100%; max-width: 100%; height: 2.625rem;
      
     }
   }

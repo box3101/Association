@@ -484,6 +484,11 @@ input {
   position: relative;
   align-items: center;
   display: flex; }
+  @media all and (max-width: 75rem) {
+    .form-radio {
+      flex-wrap: wrap;
+      gap: 15px;
+      padding: 10px 0; } }
   .form-radio input[type="radio"] {
     opacity: 0;
     position: absolute;
@@ -1485,6 +1490,9 @@ a[data-fancybox="gallery"] {
   gap: 0.3125rem; }
   .gap5 input {
     flex: 1; }
+    @media all and (max-width: 75rem) {
+      .gap5 input {
+        flex: auto; } }
   .gap5 .btn {
     flex: 0 0 30%;
     max-width: 6.25rem; }
@@ -1492,7 +1500,7 @@ a[data-fancybox="gallery"] {
       .gap5 .btn {
         flex: 0 0 100%;
         max-width: 100%;
-        height: 42px; } }
+        height: 2.625rem; } }
 
 .gap10 {
   gap: 0.625rem; }
@@ -1924,6 +1932,9 @@ a[data-fancybox="gallery"] {
         font-size: 0.875rem;
         font-weight: 500;
         padding-right: 6.875rem; }
+        .footer__bot .inner .ref select option {
+          display: inline-block;
+          padding: 0.5rem 0; }
 
 /* =================== 이미지 호버시 확대 =================== */
 /* =================== 텍스트 그라디언트 생성 =================== */
@@ -4801,6 +4812,9 @@ section {
   font-size: 1.125rem;
   font-weight: bold;
   border-radius: 1.875rem; }
+  @media all and (max-width: 600px) {
+    .btn-set a {
+      padding: 0rem 1.5rem !important; } }
 
 .btn-set a:first-child {
   margin-left: 0rem; }
