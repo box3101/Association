@@ -12,6 +12,7 @@ $(function () {
 
   //이벤트 바인딩
   function bindingEvent() {
+    faq();
     datepicker();
     wow();
     htmlInclude();
@@ -25,6 +26,47 @@ $(function () {
     comFile();
   }
 
+  //faq
+  function faq() {
+    /* faq 220726 */
+    var faqDl = $(".faq-section");
+    var faqDt = $(".faq-section dt");
+    var faqDd = $(".faq-section dd");
+
+    // 첫번째 활성화
+    // faqDl.eq(0).children("dd").slideDown(500);
+    // faqDl.eq(0).addClass("is-active");
+
+    // 활성화 되었을때 클릭
+    function dlCheck($this) {
+      $this.parent("dl").removeClass("is-active");
+      $this.siblings("dd").slideUp(500);
+    }
+
+    // 활성화 안되었을때 클릭
+    function dlCheckOff($this) {
+      faqDl.children("dd").slideUp(500);
+      faqDl.removeClass("is-active");
+      $this.siblings("dd").slideDown(500);
+      $this.parent("dl").addClass("is-active");
+    }
+
+    faqDt.on("click", function () {
+
+      var $this = $(this);
+      var checkOn = $this.parent("dl").hasClass("is-active");
+
+
+      if (checkOn) {
+        dlCheck($this);
+      } else {
+        dlCheckOff($this);
+      }
+
+    });
+    /*// faq 220726  */
+  }
+  
   function comFile() {
     $(".add-btn").on("click", function (e) {
       e.preventDefault();
@@ -49,7 +91,7 @@ $(function () {
     });
 
     $(function () {
-      $(document).on("click", '.file-upload' , function () {
+      $(document).on("click", '.file-upload', function () {
         $(this).find(".chooseFile").on('change', function () {
           var filename = $(this).val();
           if (/^\s*$/.test(filename)) {
