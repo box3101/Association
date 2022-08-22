@@ -438,10 +438,12 @@ section{padding: 2.1875rem 0;}
     background-image: url(../img/r-bg02.png);
     background-size: cover;
     img{
-      width: 38.4375rem;
+      width: 20.625rem;
+      margin-top: 1.25rem; height: 10.875rem;
 
       @include media(1200px){
         width: 100%;
+        height: auto;
       }
     }
     p.tit{

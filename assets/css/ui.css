@@ -4493,10 +4493,13 @@ section {
     background-image: url(../img/r-bg02.png);
     background-size: cover; }
     .ready-wrap .bg02 img {
-      width: 38.4375rem; }
+      width: 20.625rem;
+      margin-top: 1.25rem;
+      height: 10.875rem; }
       @media all and (max-width: 1200px) {
         .ready-wrap .bg02 img {
-          width: 100%; } }
+          width: 100%;
+          height: auto; } }
     .ready-wrap .bg02 p.tit {
       font-size: 1.875rem;
       color: #fff;
