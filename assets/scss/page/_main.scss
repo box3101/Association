@@ -413,8 +413,10 @@ section{padding: 2.1875rem 0;}
     background-position: center -8.5625rem;
     img{
       width: 31.6875rem;
+      height: 23.75rem;
       @include media(1200px){
-        width: 100%;
+        width: auto;
+        // width: 100%;
       }
     }
     .txt{

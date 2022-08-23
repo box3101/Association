@@ -1492,7 +1492,6 @@ a[data-fancybox="gallery"] {
     flex: 1; }
     @media all and (max-width: 75rem) {
       .gap5 input {
-        flex: auto;
         width: 100% !important; } }
   .gap5 .btn {
     flex: 0 0 30%;
@@ -4469,10 +4468,11 @@ section {
     background-size: cover;
     background-position: center -8.5625rem; }
     .ready-wrap .bg01 img {
-      width: 31.6875rem; }
+      width: 31.6875rem;
+      height: 23.75rem; }
       @media all and (max-width: 1200px) {
         .ready-wrap .bg01 img {
-          width: 100%; } }
+          width: auto; } }
     .ready-wrap .bg01 .txt {
       margin-top: 1.875rem; }
       .ready-wrap .bg01 .txt h2 {
@@ -7190,11 +7190,18 @@ h3::after {
   max-width: 25%;
   margin-top: 0.9375rem;
   padding: 0 0.9375rem; }
+  @media all and (max-width: 900px) {
+    .com-step-wrap .com-step-container {
+      flex: 0 0 100%;
+      max-width: 100%; } }
 
 .com-step-wrap .com-step {
   border: 1px solid #999;
   height: 100%;
   border-bottom: none; }
+  @media all and (max-width: 900px) {
+    .com-step-wrap .com-step {
+      border: none; } }
 
 .com-step-wrap .com-step .com-top {
   text-align: center;
@@ -7205,6 +7212,10 @@ h3::after {
   font-weight: 400;
   border-bottom: 1px solid #999;
   box-sizing: border-box; }
+  @media all and (max-width: 900px) {
+    .com-step-wrap .com-step .com-top {
+      margin-bottom: 13px;
+      border: 1px solid #999; } }
 
 .com-step-wrap .com-step .com-top span {
   font-weight: bold;
@@ -7229,6 +7240,12 @@ h3::after {
   width: 1.5rem;
   height: 2.125rem;
   right: -0.6875rem; }
+  @media all and (max-width: 900px) {
+    .com-step-wrap .com-step:after {
+      transform: translateY(-50%) rotate(94deg);
+      right: auto;
+      left: 48.6%;
+      top: auto; } }
 
 .com-step-container:last-of-type .com-step:after {
   display: none; }
@@ -7236,6 +7253,10 @@ h3::after {
 .com-step-wrap.w16 > div {
   flex: 0 1 16.6%;
   max-width: 16.6%; }
+  @media all and (max-width: 900px) {
+    .com-step-wrap.w16 > div {
+      flex: 0 0 100%;
+      max-width: 100%; } }
 
 .grid-wrap {
   margin-top: 1.25rem;
