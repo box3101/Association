@@ -1763,7 +1763,7 @@ a[data-fancybox="gallery"] {
   opacity: 0;
   height: 0;
   padding: 0;
-  background: #641e92; }
+  background: #294eb6; }
 
 .mobile-menu .list > li > a.is-active + .sub-menu {
   opacity: 1;
@@ -4434,7 +4434,7 @@ section {
         .reference .list .ref ul li .img {
           opacity: 1;
           overflow: hidden;
-          border-radius: 1.25rem 1.25rem 0 0; }
+          border-radius: 14px 14px 0 0; }
           .reference .list .ref ul li .img img {
             transition: all 0.4s ease-in-out;
             border-radius: 1.25rem 1.25rem 0 0;
@@ -4644,7 +4644,10 @@ section {
     padding: 1.5rem 0; }
 
   .flex.gap5.align-center .flex.al-center, .flex.gap5, .flex.al-center {
-    width: 100%; } }
+    width: 100%; }
+
+  .content-location .content-location-inner > ul {
+    margin-right: 5px; } }
 @media (max-width: 900px) {
   html, #sub {
     font-size: 13px; } }
@@ -4708,7 +4711,37 @@ section {
     flex: 1 1 100% !important; }
 
   .reference .list .ref ul li .img img {
-    height: auto; } }
+    height: auto; }
+
+  .hot-menu .inner ul li a .txt {
+    font-size: 1.1rem; }
+
+  .search-menu .inquiry-box:after {
+    bottom: 1.9375rem; }
+
+  .edu-info .inner .list li p.tit {
+    line-height: 1.3; }
+
+  .visual__txt-wrap .txt {
+    word-break: break-all;
+    width: 80%;
+    margin: 0 auto; }
+
+  .visual__txt-wrap .txt br {
+    display: none; }
+
+  .scroll-tbl-wrap .tbl-type14 {
+    border: none; }
+
+  table input {
+    padding-left: 0.6rem;
+    font-size: 1.1rem !important; }
+
+  .btn.address + input {
+    flex: 1 1 100%; }
+
+  .form-input.form-date {
+    flex: 1 1 100%; } }
 .sub-banner {
   width: 100%;
   height: 17.5rem; }
