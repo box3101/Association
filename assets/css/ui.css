@@ -1721,7 +1721,9 @@ a[data-fancybox="gallery"] {
   display: none; }
   @media (max-width: 600px) {
     .mobile-menu img {
-      width: 15rem; } }
+      width: 26rem;
+      position: relative;
+      top: -3px; } }
 
 .mobile-menu .top {
   height: 6.8125rem;
@@ -4731,7 +4733,9 @@ section {
     display: none; }
 
   .scroll-tbl-wrap .tbl-type14 {
-    border: none; }
+    position: relative;
+    width: 100%;
+    overflow-x: auto; }
 
   table input {
     padding-left: 0.6rem;

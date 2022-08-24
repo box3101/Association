@@ -128,7 +128,9 @@
 
   img {
     @media (max-width:$b-mo) {
-      width: 15rem;
+      width: 26rem;
+      position: relative;
+      top: -3px;
     }
   }
 }
