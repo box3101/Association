@@ -179,7 +179,7 @@ $(function () {
       // visual-slide
       const visualSlide = new Swiper("#visual-slide", {
         effect: "fade",
-        loop: true,
+        // loop: true,
         fadeEffect: {
           crossFade: true
         },
