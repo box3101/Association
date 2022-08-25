@@ -4616,7 +4616,8 @@ section {
   .main-info .inner .flex .lef p.tit {
     font-size: 3rem;
     font-weight: bold;
-    padding: 1.5625rem 0; }
+    padding: 1.5625rem 0;
+    padding-top: 0; }
   .main-info .inner .flex .lef ul {
     border-bottom: 0.0625rem solid #ccc; }
     .main-info .inner .flex .lef ul li {
@@ -4666,7 +4667,7 @@ section {
       opacity: 1;
       border-radius: 1.0625rem;
       padding: 1.6875rem 1.6875rem;
-      height: 25.625rem; }
+      height: 24.225rem; }
       .main-info .inner .flex .ref .info .tit {
         opacity: 1;
         font-size: 3rem;

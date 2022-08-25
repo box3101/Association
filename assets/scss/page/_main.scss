@@ -532,6 +532,7 @@ section{padding: 2.1875rem 0;}
           font-size: 3rem;
           font-weight: bold;
           padding: 1.5625rem 0;
+          padding-top: 0;
         }
         ul{
           border-bottom: 0.0625rem solid #ccc;
@@ -584,7 +585,7 @@ section{padding: 2.1875rem 0;}
           @extend %txt-shadow;
           border-radius: 1.0625rem;
           padding: 1.6875rem 1.6875rem;
-          height: 25.625rem;
+          height: 24.225rem;
           .tit{
             opacity: 1;
     font-size: 3rem;
