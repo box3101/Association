@@ -16,7 +16,7 @@ $(function () {
     datepicker();
     wow();
     htmlInclude();
-    goTop();
+    // goTop();
     slides();
     // myScroll();
     // gnb();
@@ -149,20 +149,6 @@ $(function () {
     });
   }
 
-  //GO TOP
-  function goTop() {
-    $(window).scroll(function () {
-      if ($(this).scrollTop() > 300) {
-        $('.go-top').addClass("is-show");
-      } else {
-        $('.go-top').removeClass("is-show");
-      }
-    });
-    $('.go-top').click(function () {
-      $('html, body').animate({ scrollTop: 0 }, 400);
-      return false;
-    });
-  }
 
   //slides
   function slides() {
