@@ -88,3 +88,22 @@
   </a>
 </div>
 <!-- //go-top -->
+
+
+<script>
+  $(function () {
+    //myScroll
+    function myScroll() {
+      $(document).ready(function () {
+        $('.myScroll').myScroll({
+          btns: '#navi>li',
+          speed: 1000,
+          base: -300,
+          active: 'on'
+        });
+      });
+    }
+
+    myScroll();
+  });
+</script>

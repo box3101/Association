@@ -18,7 +18,7 @@ $(function () {
     htmlInclude();
     goTop();
     slides();
-    myScroll();
+    // myScroll();
     // gnb();
     // subPanel();
     // cdPopup();

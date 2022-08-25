@@ -255,7 +255,7 @@ caption > div, legend, .hide {
   font-weight: !important; }
 
 .size-sm {
-  padding: 0.625rem 1.25rem !important;
+  padding: 0.4rem 1.15rem !important;
   font-size: 1rem !important;
   font-weight: !important; }
 
@@ -1662,8 +1662,39 @@ a[data-fancybox="gallery"] {
   top: 8.1rem;
   height: 292px;
   box-shadow: 0.3125rem 0 1.125rem rgba(0, 0, 0, 0.08);
-  padding-bottom: 3.4375rem;
+  padding-bottom: 5.4375rem;
   z-index: 11; }
+  .header .bgSub .inner {
+    position: absolute !important;
+    height: auto !important;
+    padding-bottom: 0 !important;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0; }
+    .header .bgSub .inner .guide-wrap {
+      position: absolute;
+      right: 50px;
+      bottom: 10px; }
+      .header .bgSub .inner .guide-wrap .flex .btn a {
+        padding: 0 10px !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 30px;
+        width: 120px;
+        height: 30px;
+        color: #666666;
+        border: 2px solid #666;
+        font-size: 15px !important; }
+      .header .bgSub .inner .guide-wrap .flex .sns-wrap ul {
+        display: flex;
+        margin-right: -0.4375rem; }
+        .header .bgSub .inner .guide-wrap .flex .sns-wrap ul li {
+          padding: 0 0.4375rem;
+          box-sizing: border-box; }
+          .header .bgSub .inner .guide-wrap .flex .sns-wrap ul li a {
+            display: inline-block; }
   .header .bgSub .inner {
     position: relative;
     height: 100%;
@@ -1694,7 +1725,6 @@ a[data-fancybox="gallery"] {
     left: 0rem;
     width: 100%;
     padding-top: 1.5625rem;
-    padding-bottom: 1.5rem;
     background: #fff;
     z-index: 20; }
     .header .gnb ul > li > a {
