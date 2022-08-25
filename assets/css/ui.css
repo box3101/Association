@@ -4775,7 +4775,13 @@ section {
     flex: 1 1 100%; }
 
   .form-input.form-date {
-    flex: 1 1 100%; } }
+    flex: 1 1 100%; }
+
+  .hot-menu .inner ul li {
+    height: 8.625rem; }
+
+  .hot-menu .inner ul li a .img {
+    margin-bottom: 0.25rem; } }
 .sub-banner {
   width: 100%;
   height: 17.5rem; }
