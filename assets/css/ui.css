@@ -4631,6 +4631,9 @@ section {
         content: "";
         display: block;
         right: 0; }
+      @media (max-width: 600px) {
+        .main-info .inner .flex .lef ul li:hover {
+          display: none; } }
       .main-info .inner .flex .lef ul li:after {
         content: "";
         display: block;

@@ -547,6 +547,9 @@ section{padding: 2.1875rem 0;}
               @include make-after{
                 right: 0;
               }
+              @media (max-width:$b-mo){
+                display: none;
+              }
             }
             @include make-after{
               position: absolute; right: 0.9375rem;
