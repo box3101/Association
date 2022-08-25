@@ -1,67 +1,90 @@
 <!-- footer -->
 <footer id="footer" class="footer">
-  <div class="inner">
-     <div class="footer__top">
-        <div class="lef">
-            <ul>
-              <li>
-                <a href="#">개인정보처리방침</a>
-              </li>
-              <li>
-                <a href="#">이메일무단수집거부</a>
-              </li>
-              <li>
-                <a href="#">오시는길</a>
-              </li>
-            </ul>
+  <div class="footer__top">
+    <div class="inner">
+      <div class="lef">
+        <ul>
+          <li>
+            <a href="./개인정보처리방침.html">개인정보처리방침</a>
+          </li>
+          <li>
+            <a href="./이메일무단수집거부.html">이메일무단수집거부</a>
+          </li>
+          <li>
+            <a href="./오시는길.html">오시는길</a>
+          </li>
+        </ul>
+      </div>
+      <div class="ref">
+        <ul>
+          <li>
+            <a href="#" onclick='alert("준비중입니다.")'>
+              <img src="../img/ico-fa.png" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="#" onclick='alert("준비중입니다.")'>
+              <img src="../img/ico-yu.png" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="#" onclick='alert("준비중입니다.")'>
+              <img src="../img/ico-ins.png" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="#" onclick='alert("준비중입니다.")'>
+              <img src="../img/ico-bl.png" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="#" onclick='alert("준비중입니다.")'>
+              <img src="../img/ico-na.png" alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bot">
+    <div class="inner">
+      <div class="lef">
+        <div class="f-logo">
+          <img src="../img/fot-logo.png" alt="">
         </div>
-        <div class="ref">
-          <ul>
-            <li>
-              <a href="#">
-                 <img src="../img/ico-fa.png" alt=""> 
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                 <img src="../img/ico-yu.png" alt=""> 
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                 <img src="../img/ico-ins.png" alt=""> 
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                 <img src="../img/ico-bl.png" alt=""> 
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                 <img src="../img/ico-na.png" alt=""> 
-              </a>
-            </li>
-          </ul>
-        </div>
-     </div>
-     <div class="footer__bot">
-       <div class="lef">
-          <div class="f-logo">
-              <img src="../img/fot-logo.png" alt="">
-          </div>
-          <address>
-            주소 : 06160 서울시강남구 테헤란로 69길 5 (삼성동,DT센터) 대표전화 :1670-6009 <br>
-            Copyright⒞ KOREAN STANDARDS ASSOCIATION. ALL Rights Reserved.
-          </address>
-       </div>
-       <div class="ref">  
-          <label for="relatedSell" class="hidden">사이트 바로가기</label>
-          <select name="" id="relatedSell">
-            <option value="https://www.naver.com">유관 성과관리 시스템 가기</option>
-          </select>
-       </div>
-     </div>
+        <address>
+          주소 : 06160 서울시강남구 테헤란로 69길 5 (삼성동,DT센터) 대표전화 :1670-6009 <br>
+          Copyright⒞ KOREAN STANDARDS ASSOCIATION. ALL Rights Reserved.
+        </address>
+      </div>
+      <div class="ref">
+        <label for="relatedSell" class="hidden">사이트 바로가기</label>
+        <select name="" id="relatedSell" onchange="window.location.href=this.value">
+          <option value="">--- 유관기관 사이트 바로가기 ---</option>
+          <option value="https://paper.kisti.re.kr/rndUser">(논문) - 국가 R&D 연구성과 논문관리 시스템</option>
+          <option value="https://www.rndip.or.kr/main.do?method=main">(특허) - 정부 R&D 특허성과관리시스템</option>
+          <option value="https://chembank.org/">(화합물) - 한국화합물은행</option>
+          <option value="https://nrms.kisti.re.kr/cm/main.do">(보고서원문) - 국가 R&D 보고서 등록관리시스템</option>
+          <option value="https://www.zeus.go.kr/main">(연구시설·장비) - ZEUS 장비활용종합포털</option>
+          <option value="https://www.cros.or.kr/page.do?w2xPath=/ui/main/main.xml">(소프트웨어) - 한국저작권 위원회 저작권 등록
+          </option>
+          <option value="https://www.swbank.kr/asset/assetManage/main.do">(소프트웨어) - 소프트웨어 자산뱅크 지원</option>
+          <option value="https://www.biodata.kr/">(생명자원) - 생명정보 연구성과 등록시스템</option>
+          <option value="https://biorp.kribb.re.kr/">(생명자원) - 생물자원 연구성과 기탁 및 활용 지원</option>
+          <option value="https://www.bris.go.kr/portal/main/main.do">(신품종) - 생명정보 연구성과 등록시스템</option>
+          <option value="http://genebank.rda.go.kr/">(신품종) - 씨앗은행</option>
+        </select>
+      </div>
+    </div>
   </div>
 </footer>
 <!-- //footer -->
+
+
+<!-- go-top -->
+<div class="go-top">
+  <a href=".header" title="위로 이동">
+    <span class="hidden">상단으로</span>
+  </a>
+</div>
+<!-- //go-top -->

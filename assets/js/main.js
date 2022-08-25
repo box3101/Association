@@ -19,7 +19,7 @@ $(function () {
     goTop();
     slides();
     myScroll();
-    gnb();
+    // gnb();
     // subPanel();
     // cdPopup();
     comTab();

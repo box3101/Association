@@ -16,7 +16,6 @@
   <link rel="stylesheet" type="text/css" href="../css/datepicker.min.css" />
   <!-- jquery-ui css -->
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
-
   <!-- swiper css -->
   <link rel="stylesheet" href="../css/swiper.min.css">
   <link rel="stylesheet" href="../css/ui.css">
@@ -40,10 +39,9 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
-
-  <!-- =================== SCRIPT =================== -->
+  <!-- =================== LINK  EEE =================== -->
+    <!-- =================== SCRIPT =================== -->
   <script src="../js/jquery.js"></script>
-
   <!-- jquery-ui js -->
   <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
   <!-- fontawesome js -->
@@ -62,8 +60,16 @@
   <script src="../js/myScroll.js"></script>
   <!-- main js -->
   <script src="../js/main.js"></script>
+  <!-- include -->
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("#meta").load("./meta.html");
+      $("#headers").load("./header.html");
+      $("#footers").load("./footer.html");
+    });
+  </script>
+  <!-- =================== SCRIPT EEE =================== -->
 </head>
-
 <body>
   <!-- 메인이 들어가는 부분 -->
   <main class="main-wrap" id="STA">
@@ -511,89 +517,8 @@
     <!-- sub-content eee -->
 
     <!-- footer -->
-    <footer id="footer" class="footer">
-      <div class="footer__top">
-        <div class="inner">
-          <div class="lef">
-            <ul>
-              <li>
-                <a href="#">개인정보처리방침</a>
-              </li>
-              <li>
-                <a href="#">이메일무단수집거부</a>
-              </li>
-              <li>
-                <a href="#">오시는길</a>
-              </li>
-            </ul>
-          </div>
-          <div class="ref">
-            <ul>
-              <li>
-                <a href="#">
-                  <img src="../img/ico-fa.png" alt="">
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="../img/ico-yu.png" alt="">
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="../img/ico-ins.png" alt="">
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="../img/ico-bl.png" alt="">
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="../img/ico-na.png" alt="">
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="footer__bot">
-        <div class="inner">
-          <div class="lef">
-            <div class="f-logo">
-              <img src="../img/fot-logo.png" alt="">
-            </div>
-            <address>
-              주소 : 06160 서울시강남구 테헤란로 69길 5 (삼성동,DT센터) 대표전화 :1670-6009 <br>
-              Copyright⒞ KOREAN STANDARDS ASSOCIATION. ALL Rights Reserved.
-            </address>
-          </div>
-          <div class="ref">
-            <label for="relatedSell" class="hidden">사이트 바로가기</label>
-            <select name="" id="relatedSell">
-              <option value="https://www.naver.com">유관 성과관리 시스템 가기</option>
-              <option value="https://www.naver.com">유관 성과관리 시스템 가기</option>
-              <option value="https://www.naver.com">유관 성과관리 시스템 가기</option>
-              <option value="https://www.naver.com">유관 성과관리 시스템 가기</option>
-              <option value="https://www.naver.com">유관 성과관리 시스템 가기</option>
-            </select>
-          </div>
-        </div>
-      </div>
-    </footer>
+    <div id="footers"></div>
     <!-- //footer -->
-
-    <!-- go-top -->
-    <a href="#" class="iqr-btn">
-      <img src="../img/inquiry-btn.png" alt="">
-    </a>
-    <div class="go-top">
-      <a href=".header" title="위로 이동">
-        <span class="hidden">상단으로</span>
-      </a>
-    </div>
-    <!-- //go-top -->
 
   </main>
   <!-- 메인이 들어가는 부분 eee -->

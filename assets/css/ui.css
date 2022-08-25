@@ -1871,75 +1871,73 @@ a[data-fancybox="gallery"] {
   .header__top .ref, .header__menu, #gnb {
     display: none; } }
 /* =================== footer =================== */
-.footer {
-  display: none; }
-  .footer__top {
-    background: #f6f6f6; }
-    .footer__top .inner {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      height: 3.125rem; }
-    .footer__top .lef ul {
+.footer__top {
+  background: #f6f6f6; }
+  .footer__top .inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 3.125rem; }
+  .footer__top .lef ul {
+    opacity: 1;
+    display: flex;
+    margin-left: -0.9375rem; }
+    .footer__top .lef ul li {
       opacity: 1;
-      display: flex;
-      margin-left: -0.9375rem; }
-      .footer__top .lef ul li {
+      padding: 0 0.9375rem;
+      position: relative; }
+      .footer__top .lef ul li:after {
+        content: "";
+        display: block;
+        right: -0.125rem !important; }
+      .footer__top .lef ul li a {
         opacity: 1;
-        padding: 0 0.9375rem;
-        position: relative; }
-        .footer__top .lef ul li:after {
-          content: "";
-          display: block;
-          right: -0.125rem !important; }
-        .footer__top .lef ul li a {
-          opacity: 1;
-          font-size: 1rem;
-          font-weight: 500; }
-        .footer__top .lef ul li:last-of-type:after {
-          content: "";
-          display: block;
-          display: none; }
-    .footer__top .ref ul {
+        font-size: 1rem;
+        font-weight: 500; }
+      .footer__top .lef ul li:last-of-type:after {
+        content: "";
+        display: block;
+        display: none; }
+  .footer__top .ref ul {
+    display: flex;
+    margin-right: -0.4375rem; }
+    .footer__top .ref ul li {
+      padding: 0 0.4375rem;
+      box-sizing: border-box; }
+      .footer__top .ref ul li a {
+        display: inline-block; }
+.footer__bot {
+  padding: 2.9375rem 0; }
+  .footer__bot .inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    @media all and (max-width: 1200px) {
+      .footer__bot .inner {
+        flex-direction: column; } }
+    .footer__bot .inner .lef {
       display: flex;
-      margin-right: -0.4375rem; }
-      .footer__top .ref ul li {
-        padding: 0 0.4375rem;
-        box-sizing: border-box; }
-        .footer__top .ref ul li a {
-          display: inline-block; }
-  .footer__bot {
-    padding: 2.9375rem 0; }
-    .footer__bot .inner {
-      display: flex;
-      align-items: center;
-      justify-content: space-between; }
-      @media all and (max-width: 1200px) {
-        .footer__bot .inner {
-          flex-direction: column; } }
-      .footer__bot .inner .lef {
-        display: flex;
-        align-items: center; }
-        .footer__bot .inner .lef .f-logo {
-          margin-right: 4.1875rem; }
-          .footer__bot .inner .lef .f-logo img {
-            width: 21.875rem; }
-        .footer__bot .inner .lef address {
-          font-size: 0.875rem;
-          color: #999;
-          line-height: 1.6; }
-      .footer__bot .inner .ref {
-        opacity: 1;
-        align-self: flex-end; }
-        .footer__bot .inner .ref select {
-          padding: 0.4375rem 0.625rem;
-          background: #f6f6f6;
-          font-size: 0.875rem;
-          font-weight: 500;
-          padding-right: 6.875rem; }
-          .footer__bot .inner .ref select option {
-            display: inline-block;
-            padding: 0.5rem 0; }
+      align-items: center; }
+      .footer__bot .inner .lef .f-logo {
+        margin-right: 4.1875rem; }
+        .footer__bot .inner .lef .f-logo img {
+          width: 21.875rem; }
+      .footer__bot .inner .lef address {
+        font-size: 0.875rem;
+        color: #999;
+        line-height: 1.6; }
+    .footer__bot .inner .ref {
+      opacity: 1;
+      align-self: flex-end; }
+      .footer__bot .inner .ref select {
+        padding: 0.4375rem 0.625rem;
+        background: #f6f6f6;
+        font-size: 0.875rem;
+        font-weight: 500;
+        padding-right: 6.875rem; }
+        .footer__bot .inner .ref select option {
+          display: inline-block;
+          padding: 0.5rem 0; }
 
 /* =================== 이미지 호버시 확대 =================== */
 /* =================== 텍스트 그라디언트 생성 =================== */
