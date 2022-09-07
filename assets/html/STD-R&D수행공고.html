@@ -40,7 +40,7 @@
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
   <!-- =================== LINK  EEE =================== -->
-    <!-- =================== SCRIPT =================== -->
+  <!-- =================== SCRIPT =================== -->
   <script src="../js/jquery.js"></script>
   <!-- jquery-ui js -->
   <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
@@ -70,11 +70,12 @@
   </script>
   <!-- =================== SCRIPT EEE =================== -->
 </head>
+
 <body>
   <!-- 메인이 들어가는 부분 -->
   <main class="main-wrap" id="STA">
 
-     <!-- header -->
+    <!-- header -->
     <div id="headers"></div>
     <!-- header eee -->
 
@@ -93,13 +94,13 @@
             <li>
               <span>
                 <a href="#">
-                  사업소개</a>
+                  STD-R&D </a>
               </span>
             </li>
             <li class="last">
               <span>
                 <a href="#">
-                  표준성과 검색</a>
+                  STD-R&D 수행공고</a>
               </span>
             </li>
           </ul>
@@ -132,35 +133,11 @@
                           <option>2020</option>
                         </select>
                       </td>
-                      <th scope="row">모집차수</th>
-                      <td>
-                        <select title="모집차수" class="wx80">
-                          <option>전체</option>
-                          <option>1</option>
-                          <option>2</option>
-                        </select>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">과제명</th>
-                      <td><input type="text" title="제안자" /></td>
-                      <th scope="row">과제번호</th>
-                      <td><input type="text" title="제안자" /></td>
-                    </tr>
-                    <tr>
-                      <th scope="row">접수기간</th>
-                      <td class="flex gap5 align-center">
-                        <div class="flex al-center">
-                          <input type="text" class="form-input form-date datePicker" placeholder="2022-08-01">
-                          &nbsp;~&nbsp;
-                          <input type="text" class="form-input form-date datePicker" placeholder="2022-08-01">
-                        </div>
-                      </td>
                       <th scope="row">진행구분</th>
                       <td>
                         <div class="form-radio-wrap">
                           <div class="form-radio">
-                            <input type="radio" id="a1" name="chk1_01" value="1" checked>
+                            <input type="radio" id="a1" name="chk1_01" value="1" checked="">
                             <label for="a1">
                               대기중 &nbsp;&nbsp;
                             </label>
@@ -175,6 +152,70 @@
                           </div>
                         </div>
                       </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">모집기간 </th>
+                      <td colspan="3">
+                        <div class="flex gap5 align-center">
+                          <select title="모집년도" class="form-select w25">
+                            <option>모집시작일</option>
+                            <option>모집종료일</option>
+                          </select>
+                          <div class="flex al-center">
+                            <input type="text" class="form-input form-date datePicker w25" placeholder="2022-08-01">
+                            &nbsp;~&nbsp;
+                            <input type="text" class="form-input form-date datePicker w25" placeholder="2022-08-01">
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">산업기술분류</th>
+                      <td class="flex gap5">
+                        <select title="산업기술분류" class="wx150">
+                          <option>전체</option>
+                          <option>기계·소재</option>
+                          <option>바이오·의료</option>
+                          <option>전기·전자</option>
+                          <option>에너지·자원</option>
+                          <option>정보통신</option>
+                          <option>지식서비스</option>
+                          <option>화학</option>
+                        </select>
+                        <select title="산업기술분류" class="wx150">
+                          <option>전체</option>
+                          <option>정밀생산기계</option>
+                          <option>자동차/철도차량</option>
+                          <option>에너지/환경기계시스템</option>
+                          <option>요소부품</option>
+                          <option>로봇/자동화기계</option>
+                          <option>산업/일반기계</option>
+                          <option>조선/해양시스템</option>
+                        </select>
+                      </td>
+                      <th scope="row">국가과학기술분류</th>
+                      <td class="flex gap5">
+                        <select title="국가과학기술분류" class="wx150">
+                          <option>전체</option>
+                          <option>전기·전자</option>
+                          <option>정보통신</option>
+                          <option>에너지/자원</option>
+                          <option>원자력</option>
+                          <option>환경</option>
+                          <option>건설/교통</option>
+                          <option>화공</option>
+                          <option>기계</option>
+                        </select>
+                        <select title="국가과학기술분류" class="wx150">
+                          <option>전체</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">과제명</th>
+                      <td><input type="text" title="제안자" /></td>
+                      <th scope="row">과제번호</th>
+                      <td><input type="text" title="제안자" /></td>
                     </tr>
                   </tbody>
                 </table>
@@ -197,49 +238,69 @@
                   <colgroup>
                     <col width="30px">
                     <col width="70px">
-                    <col width="50px">
                     <col width="250px">
-                    <col width="100px">
+                    <col width="200px">
+                    <col width="200px">
+                    <col width="200px">
                     <col width="130px">
+                    <col width="120px">
                     <col width="250px">
-                    <col width="80px">
                     <col width="80px">
                   </colgroup>
                   <thead>
                     <tr>
                       <th scope="col">NO</th>
                       <th scope="col">모집년도</th>
-                      <th scope="col">모집차수</th>
+                      <th scope="col">공고명</th>
+                      <th>산업기술분야</th>
+                      <th>국가과학기술분야</th>
                       <th scope="col">과제명</th>
                       <th scope="col">과제번호</th>
                       <th scope="col">공고일자</th>
                       <th scope="col">모집기간</th>
                       <th scope="col">진행현황</th>
-                      <th scope="col">모집신청</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
                       <td>1</td>
-                      <td>2022</td>
-                      <td>2</td>
-                      <td><a href="./STD-R&D수행공고상세화면.html" target="_blank">표준화동향조사 신청과제1</a></td>
+                      <td rowspan="2">2022</td>
+                      <td rowspan="2"><a href="./STD-R&D수행공고상세화면.html" target="_blank">2022년 2차 STD-R&amp;D 수행공고</a>
+                      </td>
+                      <td>기계·소재/정밀생산기계</td>
+                      <td>전기·전자</td>
+                      <td><a href="./STD-R&D수행공고상세화면(팝업).html" target="_blank">STD-R&amp;D 신청과제1</a></td>
                       <td>ASD0001</td>
-                      <td>2022-07-29</td>
-                      <td>2022-08-01 ~ 2022-08-31</td>
-                      <td>대기중</td>
-                      <td> </td>
+                      <td rowspan="2">2022-07-29</td>
+                      <td rowspan="2">2022-08-01 ~ 2022-08-31</td>
+                      <td rowspan="2">대기중</td>
                     </tr>
                     <tr>
                       <td>2</td>
-                      <td>2022</td>
-                      <td>2</td>
-                      <td><a href="과제정보 상세화면.html" target="_blank">표준화동향조사 신청과제2</a></td>
+                      <td>기계·소재/정밀생산기계</td>
+                      <td>전기·전자</td>
+                      <td><a href="./STD-R&D수행공고상세화면(팝업).html" target="_blank">STD-R&amp;D 신청과제2</a></td>
                       <td>ASD0002</td>
-                      <td>2022-06-29</td>
-                      <td>2022-07-01 ~ 2022-07-31</td>
-                      <td>모집중</td>
-                      <td><a href="./STD-R&D수행공고신청화면.html">신청하기</a></td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td rowspan="2">2022</td>
+                      <td rowspan="2"><a href="./STD-R&D수행공고상세화면(팝업).html" target="_blank">2022년 1차 STD-R&amp;D 수행공고</a>
+                      </td>
+                      <td>기계·소재/정밀생산기계</td>
+                      <td>전기·전자</td>
+                      <td><a href="#" target="_blank">STD-R&amp;D 신청과제3</a></td>
+                      <td>ASD0003</td>
+                      <td rowspan="2">2021-07-29</td>
+                      <td rowspan="2">2021-08-01 ~ 2022-08-31</td>
+                      <td rowspan="2">모집중</td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>기계·소재/정밀생산기계</td>
+                      <td>전기·전자</td>
+                      <td><a href="#" target="_blank">STD-R&amp;D 신청과제4</a></td>
+                      <td>ASD0004</td>
                     </tr>
                   </tbody>
                 </table>

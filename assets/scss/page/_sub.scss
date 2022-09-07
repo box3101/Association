@@ -848,6 +848,68 @@ caption{display: none;}
   .flex.al-center{width: 100%;}
 }
 
+// 개인정보처리방침
+.policy-privacy{
+  h2{
+    word-break: keep-all; text-align: center;font-size: 2rem;
+  }
+  .section2{
+    padding-bottom: 0;
+  }
+  .definition-area{
+    margin-top: 1.5625rem;
+    padding: 1.75rem 1.75rem;
+    background: #eee; border: 0.0625rem solid #aaa;
+  }
+  .txt{
+    font-size: 1.25rem;
+    line-height: 1.4;
+    word-break: keep-all; font-weight: 500;
+  }
+  .list{
+    margin-top: 0.3125rem;
+    li{
+      position: relative;
+      padding-left: 0.9375rem;
+      margin-bottom: 0.3125rem; font-size: 1.0625rem; word-break: keep-all;
+      @include make-after{
+        position: absolute;
+        left: 0; top: 0.625rem; border: 2px solid #333;
+        border-radius: 50%;
+      }
+    }
+    &-none{
+      li{
+        @include make-after{
+          content: ' - ';
+          border:none;
+          left: 0; top: -0.0625rem; 
+        }
+      }
+    }
+  }
+  .list2{
+    padding-left: 1rem;
+    margin-top: 0.9375rem;
+    .tit{
+      font-size: 1.125rem; font-weight: bold; margin-bottom: 0.3125rem;
+    }
+    li{
+      margin-left: 1.25rem;
+      padding-left: 1.125rem;
+      position: relative;
+      @include make-after{
+        position: absolute;
+        left: 0; top: 0.4375rem; border: 0.1875rem solid #333;
+        border-radius: 50%;
+      }
+    }
+  }
+  p.primary{
+    color: #1177ec;
+  }
+}
+
 
 @media (max-width:$b-web){
   .tbl-type12 tbody td{

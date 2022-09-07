@@ -40,7 +40,7 @@
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
   <!-- =================== LINK  EEE =================== -->
-    <!-- =================== SCRIPT =================== -->
+  <!-- =================== SCRIPT =================== -->
   <script src="../js/jquery.js"></script>
   <!-- jquery-ui js -->
   <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
@@ -70,11 +70,12 @@
   </script>
   <!-- =================== SCRIPT EEE =================== -->
 </head>
+
 <body>
   <!-- 메인이 들어가는 부분 -->
   <main class="main-wrap" id="STA">
 
-     <!-- header -->
+    <!-- header -->
     <div id="headers"></div>
     <!-- header eee -->
 
@@ -145,12 +146,12 @@
                     <td><input type="text" title="" /></td>
                   </tr>
                   <tr>
-                    <th scope="row">표준화경력</th>
+                    <th scope="row">표준화 경력 기간	</th>
                     <td class="flex al-center gap5">
                       <input type="text" title="" class="mo-w95" /><span>년</span>
                       <input type="text" title="" class="mo-w95" /><span>월</span>
                     </td>
-                    <th scope="row">기술분야경력</th>
+                    <th scope="row">기술 분야 경력 기간</th>
                     <td class="flex al-center gap5">
                       <input type="text" title="" class="mo-w95" /><span>년</span>
                       <input type="text" title="" class="mo-w95" /><span>월</span>
@@ -214,7 +215,7 @@
                     <th scope="row " class="col1-3">기술분류</th>
                     <th scope="row">산업기술분류</th>
                     <td class="flex gap5">
-                      <select title="표준화 기구명 선택" class="wx150">
+                      <select title="표준화기구명 선택" class="wx150">
                         <option>기계·소재</option>
                         <option>바이오·의료</option>
                         <option>전기·전자</option>
@@ -223,7 +224,7 @@
                         <option>지식서비스</option>
                         <option>화학</option>
                       </select>
-                      <select title="표준화 기구명 선택" class="wx150">
+                      <select title="표준화기구명 선택" class="wx150">
                         <option>정밀생산기계</option>
                         <option>자동차/철도차량</option>
                         <option>에너지/환경기계시스템</option>
@@ -235,7 +236,7 @@
                     </td>
                     <th scope="row">국가과학기술분류</th>
                     <td class="flex gap5">
-                      <select title="표준화 기구명 선택" class="wx150">
+                      <select title="표준화기구명 선택" class="wx150">
                         <option>전기·전자</option>
                         <option>정보통신</option>
                         <option>에너지/자원</option>
@@ -245,7 +246,7 @@
                         <option>화공</option>
                         <option>기계</option>
                       </select>
-                      <select title="표준화 기구명 선택" class="wx150">
+                      <select title="표준화기구명 선택" class="wx150">
                         <option>선택</option>
                       </select>
                     </td>
@@ -268,21 +269,21 @@
                             <div class="form-chkbox__indicator"></div>
                           </label>
                         </div>
-                        <!-- TODO 성문표준 성과검증 체크시 활성화 -->
-                        <div class="is-active flex gap5 al-center">
+                        <!-- TODO 성문표준 - 검증 가능한 사실상 국제표준화 기구명 입력 -->
+                        <div class="is-active flex gap5 al-center" style="flex:1;">
                           <span>표준화기구명</span>
-                          <input type="text" title="" placeholder="성과검증 체크시 활성화">
+                          <input style="font-size:15px;" type="text" title="" placeholder="- 검증 가능한 사실상 국제표준화 기구명 입력">
                         </div>
                       </div>
                     </td>
                   </tr>
                   <tr>
                     <th colspan="2" scope="row">표준화기구 임원 경력</th>
-                    <td colspan="3"><textarea rows="5" cols="110%" title="임원및경력"></textarea> </td>
+                    <td colspan="3"><textarea rows="5" cols="110%" title="임원및경력" placeholder="ISO/TCOO/SCOO/WGOO Convenor 국내외 활동기구명 포함하여 기재"></textarea > </td>
                   </tr>
                   <tr>
                     <th colspan="2" scope="row">프로젝트 리더 수임 경력</th>
-                    <td colspan="3"><textarea rows="5" cols="110%" title="임원및경력"></textarea> </td>
+                    <td colspan="3"><textarea rows="5" cols="110%" title="임원및경력"placeholder="ISO OOOOO Project Leader 등"></textarea > </td>
                   </tr>
                   <tr>
                     <th colspan="2" scope="row">표준관련주요경력</th>
@@ -308,23 +309,28 @@
                 </tbody>
               </table>
             </div>
-            <p class="mt10">
-            <h4>
-              본인은 다음과 같이 본인의 개인정보를 수집·처리하는 것에 대하여
-              <div class="form-radio-wrap" style="display:inline;">
-                <div class="form-radio" style="display:inline-block; margin-left: 5px;">
-                  <input type="radio" id="f1" name="chk1_01" value="1">
-                  <label for="f1">
-                    동의합니다.
-                  </label>
-                  <input type="radio" id="g1" name="chk1_01" value="1">
-                  <label for="g1">
-                    동의하지 않습니다
-                  </label>
+            <!-- 개인정보처리방침 -->
+            <div class="policy-privacy">
+              <p class="mt10">
+              <h4>
+                본인은 다음과 같이 본인의 개인정보를 수집·처리하는 것에 대하여
+                <div class="form-radio-wrap" style="display:inline;">
+                  <div class="form-radio" style="display:inline-block; margin-left: 5px;">
+                    <input type="radio" id="f1" name="chk1_01" value="1">
+                    <label for="f1">
+                      동의합니다.
+                    </label>
+                    <input type="radio" id="g1" name="chk1_01" value="1">
+                    <label for="g1">
+                      동의하지 않습니다
+                    </label>
+                  </div>
                 </div>
-              </div>
-            </h4>
-            </p>
+              </h4>
+              </p>
+            </div>
+            <!-- 개인정보처리방침 eee -->
+
             <div class="btn-set mt20 txt-c">
               <a href="#" class="reset2">취소</a>
               <a href="#" class="submit3">저장</a>

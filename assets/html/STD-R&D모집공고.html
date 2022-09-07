@@ -40,7 +40,7 @@
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
   <!-- =================== LINK  EEE =================== -->
-    <!-- =================== SCRIPT =================== -->
+  <!-- =================== SCRIPT =================== -->
   <script src="../js/jquery.js"></script>
   <!-- jquery-ui js -->
   <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
@@ -70,11 +70,12 @@
   </script>
   <!-- =================== SCRIPT EEE =================== -->
 </head>
+
 <body>
   <!-- 메인이 들어가는 부분 -->
   <main class="main-wrap" id="STA">
 
-   <!-- header -->
+    <!-- header -->
     <div id="headers"></div>
     <!-- header eee -->
 
@@ -109,17 +110,17 @@
       <div class="section2">
         <div class="inner">
           <div class="section2__had">
-            <p>STD-R&D모집공고상세화면</p>
+            <p>STD-R&D 모집공고</p>
           </div>
           <div class="section2__body">
             <div class="tbl-type12">
               <table summary="">
-                <caption>STD-R&D모집공고상세화면</caption>
+                <caption>표준화동향조사 모집공고</caption>
                 <colgroup>
-                  <col width="20%" />
-                  <col width="30%" />
-                  <col width="20%" />
-                  <col width="30%" />
+                  <col width="20%">
+                  <col width="30%">
+                  <col width="20%">
+                  <col width="30%">
                 </colgroup>
                 <tbody>
                   <tr>
@@ -132,29 +133,11 @@
                         <option>2020</option>
                       </select>
                     </td>
-                    <th scope="row">모집차수</th>
-                    <td>
-                      <select title="모집차수" class="wx80">
-                        <option>전체</option>
-                        <option>1</option>
-                        <option>2</option>
-                      </select>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">접수기간</th>
-                    <td class="flex gap5 align-center">
-                      <div class="flex al-center">
-                        <input type="text" class="form-input form-date datePicker" placeholder="2022-08-01">
-                        &nbsp;~&nbsp;
-                        <input type="text" class="form-input form-date datePicker" placeholder="2022-08-01">
-                      </div>
-                    </td>
                     <th scope="row">진행구분</th>
                     <td>
                       <div class="form-radio-wrap">
                         <div class="form-radio">
-                          <input type="radio" id="a1" name="chk1_01" value="1" checked>
+                          <input type="radio" id="a1" name="chk1_01" value="1" checked="">
                           <label for="a1">
                             대기중 &nbsp;&nbsp;
                           </label>
@@ -166,6 +149,22 @@
                           <label for="a3">
                             모집완료 &nbsp;&nbsp;
                           </label>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">모집기간 </th>
+                    <td colspan="3">
+                      <div class="flex gap5 align-center">
+                        <select title="모집년도" class="form-select w25">
+                          <option>모집시작일</option>
+                          <option>모집종료일</option>
+                        </select>
+                        <div class="flex al-center">
+                          <input type="text" class="form-input form-date datePicker w25" placeholder="2022-08-01">
+                          &nbsp;~&nbsp;
+                          <input type="text" class="form-input form-date datePicker w25" placeholder="2022-08-01">
                         </div>
                       </div>
                     </td>
@@ -193,37 +192,33 @@
                     <colgroup>
                       <col width="30px">
                       <col width="70px">
-                      <col width="50px">
-                      <col width="500px">
-                      <col width="130px">
+                      <col width="300px">
                       <col width="250px">
-                      <col width="80px">
                       <col width="80px">
                     </colgroup>
                     <thead>
                       <tr>
                         <th scope="col">NO</th>
                         <th scope="col">모집년도</th>
-                        <th scope="col">모집차수</th>
-                        <th scope="col">공고내용</th>
-                        <th scope="col">공고일자</th>
+                        <th scope="col">공고명</th>
                         <th scope="col">모집기간</th>
                         <th scope="col">진행현황</th>
-                        <th scope="col">모집신청</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
                         <td>1</td>
                         <td>2022</td>
-                        <td>2</td>
-                        <td><a href="./STD-R&D모집공고상세화면.html" target="_blank">2022년 R&D 사업화 표준연계 사업에 따른 표준화동향조사 시행계획을 다음과
-                            같이
-                            공고하오니, 동 사업에 참여하여 표준화동향조사 서비스를 지원받고자 하는 연구기관·기업은 공고에 따라 신청서를 제출하여 주시기 바랍니다.</a></td>
-                        <td>2022-07-29</td>
+                        <td><a href="./STD-R&D모집공고상세화면.html">2022년 2차 표준화전략컨설팅 모집공고</a></td>
                         <td>2022-08-01 ~ 2022-08-31</td>
-                        <td>대기중</td>
-                        <td><a href="./STD-R&D모집공고신청화면.html" target="_blank">신청하기</a></td>
+                        <td>모집중</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>2022</td>
+                        <td><a href="./STD-R&D모집공고상세화면.html">2022년 1차 표준화전략컨설팅 모집공고</a></td>
+                        <td>2022-05-01 ~ 2022-05-31</td>
+                        <td>모집완료</td>
                       </tr>
                     </tbody>
                   </table>

@@ -40,7 +40,7 @@
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
   <!-- =================== LINK  EEE =================== -->
-    <!-- =================== SCRIPT =================== -->
+  <!-- =================== SCRIPT =================== -->
   <script src="../js/jquery.js"></script>
   <!-- jquery-ui js -->
   <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
@@ -70,11 +70,12 @@
   </script>
   <!-- =================== SCRIPT EEE =================== -->
 </head>
+
 <body>
   <!-- 메인이 들어가는 부분 -->
   <main class="main-wrap" id="STA">
 
-     <!-- header -->
+    <!-- header -->
     <div id="headers"></div>
     <!-- header eee -->
 
@@ -93,7 +94,7 @@
             <li>
               <span>
                 <a href="#">
-                  STD-R&D</a>
+                  STD-R&D </a>
               </span>
             </li>
             <li class="last">
@@ -116,10 +117,10 @@
                 <table summary="">
                   <caption>STD-R&D 보고서</caption>
                   <colgroup>
-                    <col width="20%" />
-                    <col width="30%" />
-                    <col width="20%" />
-                    <col width="30%" />
+                    <col width="20%">
+                    <col width="30%">
+                    <col width="20%">
+                    <col width="30%">
                   </colgroup>
                   <tbody>
                     <tr>
@@ -133,19 +134,61 @@
                         </select>
                       </td>
                       <th scope="row">보고서명</th>
-                      <td><input type="text" title="제안자" /></td>
+                      <td><input type="text" title="제안자"></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">산업기술분류</th>
+                      <td class="flex gap5">
+                        <select title="산업기술분류" class="wx150">
+                          <option>전체</option>
+                          <option>기계·소재</option>
+                          <option>바이오·의료</option>
+                          <option>전기·전자</option>
+                          <option>에너지·자원</option>
+                          <option>정보통신</option>
+                          <option>지식서비스</option>
+                          <option>화학</option>
+                        </select>
+                        <select title="산업기술분류" class="wx150">
+                          <option>전체</option>
+                          <option>정밀생산기계</option>
+                          <option>자동차/철도차량</option>
+                          <option>에너지/환경기계시스템</option>
+                          <option>요소부품</option>
+                          <option>로봇/자동화기계</option>
+                          <option>산업/일반기계</option>
+                          <option>조선/해양시스템</option>
+                        </select>
+                      </td>
+                      <th scope="row">국가과학기술분류</th>
+                      <td class="flex gap5">
+                        <select title="국가과학기술분류" class="wx150">
+                          <option>전체</option>
+                          <option>전기·전자</option>
+                          <option>정보통신</option>
+                          <option>에너지/자원</option>
+                          <option>원자력</option>
+                          <option>환경</option>
+                          <option>건설/교통</option>
+                          <option>화공</option>
+                          <option>기계</option>
+                        </select>
+                        <select title="국가과학기술분류" class="wx150">
+                          <option>전체</option>
+                        </select>
+                      </td>
                     </tr>
                     <tr>
                       <th scope="row">과제명</th>
-                      <td><input type="text" title="제안자" /></td>
+                      <td><input type="text" title="제안자"></td>
                       <th scope="row">과제번호</th>
-                      <td><input type="text" title="제안자" /></td>
+                      <td><input type="text" title="제안자"></td>
                     </tr>
                     <tr>
                       <th scope="row">연구책임자</th>
-                      <td><input type="text" title="제안자" /></td>
+                      <td><input type="text" title="제안자"></td>
                       <th scope="row">발행자</th>
-                      <td><input type="text" title="제안자" /></td>
+                      <td><input type="text" title="제안자"></td>
                     </tr>
                   </tbody>
                 </table>
@@ -172,6 +215,8 @@
                         <col width="60px">
                         <col width="200px">
                         <col width="200px">
+                        <col width="200px">
+                        <col width="200px">
                         <col width="120px">
                         <col width="80px">
                         <col width="80px">
@@ -184,6 +229,8 @@
                           <th scope="col">NO</th>
                           <th scope="col">발행년도</th>
                           <th scope="col">보고서명</th>
+                          <th>산업기술분야</th>
+                          <th>국가과학기술분야</th>
                           <th scope="col">과제명</th>
                           <th scope="col">과제번호</th>
                           <th scope="col">연구책임자</th>
@@ -197,30 +244,30 @@
                         <tr>
                           <td>1</td>
                           <td>2022</td>
-                          <td>STD-R&D 보고서1</td>
-                          <td><a href="과제정보상세화면.html" target="_blank">STD-R&D 수행과제1</a></td>
+                          <td>STD-R&amp;D 보고서1</td>
+                          <td>기계·소재/정밀생산기계</td>
+                          <td>전기·전자</td>
+                          <td><a href="STD-R&amp;D 모집신청 조회(팝업).html" target="_blank">STD-R&amp;D 수행과제1</a></td>
                           <td>ASD0001</td>
                           <td>김연구</td>
                           <td>이발행</td>
                           <td>박등록</td>
                           <td> </td>
-                          <td>
-                             
-                          </td>
+                          <td>다운로드</td>
                         </tr>
                         <tr>
                           <td>2</td>
                           <td>2022</td>
-                          <td>STD-R&D 보고서2</td>
-                          <td><a href="과제정보상세화면.html" target="_blank">STD-R&D 수행과제2</a></td>
+                          <td>STD-R&amp;D 보고서2</td>
+                          <td>기계·소재/정밀생산기계</td>
+                          <td>전기·전자</td>
+                          <td><a href="STD-R&amp;D 모집신청 조회(팝업).html" target="_blank">STD-R&amp;D 수행과제2</a></td>
                           <td>ASD0001</td>
                           <td>김연구</td>
                           <td>이발행</td>
                           <td>박등록</td>
                           <td> </td>
-                          <td>
-                             
-                          </td>
+                          <td>다운로드</td>
                         </tr>
                       </tbody>
                     </table>

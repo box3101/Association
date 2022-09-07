@@ -40,7 +40,7 @@
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
   <!-- =================== LINK  EEE =================== -->
-    <!-- =================== SCRIPT =================== -->
+  <!-- =================== SCRIPT =================== -->
   <script src="../js/jquery.js"></script>
   <!-- jquery-ui js -->
   <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
@@ -70,11 +70,12 @@
   </script>
   <!-- =================== SCRIPT EEE =================== -->
 </head>
+
 <body>
   <!-- 메인이 들어가는 부분 -->
   <main class="main-wrap" id="STA">
 
-   <!-- header -->
+    <!-- header -->
     <div id="headers"></div>
     <!-- header eee -->
 
@@ -192,23 +193,20 @@
                     <td colspan="3">
                       <div class="flex gap5 al-center">
                         <div class="form-chkbox">
-                          <label class="form-chkbox__control control--checkbox mr15">표준화동향조사
-                            <input type="checkbox">
-                            <div class="form-chkbox__indicator"></div>
-                          </label>
                           <label class="form-chkbox__control control--checkbox mr15"> 표준화전략컨설팅
                             <input type="checkbox">
                             <div class="form-chkbox__indicator"></div>
                           </label>
-                          <label class="form-chkbox__control control--checkbox"> 성문표준 성과검증
+                          <label class="form-chkbox__control control--checkbox">
+                            성문표준 성과검증
                             <input type="checkbox">
                             <div class="form-chkbox__indicator"></div>
                           </label>
                         </div>
-                        <!-- TODO 성문표준 성과검증 체크시 활성화 -->
-                        <div class="is-active flex gap5 al-center">
+                        <!-- TODO 성문표준 - 검증 가능한 사실상 국제표준화 기구명 입력 -->
+                        <div class="is-active flex gap5 al-center" style="flex:1;">
                           <span>표준화기구명</span>
-                          <input type="text" title="" placeholder="성과검증 체크시 활성화">
+                          <input style="font-size:15px;" type="text" title="" placeholder="- 검증 가능한 사실상 국제표준화 기구명 입력">
                         </div>
                       </div>
                     </td>
@@ -227,80 +225,107 @@
                 </tbody>
               </table>
             </div>
+
+            <div class="policy-privacy">
+              <p class="mt10">
+              </p>
+              <h4>
+                본인은 다음과 같이 본인의 개인정보를 수집·처리하는 것에 대하여
+                <div class="form-radio-wrap" style="display:inline;">
+                  <div class="form-radio" style="display:inline-block; margin-left: 5px;">
+                    <input type="radio" id="f1" name="chk1_01" value="1">
+                    <label for="f1">
+                      동의합니다.
+                    </label>
+                    <input type="radio" id="g1" name="chk1_01" value="1">
+                    <label for="g1">
+                      동의하지 않습니다
+                    </label>
+                  </div>
+                </div>
+              </h4>
+              <p></p>
+            </div>
+
             <div class="guideBx">
-              <h3 class="title">참여인력 경력사항</h3>
-              <div class="tbl-type14">
-                <div class="scroll-tbl">
-                  <table>
-                    <caption>참여인력 목록</caption>
-                    <colgroup>
-                      <col width="30px">
-                      <col width="100px">
-                      <col width="100px">
-                      <col width="100px">
-                      <col width="100px">
-                      <col width="60px">
-                      <col width="80px">
-                      <col width="100px">
-                      <col width="40px">
-                      <col width="100px">
-                      <col width="40px">
-                      <col width="40px">
-                      <col width="40px">
-                      <col width="100px">
-                      <col width="100px">
-                    </colgroup>
-                    <thead>
-                      <tr>
-                        <th rowspan="2" scope="col">NO</th>
-                        <th colspan="2" scope="col">사업기술분야</th>
-                        <th colspan="2" scope="col">국가과학기술분야</th>
-                        <th rowspan="2" scope="col">성명</th>
-                        <th rowspan="2" scope="col">직위</th>
-                        <th rowspan="2" scope="col">생년월일</th>
-                        <th colspan="4" scope="col">학력</th>
-                        <th colspan="2" scope="col">경력</th>
-                        <th rowspan="2" scope="col">기타자격</th>
-                        <th rowspan="2" scope="col">국가연구자번호</th>
-                      </tr>
-                      <tr>
-                        <th scope="col">대분류</th>
-                        <th scope="col">중분류</th>
-                        <th scope="col">대분류</th>
-                        <th scope="col">중분류</th>
-                        <th scope="col">최종학교</th>
-                        <th scope="col">졸업년도</th>
-                        <th scope="col">전공</th>
-                        <th scope="col">학위</th>
-                        <th scope="col">표준화</th>
-                        <th scope="col">기술분야</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>1</td>
-                        <td>기계·소재</td>
-                        <td>정밀생산기계</td>
-                        <td>기계·소재</td>
-                        <td>정밀생산기계</td>
-                        <td>홍길동</td>
-                        <td>연구원</td>
-                        <td>1976-04-16</td>
-                        <td>표준대학교</td>
-                        <td>1998</td>
-                        <td>기계공학</td>
-                        <td>박사</td>
-                        <td>10</td>
-                        <td>5</td>
-                        <td>기계처리기사</td>
-                        <td>12681699</td>
-                      </tr>
-                    </tbody>
-                  </table>
+              <h3 class="title">참여인력 정보</h3>
+              <div class="scroll-tbl-wrap">
+                <div>
+                  <div class="tbl-type14">
+                    <div class="scroll-tbl">
+                      <table>
+                        <caption>참여인력 목록</caption>
+                        <colgroup>
+                          <col width="30px">
+                          <col width="100px">
+                          <col width="100px">
+                          <col width="100px">
+                          <col width="100px">
+                          <col width="60px">
+                          <col width="80px">
+                          <col width="100px">
+                          <col width="40px">
+                          <col width="100px">
+                          <col width="40px">
+                          <col width="40px">
+                          <col width="40px">
+                          <col width="100px">
+                          <col width="100px">
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th rowspan="2" scope="col">NO</th>
+                            <th colspan="2" scope="col">산업기술분야</th>
+                            <th colspan="2" scope="col">국가과학기술분야</th>
+                            <th rowspan="2" scope="col">성명</th>
+                            <th rowspan="2" scope="col">직위</th>
+                            <th rowspan="2" scope="col">생년월일</th>
+                            <th colspan="4" scope="col">학력</th>
+                            <th colspan="2" scope="col">경력</th>
+                            <th rowspan="2" scope="col">기타자격</th>
+                            <th rowspan="2" scope="col">국가연구자번호</th>
+                          </tr>
+                          <tr>
+                            <th scope="col">대분류</th>
+                            <th scope="col">중분류</th>
+                            <th scope="col">대분류</th>
+                            <th scope="col">중분류</th>
+                            <th scope="col">최종학교</th>
+                            <th scope="col">졸업년도</th>
+                            <th scope="col">전공</th>
+                            <th scope="col">학위</th>
+                            <th scope="col">표준화</th>
+                            <th scope="col">기술분야</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>기계·소재</td>
+                            <td>정밀생산기계</td>
+                            <td>기계·소재</td>
+                            <td>정밀생산기계</td>
+                            <td>홍길동</td>
+                            <td>연구원</td>
+                            <td>1976-04-16</td>
+                            <td>표준대학교</td>
+                            <td>1998</td>
+                            <td>기계공학</td>
+                            <td>박사</td>
+                            <td>10</td>
+                            <td>5</td>
+                            <td>기계처리기사</td>
+                            <td>12681699</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="btn-set">
                 <a href="#" class="reset">+ 행추가</a>
+                <a href="#" class="reset">- 행삭제</a>
               </div>
             </div>
             <div class="btn-set mt20">

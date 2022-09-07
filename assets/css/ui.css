@@ -388,7 +388,6 @@ input {
 .form-input, .form-select {
   width: 100%;
   border: 1px solid #c5c5c5;
-  border-radius: 10px;
   height: 3.25rem;
   padding-left: 1rem;
   box-sizing: border-box; }
@@ -399,7 +398,11 @@ input {
   .form-input.w20, .form-select.w20 {
     width: 120px !important; }
   .form-input.w25, .form-select.w25 {
-    width: 150px !important; }
+    width: 150px !important;
+    flex: none !important; }
+    @media all and (max-width: 600px) {
+      .form-input.w25, .form-select.w25 {
+        flex: 1 1 100% !important; } }
   .form-input.w33, .form-select.w33 {
     width: 188px !important; }
   .form-input.w50, .form-select.w50 {
@@ -7622,6 +7625,67 @@ caption {
 
 .flex.gap5.align-center .flex.al-center {
   width: 100%; }
+
+.policy-privacy h2 {
+  word-break: keep-all;
+  text-align: center;
+  font-size: 2rem; }
+.policy-privacy .section2 {
+  padding-bottom: 0; }
+.policy-privacy .definition-area {
+  margin-top: 1.5625rem;
+  padding: 1.75rem 1.75rem;
+  background: #eee;
+  border: 0.0625rem solid #aaa; }
+.policy-privacy .txt {
+  font-size: 1.25rem;
+  line-height: 1.4;
+  word-break: keep-all;
+  font-weight: 500; }
+.policy-privacy .list {
+  margin-top: 0.3125rem; }
+  .policy-privacy .list li {
+    position: relative;
+    padding-left: 0.9375rem;
+    margin-bottom: 0.3125rem;
+    font-size: 1.0625rem;
+    word-break: keep-all; }
+    .policy-privacy .list li:after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0.625rem;
+      border: 2px solid #333;
+      border-radius: 50%; }
+  .policy-privacy .list-none li:after {
+    content: "";
+    display: block;
+    content: ' - ';
+    border: none;
+    left: 0;
+    top: -0.0625rem; }
+.policy-privacy .list2 {
+  padding-left: 1rem;
+  margin-top: 0.9375rem; }
+  .policy-privacy .list2 .tit {
+    font-size: 1.125rem;
+    font-weight: bold;
+    margin-bottom: 0.3125rem; }
+  .policy-privacy .list2 li {
+    margin-left: 1.25rem;
+    padding-left: 1.125rem;
+    position: relative; }
+    .policy-privacy .list2 li:after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0.4375rem;
+      border: 0.1875rem solid #333;
+      border-radius: 50%; }
+.policy-privacy p.primary {
+  color: #1177ec; }
 
 @media (max-width: 1200px) {
   .tbl-type12 tbody td {
