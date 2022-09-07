@@ -5107,6 +5107,11 @@ section {
 .btn-set {
   margin-top: 1.875rem;
   text-align: center; }
+  .btn-set.jc-end {
+    justify-content: flex-end; }
+    @media all and (max-width: 1200px) {
+      .btn-set.jc-end {
+        justify-content: flex-start; } }
 
 .btn-set button {
   border-radius: 1.875rem; }

@@ -126,7 +126,15 @@
 .mask { position: fixed; top: 0rem; width: 100%; height: 100%; background: #000; z-index: 998; opacity: 0.5; filter: opacity(50);}
 
 /* 버튼 */
-.btn-set { margin-top: 1.875rem; text-align: center; }
+.btn-set { 
+  margin-top: 1.875rem; text-align: center; 
+  &.jc-end{
+    justify-content: flex-end;
+    @include media(1200px){
+      justify-content: flex-start;
+    }
+  }
+}
 .btn-set button { border-radius: 1.875rem; }
 .btn-set button.btnType01 { padding: 0rem 1.5625rem; height: 1.875rem; font-size: 0.875rem; color: #fff; background: #222; }
 .btn-set button.btnType02 { padding: 0rem 1.5625rem; height: 1.875rem; font-size: 0.875rem; color: #222; border: 1px solid #cccccc; }

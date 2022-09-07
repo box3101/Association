@@ -226,29 +226,20 @@
               </table>
             </div>
 
-            <div class="policy-privacy">
-              <p class="mt10">
-              </p>
-              <h4>
-                본인은 다음과 같이 본인의 개인정보를 수집·처리하는 것에 대하여
-                <div class="form-radio-wrap" style="display:inline;">
-                  <div class="form-radio" style="display:inline-block; margin-left: 5px;">
-                    <input type="radio" id="f1" name="chk1_01" value="1">
-                    <label for="f1">
-                      동의합니다.
-                    </label>
-                    <input type="radio" id="g1" name="chk1_01" value="1">
-                    <label for="g1">
-                      동의하지 않습니다
-                    </label>
-                  </div>
-                </div>
-              </h4>
-              <p></p>
-            </div>
 
             <div class="guideBx">
-              <h3 class="title">참여인력 정보</h3>
+              <h3 class="title">
+                참여인력 정보
+              </h3>
+              <div class="btn-set flex jc-end">
+                <!-- TODO cd-popup-trigger 클릭시 팝업 -->
+                <li>
+                  <a href="#" class="reset cd-popup-trigger">+ 행추가</a>
+                </li>
+                <li>
+                  <a href="#" class="reset bg-red">- 행삭제</a>
+                </li>
+              </div>
               <div class="scroll-tbl-wrap">
                 <div>
                   <div class="tbl-type14">
@@ -331,11 +322,6 @@
                   </div>
                 </div>
               </div>
-              <div class="btn-set">
-                <!-- TODO cd-popup-trigger 클릭시 팝업 -->
-                <a href="#" class="reset cd-popup-trigger">+ 행추가</a>
-                <a href="#" class="reset bg-red">- 행삭제</a>
-              </div>
             </div>
             <div class="btn-set mt20">
               <a href="#" class="reset2">취소</a>
@@ -395,7 +381,7 @@
                 <td><input type="text" title=""></td>
               </tr>
               <tr>
-                <th scope="row">표준화 경력 기간	</th>
+                <th scope="row">표준화 경력 기간 </th>
                 <td class="flex al-center gap5">
                   <input type="text" title="" class="mo-w95"><span>년</span>
                   <input type="text" title="" class="mo-w95"><span>월</span>
@@ -528,11 +514,13 @@
               </tr>
               <tr>
                 <th colspan="2" scope="row">표준화기구 임원 경력</th>
-                <td colspan="3"><textarea rows="5" cols="110%" title="임원및경력" placeholder="ISO/TCOO/SCOO/WGOO Convenor 국내외 활동기구명 포함하여 기재"></textarea> </td>
+                <td colspan="3"><textarea rows="5" cols="110%" title="임원및경력"
+                    placeholder="ISO/TCOO/SCOO/WGOO Convenor 국내외 활동기구명 포함하여 기재"></textarea> </td>
               </tr>
               <tr>
                 <th colspan="2" scope="row">프로젝트 리더 수임 경력</th>
-                <td colspan="3"><textarea rows="5" cols="110%" title="임원및경력" placeholder="ISO OOOOO Project Leader 등"></textarea> </td>
+                <td colspan="3"><textarea rows="5" cols="110%" title="임원및경력"
+                    placeholder="ISO OOOOO Project Leader 등"></textarea> </td>
               </tr>
               <tr>
                 <th colspan="2" scope="row">표준관련주요경력</th>
@@ -553,7 +541,7 @@
                       <!-- 첨부파일 -->
                       <img src="../img/첨부파일.png" alt="첨부파일">
                     </dd>
-                </a></td>
+                  </a></td>
               </tr>
             </tbody>
           </table>
