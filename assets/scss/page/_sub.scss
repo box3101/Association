@@ -138,21 +138,21 @@
 
 }
 .btn-set a:first-child { margin-left: 0rem; }
-.btn-set a.save { font-size: 1.375rem; font-weight: 500; padding: 0rem 2.8125rem; line-height: 2.1875rem; color: #fff; border: 1px solid #3176c4; background: #609de3; border-radius: 0.625rem;}
+.btn-set a.save { font-size: 1.375rem; font-weight: 500; padding: 0rem 2.8125rem; line-height: 2.1875rem; color: #fff; border: 1px solid #3176c4; background: #609de3; border-radius: 0;}
 .btn-set a.save:hover { background: #1a50b4; cursor:pointer;}
 .btn-set a.submit { color: #fff; background: #444444; cursor:pointer;}
 .btn-set a.submit:hover { background: #222222; cursor:pointer;}
 .btn-set a.submit2 { color: #fff; background: #265ec7;  cursor:pointer;}
-.btn-set a.submit3 { font-size: 1.375rem; font-weight: 500; padding: 0rem 2.8125rem; line-height: 3.125rem; color: #fff; border: 1px solid #3176c4; background: #609de3; border-radius: 0.625rem;}
+.btn-set a.submit3 { font-size: 1.375rem; font-weight: 500; padding: 0rem 2.8125rem; line-height: 3.125rem; color: #fff; border: 1px solid #3176c4; background: #609de3; border-radius: 0;}
 .btn-set a.submit3 span { padding-left: 2.1875rem; background: url("../img/ico-search3.png") no-repeat left center; background-size: contain;}
 .btn-set a.submit2:hover { background: #0a44af; cursor:pointer;}
-.btn-set a.submit4 { font-size: 1.375rem; font-weight: 500; padding: 0rem 2.8125rem; line-height: 3.125rem; color: #fff; border: 1px solid #3176c4; background: #609de3; border-radius: 0.625rem;}
+.btn-set a.submit4 { font-size: 1.375rem; font-weight: 500; padding: 0rem 2.8125rem; line-height: 3.125rem; color: #fff; border: 1px solid #3176c4; background: #609de3; border-radius: 0;}
 .btn-set a.submit4 span { padding-left: 2.1875rem; background: url("../img/ico-search4.png") no-repeat left center; }
 .btn-set a.cancel { line-height: 3.625rem; color: #333333; border: 1px solid #e0e0e0; background: #fff; cursor:pointer;}
 .btn-set a.cancel:hover { border: 1px solid #c2c2c2; cursor:pointer;}
 .btn-set a.reset { line-height: 2.75rem; color: #333333; border: 1px solid #dbdde2; }
 .btn-set a.reset:hover { border: 1px solid #a5a5a5; }
-.btn-set a.reset2 { font-size: 1.375rem; font-weight: 500; padding: 0rem 2.8125rem; line-height: 3.125rem; color: #fff; border: 1px solid #b1a2a5; background: #cdbdc0; border-radius: 0.625rem; }
+.btn-set a.reset2 { font-size: 1.375rem; font-weight: 500; padding: 0rem 2.8125rem; line-height: 3.125rem; color: #fff; border: 1px solid #b1a2a5; background: #cdbdc0; border-radius: 0; }
 .btn-set a.reset2:hover {  }
 .btn-set a.list { color: #fff; background: #1177ec; }
 .btn-set a.list:hover { border: 1px solid #c2c2c2; cursor:pointer;}
@@ -560,7 +560,7 @@ table{
 .priv > ul > li { padding: 0.9375rem 0rem; font-size: 0.875rem; color: #333; text-align: center; }
 
 
-.popup { position: fixed; top: 50%; left: 50%; width: 31.25rem; height: auto; margin: -7.1875rem 0rem 0rem -15.625rem; border-radius: 0.625rem; background: #fff; z-index: 2060;}
+.popup { position: fixed; top: 50%; left: 50%; width: 31.25rem; height: auto; margin: -7.1875rem 0rem 0rem -15.625rem; border-radius: 0; background: #fff; z-index: 2060;}
 .popup .popup_content {     padding: 3rem 0rem;; text-align: center; }
 .popup .popup_content .alert { font-size: 1.125rem; color: #333; }
 .popup .popup_content .alert span { font-size: 0.875rem; }
