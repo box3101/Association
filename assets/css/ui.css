@@ -226,13 +226,13 @@ caption > div, legend, .hide {
 
 .bg-white {
   background-color: #fff;
-  color: #294eb6 !important;
+  color: #1c226c !important;
   border: 1px solid #fff; }
 
 .bg-main {
   background-color: #1c226c;
   color: !important;
-  border: 1px solid; }
+  border: 1px solid #1c226c; }
 
 .bg-green {
   background-color: green;
@@ -554,6 +554,9 @@ input {
 
 .form-chkbox input:checked ~ .form-chkbox__indicator::after {
   display: block; }
+
+td.lef .form-chkbox__indicator {
+  left: -0.625rem !important; }
 
 /* =================== FILE =================== */
 .filebox input[type="file"] {
@@ -926,7 +929,8 @@ a[data-fancybox="gallery"] {
   opacity: 0;
   visibility: hidden;
   -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
-  transition: opacity 0.3s 0s, visibility 0s 0.3s; }
+  transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  z-index: 100; }
 
 .cd-popup.is-visible {
   opacity: 1;
@@ -936,11 +940,10 @@ a[data-fancybox="gallery"] {
 
 .cd-popup-container {
   position: relative;
-  width: 60%;
+  width: 70%;
   margin: 4em auto;
   background: #FFF;
   border-radius: .25em .25em .4em .4em;
-  text-align: center;
   -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   -webkit-transform: translateY(-40px);
@@ -953,9 +956,19 @@ a[data-fancybox="gallery"] {
   transition-property: transform, -webkit-transform;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s; }
+  @media all and (max-width: 1200px) {
+    .cd-popup-container {
+      width: 90%; } }
+  .cd-popup-container .tbl-type12 {
+    margin-top: 0; }
 
 .cd-popup .contents {
-  padding: 20px 0; }
+  padding: 1.2rem;
+  max-height: 80vh;
+  overflow-y: scroll; }
+  @media all and (max-width: 1200px) {
+    .cd-popup .contents {
+      max-height: 74vh; } }
 
 .cd-popup-container .scroll-wrap:before, .cd-popup-container .scroll-tbl-wrap:before {
   display: none; }
@@ -983,7 +996,8 @@ a[data-fancybox="gallery"] {
   padding: 20px 10px;
   background: #222;
   color: #fff;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  text-align: center; }
 
 .cd-popup-container .cd-buttons:after {
   content: "";
@@ -999,7 +1013,7 @@ a[data-fancybox="gallery"] {
   list-style: none; }
 
 .cd-popup-container .cd-buttons .cd-close {
-  background: #a5c544 !important; }
+  background: #1c226c; }
 
 .cd-popup-container .cd-buttons a {
   display: block;
@@ -1008,10 +1022,11 @@ a[data-fancybox="gallery"] {
   text-transform: uppercase;
   color: #FFF;
   -webkit-transition: background-color 0.2s;
-  transition: background-color 0.2s; }
+  transition: background-color 0.2s;
+  text-align: center; }
 
 .cd-popup-container .cd-buttons li:first-child a {
-  background: #a5c544;
+  background: #1c226c;
   border-radius: 0 0 0 .25em; }
 
 .no-touch .cd-popup-container .cd-buttons li:first-child a:hover {
@@ -1112,6 +1127,15 @@ a[data-fancybox="gallery"] {
 
 .w100 {
   width: 100%; }
+
+.bg-aaa {
+  background: #aaa !important; }
+
+.bg-main {
+  background: #1c226c !important; }
+
+td > a {
+  color: #294eb6 !important; }
 
 @media (max-width: 1200px) {
   .inner {
@@ -1644,7 +1668,7 @@ a[data-fancybox="gallery"] {
       font-size: 1.125rem;
       font-weight: 500; }
       .header__top .ref .util-menu li a span:hover {
-        color: #294eb6; }
+        color: #1c226c; }
     .header__top .ref .util-menu li:before {
       content: "";
       display: block; }
@@ -4025,7 +4049,7 @@ a[data-fancybox="gallery"] {
   width: 44px;
   height: 44px;
   display: block;
-  background-color: #294eb6;
+  background-color: #1c226c;
   background-image: url(../img/arw-btn-go-top.png);
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -4666,7 +4690,7 @@ section {
           .main-info .inner .flex .lef ul li .txt {
             max-width: 63%; } }
         .main-info .inner .flex .lef ul li .txt:hover {
-          color: #294eb6; }
+          color: #1c226c; }
   .main-info .inner .flex .ref {
     opacity: 1; }
     .main-info .inner .flex .ref .info {
@@ -7546,9 +7570,9 @@ input.address {
 
 textarea {
   width: 100%;
-  padding: 20px;
+  padding: 1.25rem;
   box-sizing: border-box;
-  border: 1px solid #ccc; }
+  border: 0.0625rem solid #ccc; }
 
 #ft .footer .ftMenu > ul > li > a, #ft .footer .ftMenu > ul > li:last-child > a {
   color: #fff; }

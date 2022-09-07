@@ -1,5 +1,8 @@
 .inner{max-width: 1280px;margin: 0 auto;position: relative;}
 .w100{width: 100%;}
+.bg-aaa{background: #aaa!important;}
+.bg-main{background: $main!important;}
+td>a{color: #294eb6!important;}
 
 @media (max-width:$b-web){
   .inner{width: 100%; padding: 0 10px; box-sizing: border-box;}

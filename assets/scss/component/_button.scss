@@ -34,7 +34,8 @@ $btn-colors: (
     bd-color:#fff,
   ),
   bg-main: (
-    bg-color: #1c226c,
+    bg-color: $main,
+    bd-color: $main,
   ),
   bg-green: (
     bg-color: $c-green,

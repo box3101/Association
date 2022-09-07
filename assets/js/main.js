@@ -21,7 +21,7 @@ $(function () {
     // myScroll();
     // gnb();
     // subPanel();
-    // cdPopup();
+    cdPopup();
     comTab();
     comFile();
   }
@@ -326,6 +326,7 @@ $(function () {
       $('.cd-popup-trigger').on('click', function (event) {
         event.preventDefault();
         $('.cd-popup').addClass('is-visible');
+        $("html, body").css({overflow:"hidden"});
       });
 
       //close popup
@@ -333,6 +334,7 @@ $(function () {
         if ($(event.target).is('.cd-popup-close') || $(event.target).is('.cd-popup') || $(event.target).is('.cd-close')) {
           event.preventDefault();
           $(this).removeClass('is-visible');
+          $("html, body").css({overflow:"auto"});
         }
       });
       //close popup when clicking the esc keyboard button

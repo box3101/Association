@@ -300,6 +300,14 @@
                         </thead>
                         <tbody>
                           <tr>
+                            <td class="lef">
+                              <div class="form-chkbox flex all-center">
+                                <label class="form-chkbox__control control--checkbox mr0">
+                                  <input type="checkbox">
+                                  <div class="form-chkbox__indicator"></div>
+                                </label>
+                              </div>
+                            </td>
                             <td>1</td>
                             <td>기계·소재</td>
                             <td>정밀생산기계</td>
@@ -324,8 +332,9 @@
                 </div>
               </div>
               <div class="btn-set">
-                <a href="#" class="reset">+ 행추가</a>
-                <a href="#" class="reset">- 행삭제</a>
+                <!-- TODO cd-popup-trigger 클릭시 팝업 -->
+                <a href="#" class="reset cd-popup-trigger">+ 행추가</a>
+                <a href="#" class="reset bg-red">- 행삭제</a>
               </div>
             </div>
             <div class="btn-set mt20">
@@ -345,6 +354,226 @@
   </main>
   <!-- 메인이 들어가는 부분 eee -->
 
+
+  <!-- 참여인력 정보입력(팝업) -->
+  <div class="cd-popup">
+    <div class="cd-popup-container">
+      <div class="had-tit">
+        참여인력 정보입력
+      </div>
+
+      <div class="contents">
+        <!-- 팝업내용 -->
+        <div class="tbl-type12 long-type">
+          <table summary="">
+            <caption>신청등록</caption>
+            <colgroup>
+              <col width="6.25rem">
+              <col width="9.375rem">
+              <col width="18.75rem">
+              <col width="9.375rem">
+              <col width="18.75rem">
+            </colgroup>
+            <tbody>
+              <tr>
+                <th rowspan="6" scope="row">신청인</th>
+                <th scope="row">성명</th>
+                <td><input type="text"></td>
+                <th scope="row">직위</th>
+                <td><input type="text" title="직위"></td>
+              </tr>
+              <tr>
+                <th scope="row">생년월일</th>
+                <td><input type="text" title=""></td>
+                <th scope="row">연락처(휴대전화)</th>
+                <td><input type="text"></td>
+              </tr>
+              <tr>
+                <th scope="row">이메일</th>
+                <td><input type="text" title=""></td>
+                <th scope="row">국가연구자번호</th>
+                <td><input type="text" title=""></td>
+              </tr>
+              <tr>
+                <th scope="row">표준화 경력 기간	</th>
+                <td class="flex al-center gap5">
+                  <input type="text" title="" class="mo-w95"><span>년</span>
+                  <input type="text" title="" class="mo-w95"><span>월</span>
+                </td>
+                <th scope="row">기술 분야 경력 기간</th>
+                <td class="flex al-center gap5">
+                  <input type="text" title="" class="mo-w95"><span>년</span>
+                  <input type="text" title="" class="mo-w95"><span>월</span>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">최종학교</th>
+                <td><input type="text" title=""></td>
+                <th scope="row">졸업년도</th>
+                <td><input type="text" title=""></td>
+              </tr>
+              <tr>
+                <th scope="row">전공</th>
+                <td><input type="text" title=""></td>
+                <th scope="row">학위</th>
+                <td>
+                  <div class="form-radio-wrap">
+                    <div class="form-radio flex gap5">
+                      <input type="radio" name="chk1_01" value="1" id="a1">
+                      <label for="a1">
+                        학사
+                      </label>
+                      <input type="radio" name="chk1_01" value="1" id="a2">
+                      <label for="a2">
+                        석사
+                      </label>
+                      <input type="radio" name="chk1_01" value="1" id="a3">
+                      <label for="a3">
+                        박사
+                      </label>
+                      <input type="radio" name="chk1_01" value="1" id="a4">
+                      <label for="a4">
+                        기타
+                      </label>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th rowspan="3" scope="row">소속기관</th>
+                <th scope="row">기관명</th>
+                <td><input type="text" title="기관명"></td>
+                <th scope="row">대표자</th>
+                <td><input type="text" title="직위"></td>
+              </tr>
+              <tr>
+                <th scope="row">주소</th>
+                <td colspan="3">
+                  <div class="flex gap5">
+                    <input type="button" class="btn address" value="주소검색" onclick="goPopup();">
+                    <input type="text" id="roadAddrPart1" placeholder="경기도 군포시 금포로">
+                    <input type="text" id="roadAddrPart1" placeholder="123동 201호">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">홈페이지</th>
+                <td colspan="3"><input type="text" title=""></td>
+              </tr>
+              <tr>
+                <th scope="row " class="col1-3">기술분류</th>
+                <th scope="row">산업기술분류</th>
+                <td class="flex gap5">
+                  <select title="표준화기구명 선택" class="wx150">
+                    <option>기계·소재</option>
+                    <option>바이오·의료</option>
+                    <option>전기·전자</option>
+                    <option>에너지·자원</option>
+                    <option>정보통신</option>
+                    <option>지식서비스</option>
+                    <option>화학</option>
+                  </select>
+                  <select title="표준화기구명 선택" class="wx150">
+                    <option>정밀생산기계</option>
+                    <option>자동차/철도차량</option>
+                    <option>에너지/환경기계시스템</option>
+                    <option>요소부품</option>
+                    <option>로봇/자동화기계</option>
+                    <option>산업/일반기계</option>
+                    <option>조선/해양시스템</option>
+                  </select>
+                </td>
+                <th scope="row">국가과학기술분류</th>
+                <td class="flex gap5">
+                  <select title="표준화기구명 선택" class="wx150">
+                    <option>전기·전자</option>
+                    <option>정보통신</option>
+                    <option>에너지/자원</option>
+                    <option>원자력</option>
+                    <option>환경</option>
+                    <option>건설/교통</option>
+                    <option>화공</option>
+                    <option>기계</option>
+                  </select>
+                  <select title="표준화기구명 선택" class="wx150">
+                    <option>선택</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <th colspan="2" scope="row">지원분야(복수선택 가능)</th>
+                <td colspan="3">
+                  <div class="flex gap5 al-center">
+                    <div class="form-chkbox">
+                      <label class="form-chkbox__control control--checkbox mr15">표준화동향조사
+                        <input type="checkbox">
+                        <div class="form-chkbox__indicator"></div>
+                      </label>
+                      <label class="form-chkbox__control control--checkbox mr15"> 표준화전략컨설팅
+                        <input type="checkbox">
+                        <div class="form-chkbox__indicator"></div>
+                      </label>
+                      <label class="form-chkbox__control control--checkbox"> 성문표준 성과검증
+                        <input type="checkbox">
+                        <div class="form-chkbox__indicator"></div>
+                      </label>
+                    </div>
+                    <!-- TODO 성문표준 - 검증 가능한 사실상 국제표준화 기구명 입력 -->
+                    <div class="is-active flex gap5 al-center" style="flex:1;">
+                      <span>표준화기구명</span>
+                      <input style="font-size:15px;" type="text" title="" placeholder="- 검증 가능한 사실상 국제표준화 기구명 입력">
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th colspan="2" scope="row">표준화기구 임원 경력</th>
+                <td colspan="3"><textarea rows="5" cols="110%" title="임원및경력" placeholder="ISO/TCOO/SCOO/WGOO Convenor 국내외 활동기구명 포함하여 기재"></textarea> </td>
+              </tr>
+              <tr>
+                <th colspan="2" scope="row">프로젝트 리더 수임 경력</th>
+                <td colspan="3"><textarea rows="5" cols="110%" title="임원및경력" placeholder="ISO OOOOO Project Leader 등"></textarea> </td>
+              </tr>
+              <tr>
+                <th colspan="2" scope="row">표준관련주요경력</th>
+                <td colspan="3"><textarea rows="7" cols="110%" title="임원및경력"></textarea> </td>
+              </tr>
+              <tr>
+                <th colspan="2" scope="row">기술분야주요경력</th>
+                <td colspan="3"><textarea rows="7" cols="110%" title="임원및경력"></textarea> </td>
+              </tr>
+              <tr>
+                <th colspan="2" scope="row">기타사항</th>
+                <td colspan="3"><textarea rows="5" cols="110%" title="임원및경력"></textarea> </td>
+              </tr>
+              <tr>
+                <th colspan="2" scope="row">첨부파일</th>
+                <td colspan="3"><a href="#">
+                    <dd class="ffd">
+                      <!-- 첨부파일 -->
+                      <img src="../img/첨부파일.png" alt="첨부파일">
+                    </dd>
+                </a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- 팝업내용 eee -->
+      </div>
+
+      <ul class="cd-buttons">
+        <li>
+          <a href="#0" class="cd-close bg-aaa">취소</a>
+        </li>
+        <li>
+          <a href="#0" class="cd-close bg-main">저장</a>
+        </li>
+      </ul>
+      <a href="#0" class="cd-popup-close img-replace"></a>
+    </div>
+    <!-- cd-popup-container -->
+  </div>
+  <!-- 참여인력 정보입력(팝업) eee -->
 </body>
 
 </html>
