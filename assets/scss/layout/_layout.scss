@@ -3,6 +3,7 @@
 .bg-aaa{background: #aaa!important;}
 .bg-main{background: $main!important;}
 td>a{color: #294eb6!important;}
+.notice td>a{color: #333!important;display: block;text-align: left; padding-left: 2rem;}
 
 @media (max-width:$b-web){
   .inner{width: 100%; padding: 0 10px; box-sizing: border-box;}

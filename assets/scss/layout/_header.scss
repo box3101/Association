@@ -61,10 +61,11 @@
     position: absolute; z-index: 5;
     left: 0rem;
     top: 8.1rem;
+    z-index: 9999;
     // display: none;
     height: 292px;
     box-shadow: 0.3125rem 0 1.125rem rgba(0, 0, 0, 0.08);
-    padding-bottom: 5.4375rem; z-index: 11;
+    padding-bottom: 5.4375rem; z-index: 12;
       .inner{
         position: absolute!important; height: auto!important; padding-bottom: 0!important;
         left: 0; right: 0; bottom: 0; top:0;
