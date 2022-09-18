@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=10.0,user-scalable=yes" />
+  <meta name="description" content="">
+  <title>한국표준협회</title>
+
+  <!-- =================== LINK =================== -->
+  <!-- fancybox css -->
+  <link rel="stylesheet" href="../css/fancybox.css" />
+  <!-- datepicker css -->
+  <link rel="stylesheet" type="text/css" href="../css/datepicker.min.css" />
+  <!-- jquery-ui css -->
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+  <!-- swiper css -->
+  <link rel="stylesheet" href="../css/swiper.min.css">
+  <link rel="stylesheet" href="../css/ui.css">
+  <!-- font -->
+  <link href="https://webfontworld.github.io/SCoreDream/SCoreDream.css" rel="stylesheet">
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="../img/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="../img/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="../img/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="../img/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="../img/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="../img/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="../img/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="../img/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../img/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="../img/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="../img/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <!-- =================== LINK  EEE =================== -->
+  <!-- =================== SCRIPT =================== -->
+  <script src="../js/jquery.js"></script>
+  <!-- jquery-ui js -->
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <!-- fontawesome js -->
+  <script src="https://kit.fontawesome.com/6221c269fb.js" crossorigin="anonymous"></script>
+  <!-- fancybox js -->
+  <script src="../js/fancybox.umd.js"></script>
+  <!-- navigo js -->
+  <script type="text/javascript" src="../js/jquery.navgoco.js"></script>
+  <!-- datepicker js -->
+  <script src="../js/datepicker.min.js"></script>
+  <!-- wow js -->
+  <script src="../js/wow.js"></script>
+  <!-- swiper js -->
+  <script src="../js/swiper.min.js"></script>
+  <!-- myscroll.js -->
+  <script src="../js/myScroll.js"></script>
+  <!-- main js -->
+  <script src="../js/main.js"></script>
+  <!-- include -->
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("#meta").load("./meta.html");
+      $("#headers").load("./header.html");
+      $("#footers").load("./footer.html");
+    });
+  </script>
+  <!-- =================== SCRIPT EEE =================== -->
+</head>
+
+<body>
+  <!-- 메인이 들어가는 부분 -->
+  <main class="main-wrap" id="STA">
+
+    <!-- sub-content -->
+    <div id="sub" class="sub-contents">
+
+      <div class="section2">
+        <div class="inner">
+          <div class="section2__had">
+            <p>
+              성과등록(국내표준)
+            </p>
+          </div>
+          <div class="section2__body">
+            <div class="tbl-type12 long-type">
+
+              <form id="popupFrm" name="popupFrm">
+                <input type="hidden">
+
+                <table summary="">
+                  <caption>정보 작성</caption>
+                  <colgroup>
+                    <col width="20%">
+                    <col width="80%">
+                  </colgroup>
+
+                  <tbody>
+                    <tr>
+                      <th scope="row">표준명</th>
+                      <td><input type="text" id="stdNm" name="stdNm" title="표준명"></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">표준화기구명</th>
+                      <td>
+                        <select id="dmstcStdizUtnsilCode" name="dmstcStdizUtnsilCode" title="표준화기구명">
+                          <option value="">선택</option>
+                          <option value="">국립전파연구원</option>
+                          <option value="">국가기술표준원</option>
+                          <option value="">한국정보통신기술협회</option>
+                          <option value="">기타</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">표준번호</th>
+                      <td><input type="text" id="stdNo" name="stdNo" title="표준번호"></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">제안기관</th>
+                      <td><input type="text" id="propseEngn" name="propseEngn" title="제안기관"></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">제안자</th>
+                      <td><input type="text" id="propsr" name="propsr" title="제안자"></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">채택(승인) 날짜</th>
+                      <td>
+                        <div class="flex al-center">
+                          <input type="text" class="form-input form-date datePicker" placeholder="2022-08-01">
+                          &nbsp;~&nbsp;
+                          <input type="text" class="form-input form-date datePicker" placeholder="2022-08-01">
+                        </div>
+                      </td>
+                    </tr>
+                    <th scope="row">제/개정 구분</th>
+                    <td>
+                      <div class="form-radio-wrap">
+                        <div class="form-radio">
+                          <input type="radio" id="f1" name="chk1_02" value="1" checked="">
+                          <label for="f1">
+                            제정 &nbsp;&nbsp;
+                          </label>
+                          <input type="radio" id="e1" name="chk1_02" value="1">
+                          <label for="e1">
+                            개정 &nbsp;&nbsp;
+                          </label>
+                        </div>
+                      </div>
+                    </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">기여율</th>
+                      <td><input type="text" id="cntrbtRt" name="cntrbtRt" title="기여율"></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">표준기술 요약</th>
+                      <td><textarea rows="5" cols="140%" title="표준기술 요약"></textarea> </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">증빙자료 링크</th>
+                      <td colspan="3"><textarea rows="2" cols="140%" title="증빙자료 링크2"></textarea></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">첨부파일</th>
+                      <td>
+                        <a href="#">
+                          <dd class="ffd">
+                            <!-- 첨부파일 -->
+                            <img src="../img/첨부파일.png" alt="첨부파일">
+                          </dd>
+                        </a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </form>
+            </div>
+            <div class="btn-set mt20 txt-r">
+              <a href="#" class="reset2">취소</a>
+              <a href="#" class="submit3">저장</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- sub-content eee -->
+
+  </main>
+  <!-- 메인이 들어가는 부분 eee -->
+
+</body>
+
+</html>
