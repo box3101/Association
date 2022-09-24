@@ -458,8 +458,8 @@ table td a:hover{
     font-size: 14px;
     background: url("https://www.incheon.go.kr/humanframe/globaltheme/assets/image/common/hint-table-scroll.png")
       no-repeat 0 0;
+      z-index: 20;
   }
-  z-index: 20;
 }
 .paging {
   position: relative;
