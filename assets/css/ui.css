@@ -285,14 +285,14 @@ html.ie .scroll-custom {
 
 .bg-white {
   background-color: #fff;
-  color: #1e5a83 !important;
+  color: #1c226c !important;
   border: 1px solid #fff;
 }
 
 .bg-main {
-  background-color: #1e5a83;
+  background-color: #1c226c;
   color: !important;
-  border: 1px solid #1e5a83;
+  border: 1px solid #1c226c;
 }
 
 .bg-green {
@@ -1228,7 +1228,7 @@ a[data-fancybox=gallery] img {
 }
 
 .cd-popup-container .cd-buttons .cd-close {
-  background: #1e5a83;
+  background: #1c226c;
 }
 
 .cd-popup-container .cd-buttons a {
@@ -1243,7 +1243,7 @@ a[data-fancybox=gallery] img {
 }
 
 .cd-popup-container .cd-buttons li:first-child a {
-  background: #1e5a83;
+  background: #1c226c;
   border-radius: 0 0 0 0.25em;
 }
 
@@ -1371,7 +1371,7 @@ a[data-fancybox=gallery] img {
 }
 
 .bg-main {
-  background: #1e5a83 !important;
+  background: #1c226c !important;
 }
 
 td > a {
@@ -2050,7 +2050,7 @@ td > a {
   font-weight: 500;
 }
 .header__top .ref .util-menu li a span:hover {
-  color: #1e5a83;
+  color: #1c226c;
 }
 .header__top .ref .util-menu li:before {
   content: "";
@@ -4989,7 +4989,7 @@ td > a {
   width: 44px;
   height: 44px;
   display: block;
-  background-color: #1e5a83;
+  background-color: #1c226c;
   background-image: url(../img/arw-btn-go-top.png);
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -5769,7 +5769,7 @@ section {
   }
 }
 .main-info .inner .flex .lef ul li .txt:hover {
-  color: #1e5a83;
+  color: #1c226c;
 }
 .main-info .inner .flex .ref {
   opacity: 1;
@@ -9685,7 +9685,7 @@ button.w120 {
 }
 
 .c-main {
-  color: #1e5a83;
+  color: #1c226c;
 }
 
 @media (max-width: 1200px) {
@@ -10145,7 +10145,7 @@ section.admin-dashboard article.admin-dashboard__box .admin-dashboard__canva-wra
 
 .com-txt-desc {
   padding: 1.5625rem;
-  border: 0.0625rem solid #1e5a83;
+  border: 0.0625rem solid #1c226c;
   border-radius: 0.3125rem;
 }
 .com-txt-desc p {
@@ -10154,7 +10154,7 @@ section.admin-dashboard article.admin-dashboard__box .admin-dashboard__canva-wra
   color: #2d2d2d;
 }
 .com-txt-desc p span {
-  color: #1e5a83;
+  color: #1c226c;
   font-weight: bold;
 }
 
