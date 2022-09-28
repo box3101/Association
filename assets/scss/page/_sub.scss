@@ -3540,7 +3540,7 @@ caption {
     margin-top: 0.75rem !important;
 
     &::after {
-      top: 2.325rem !important;
+      top: 0 !important;
     }
   }
 
@@ -3629,6 +3629,7 @@ caption {
   padding: 0.9375rem;
   background: rgba(237,247,255,1);
   margin-bottom: 1.25rem;
+  border: 1px solid #aaa;
 }
 
 .com-bg-d .left {

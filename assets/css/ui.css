@@ -9572,6 +9572,7 @@ caption {
   padding: 0.9375rem;
   background: rgb(237, 247, 255);
   margin-bottom: 1.25rem;
+  border: 1px solid #aaa;
 }
 
 .com-bg-d .left {
