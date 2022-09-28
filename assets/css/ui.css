@@ -8939,6 +8939,7 @@ body.nopage .wrapper {
   padding: 1.25rem;
   padding-top: 1.875rem;
   margin-top: 1.25rem;
+  border: 1px solid #aaa;
 }
 
 .new-box-style1 > strong {
