@@ -8942,6 +8942,15 @@ body.nopage .wrapper {
   border: 1px solid #aaa;
 }
 
+.new-box-style1 > p {
+  font-size: 1.125rem;
+  margin-bottom: 0.3125rem;
+  line-height: 1.5;
+}
+.new-box-style1 > p:last-of-type {
+  margin-bottom: 0;
+}
+
 .new-box-style1 > strong {
   display: inline-block;
   padding: 0.625rem;
@@ -9276,9 +9285,11 @@ input.address {
 
 textarea {
   width: 100%;
-  padding: 1.25rem;
+  padding: 0.6rem;
   box-sizing: border-box;
   border: 0.0625rem solid #ccc;
+  font-size: 1.2rem;
+  color: #333;
 }
 
 #ft .footer .ftMenu > ul > li > a,
@@ -9487,9 +9498,6 @@ caption {
   border-bottom: none !important;
   padding-bottom: 0 !important;
   margin-top: 0.75rem !important;
-}
-.mypage h3.title::after {
-  top: 2.325rem !important;
 }
 .mypage > ul {
   opacity: 1;
@@ -10562,6 +10570,10 @@ div.info.task div.flex.flex-w50 div.ref dl dd div.txt br {
   font-weight: bold;
   position: relative;
   transition: 0.5s;
+}
+
+.list-table, .form-group {
+  border-top: 2px solid #2e2e2e;
 }
 
 /*# sourceMappingURL=ui.css.map */

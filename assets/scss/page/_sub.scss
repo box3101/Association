@@ -2954,6 +2954,14 @@ body.nopage .wrapper {
   margin-top: 1.25rem;
   border: 1px solid #aaa;
 }
+.new-box-style1>p{
+  font-size: 1.125rem;
+  margin-bottom: 0.3125rem;
+  line-height: 1.5;
+  &:last-of-type{
+    margin-bottom: 0;
+  }
+}
 
 .new-box-style1>strong {
   display: inline-block;
@@ -3294,9 +3302,11 @@ input.address {
 
 textarea {
   width: 100%;
-  padding: 1.25rem;
+  padding: 0.6rem;
   box-sizing: border-box;
   border: 0.0625rem solid #ccc;
+  font-size: 1.2rem;
+  color: #333;
 }
 
 #ft .footer .ftMenu>ul>li>a,
@@ -3539,9 +3549,6 @@ caption {
     padding-bottom: 0 !important;
     margin-top: 0.75rem !important;
 
-    &::after {
-      top: 0 !important;
-    }
   }
 
   >ul {
@@ -4735,4 +4742,7 @@ div.info.task {
   font-weight: bold;
   position: relative;
   transition: .5s;
+}
+.list-table, .form-group {
+  border-top: 2px solid #2e2e2e;
 }
