@@ -40,7 +40,7 @@
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
   <!-- =================== LINK  EEE =================== -->
-    <!-- =================== SCRIPT =================== -->
+  <!-- =================== SCRIPT =================== -->
   <script src="../js/jquery.js"></script>
   <!-- jquery-ui js -->
   <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
@@ -70,11 +70,12 @@
   </script>
   <!-- =================== SCRIPT EEE =================== -->
 </head>
+
 <body>
   <!-- 메인이 들어가는 부분 -->
   <main class="main-wrap" id="STA">
 
-   <!-- header -->
+    <!-- header -->
     <div id="headers"></div>
     <!-- header eee -->
 
@@ -140,7 +141,13 @@
                     <th scope="row">업종</th>
                     <td><input type="text" /></td>
                     <th scope="row">설립연월</th>
-                    <td><input type="text" /></td>
+                    <td>
+                      <div class="flex al-center">
+                        <input type="text" class="form-input form-date datePicker" placeholder="2022-08-01">
+                        &nbsp;~&nbsp;
+                        <input type="text" class="form-input form-date datePicker" placeholder="2022-08-01">
+                      </div>
+                    </td>
                   </tr>
                   <tr>
                     <th scope="row">주소</th>
@@ -160,7 +167,7 @@
                     <td><input type="text" /></td>
                   </tr>
                   <tr>
-                    <th scope="row">연락처</th>
+                    <th scope="row">연락처(유선번호), 연락처(휴대전화)</th>
                     <td><input type="text" /></td>
                     <th scope="row">이메일</th>
                     <td><input type="text" /></td>
@@ -417,15 +424,7 @@
                     <td><input type="text" /></td>
                   </tr>
                   <tr>
-                    <th scope="row">참여기관명</th>
-                    <td colspan="3"><input type="text" /> </td>
-                  </tr>
-                  <tr>
                     <th rowspan="6" scope="row">기술요약서</th>
-                    <th scope="row">핵심키워드(국문)</th>
-                    <td><input type="text" /></td>
-                    <th scope="row">핵심키워드(영문)</th>
-                    <td><input type="text" /></td>
                   </tr>
                   <tr>
                     <th scope="row">개발기술 개요</th>
@@ -467,42 +466,49 @@
             </div>
             <div class="guideBx">
               <h3 class="title">과제참여연구원</h3>
+              <div class="btn-set flex jc-end mt0">
+                <!-- TODO cd-popup-trigger 클릭시 팝업 -->
+                <li>
+                  <a href="#" class="reset cd-popup-trigger">+ 행추가</a>
+                </li>
+                <li>
+                  <a href="#" class="reset bg-red">- 행삭제</a>
+                </li>
+              </div>
               <div class="tbl-type14">
                 <div class="scroll-tbl-wrap">
                   <div>
                     <table>
                       <caption>참여인력 목록</caption>
                       <colgroup>
-                        <col width="30px" />
-                        <col width="80px" />
-                        <col width="100px" />
-                        <col width="100px" />
-                        <col width="40px" />
-                        <col width="100px" />
-                        <col width="40px" />
-                        <col width="200px" />
-                        <col width="200px" />
-                        <col width="200px" />
                       </colgroup>
                       <thead>
                         <tr>
+                          <th rowspan="2" scope="col" class="left">선택</th>
                           <th rowspan="2" scope="col">NO</th>
                           <th rowspan="2" scope="col">성명</th>
                           <th rowspan="2" scope="col">직위</th>
-                          <th colspan="4" scope="col">학력</th>
+                          <th colspan="4" scope="col">최종학력</th>
                           <th rowspan="2" scope="col">담당역할</th>
-                          <th rowspan="2" scope="col">전문분야</th>
                           <th rowspan="2" scope="col">비고</th>
                         </tr>
                         <tr>
-                          <th scope="col">최종학교</th>
-                          <th scope="col">졸업년도</th>
-                          <th scope="col">전공</th>
                           <th scope="col">학위</th>
+                          <th scope="col">전공</th>
+                          <th scope="col">학교명</th>
+                          <th scope="col">졸업연도</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
+                          <td class="lef">
+                            <div class="form-chkbox flex all-center">
+                              <label class="form-chkbox__control control--checkbox mr0">
+                                <input type="checkbox">
+                                <div class="form-chkbox__indicator"></div>
+                              </label>
+                            </div>
+                          </td>
                           <td>1</td>
                           <td>홍길동</td>
                           <td>연구원</td>
@@ -511,16 +517,14 @@
                           <td>기계공학</td>
                           <td>박사</td>
                           <td>사업수행 리더</td>
-                          <td>사업수행 총괄관리</td>
-                          <td></td>
+                          <td>
+                            <input class="form-input" type="text" placeholder="비고입력">
+                          </td>
                         </tr>
                       </tbody>
                     </table>
                   </div>
                 </div>
-              </div>
-              <div class="btn-set">
-                <a href="#" class="reset">+ 행추가</a>
               </div>
             </div>
             <div class="tbl-type12 long-type">
@@ -534,11 +538,17 @@
                 </colgroup>
                 <tbody>
                   <tr>
-                    <th rowspan="3" scope="row">연구개발과제</th>
+                    <th rowspan="4" scope="row">연구개발과제</th>
                     <th scope="row">본 사업을 통한 희망 표준화 건수는 몇 건입니까?</th>
                     <td class="flex gap5 al-center">
                       <input type="text" class="wx100" />
                       <span>건</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">본 사업을 통한 희망 표준화 기구는 어디입니까?</th>
+                    <td>
+                      <input type="text" class="wx100" />
                     </td>
                   </tr>
                   <tr>
