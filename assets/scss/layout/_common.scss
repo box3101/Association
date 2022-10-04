@@ -1,9 +1,40 @@
+.com-btn1{
+  display: inline-block !important;
+  padding: 0.5rem 1.75rem !important;
+  background: #fff !important;
+  color: #fff !important;
+  border-radius: 1.25rem !important;
+  color: #61a8ff !important;
+  font-size: 1.125rem !important;
+  font-weight: 500 !important;
+  box-shadow: 0.1875rem 0.3125rem 1.25rem rgb(0 0 0 / 30%) !important;
+  transition: all 0.5s !important;
+  &:hover{
+    transform: translateY(-0.625rem);
+  }
+}
+.com-btn2 {
+  display: inline-block; width: 7.5rem; height: 2.5rem; line-height: 2.5rem;
+  background: $gra2; text-align: center; color: #fff;
+  transition: all 0.5s!important;
+  font-size: 1rem; border-radius: 1.875rem; 
+  &:hover{
+    transform: translateY(-0.625rem);
+  }
+}
+
 /* =================== 이미지 호버시 확대 =================== */
 %hover-img{
   transition: all 0.4s ease-in-out;
   transform: scale(1.1);
 }
-
+/* =================== 화살표버튼 =================== */
+%arr-btn{
+  display: inline-block; content: '';
+  position: absolute; left: 50%; top: 50%;
+  width: 10px; height: 10px;
+  border-top:2px solid #fff; border-right:2px solid #fff;
+}
 /* =================== 텍스트 그라디언트 생성 =================== */
 %txt-shadow2 {
   content: "";
@@ -2910,9 +2941,9 @@ background: -webkit-linear-gradient(135deg,  #92a8ff 0%,#61a8ff 100%) ; /* Chrom
 }
 
 .float-btn {
-	position: absolute;
-	top: 700px;
-	right: 15px;
+	position: fixed;
+	right: 11px;
+  bottom: 75px;
 	z-index: 9999;
   // transition:all .3s ease-in-out;
   animation: dongdong;
@@ -2935,8 +2966,6 @@ background: -webkit-linear-gradient(135deg,  #92a8ff 0%,#61a8ff 100%) ; /* Chrom
 
 @media screen and ( max-width:1024px) {
 	.float-btn {
-    display: none;
-		top: 70%;
 		right: 20px;
 	}
 	.float-btn img {

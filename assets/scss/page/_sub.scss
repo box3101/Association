@@ -242,12 +242,20 @@
   margin-top: 1.875rem;
   text-align: center;
 
+  @include media(600px){
+    gap:0px!important;
+  }
+
   &.jc-end {
     justify-content: flex-end;
     margin-top: 0;
 
     @include media(1200px) {
       justify-content: flex-start;
+    }
+
+    @include media(600px){
+      justify-content: flex-end;
     }
   }
 }
@@ -1364,6 +1372,7 @@ table {
 
   &.long-type {
 background: none;
+padding: 0;
     .col1-3,
     .col-w100,
     tr>th[rowspan="7"],

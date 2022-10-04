@@ -40,7 +40,7 @@
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
   <!-- =================== LINK  EEE =================== -->
-    <!-- =================== SCRIPT =================== -->
+  <!-- =================== SCRIPT =================== -->
   <script src="../js/jquery.js"></script>
   <!-- jquery-ui js -->
   <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
@@ -70,11 +70,12 @@
   </script>
   <!-- =================== SCRIPT EEE =================== -->
 </head>
+
 <body>
   <!-- 메인이 들어가는 부분 -->
   <main class="main-wrap" id="STA">
 
-   <!-- header -->
+    <!-- header -->
     <div id="headers"></div>
     <!-- header eee -->
 
@@ -99,7 +100,7 @@
             <li class="last">
               <span>
                 <a href="#">
-                  표준성과 검색</a>
+                  자료실 </a>
               </span>
             </li>
           </ul>
@@ -108,8 +109,149 @@
 
       <div class="section2">
         <div class="inner">
-          <div class="preparing">
-            컨텐츠 준비중입니다.
+          <div class="section2__had">
+            <p>자료실</p>
+          </div>
+          <div class="section2__body">
+            <div class="com-bg-d flex flex-al-center bg-f5">
+              <div class="left mr5  ">
+                <label for="c1" class="hidden">검색</label>
+                <select name="" id="c1" class="form-select w180">
+                  <option value="">제목</option>
+                  <option value="">내용</option>
+                  <option value="">작성자</option>
+                  <option value="">제목+내용</option>
+                </select>
+              </div>
+              <div class="right">
+                <label for="c2" class="hidden">검색</label>
+                <input id="c2" type="text" class="form-input mr10" placeholder="검색어를 입력하세요.">
+                <button type="button" class="btn-mid bg-black w120">검색</button>
+              </div>
+            </div>
+            <div class="scroll-tbl-wrap">
+              <div>
+                <div class="tbl-type13 notice">
+                  <table>
+                    <caption>
+                      공지사항 :
+                      순번,제목,작성자,작성일,조회수
+                      (으)로 구성된 표
+                    </caption>
+                    <colgroup>
+                      <col style="width:10%;" class="mobile-hidden">
+                      <col style="width:auto;">
+                      <col style="width:10%;" class="mobile-hidden">
+                      <col style="width:auto;">
+                      <col style="width:10%;" class="mobile-hidden">
+                    </colgroup>
+                    <thead class="mobile-hidden">
+                      <tr>
+                        <th>순번</th>
+                        <th>제목</th>
+                        <th>작성자</th>
+                        <th>작성일</th>
+                        <th>조회수</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <!-- 공지사항 게시물 시작 -->
+                      <tr class="notice">
+                        <td class="mobile-hidden">
+                          <span class="icon-noti">공지</span>
+                        </td>
+                        <td class="subject">
+                          <a href="./자료실상세화면.html">2022 IFEZ 홍보관 재개관
+                            안내</a>
+                        </td>
+                        <td class="mobile-hidden">
+                          유효진</td>
+                        <td>
+                          2022-05-09</td>
+                        <td class="mobile-hidden">
+                          10034</td>
+                      </tr>
+                      <!-- 공지사항 게시물 끝 -->
+
+                      <!-- 일반 게시물 시작 -->
+                      <tr>
+                        <td class="mobile-hidden">
+                          1400</td>
+                        <td class="subject left">
+                          <a href="./자료실상세화면.html" class="">
+                            IFEZ 인구통계현황( 2022년 8월말 기준) </a>
+                        </td>
+                        <td class="mobile-hidden">
+                          선민희</td>
+                        <td>
+                          2022-09-13</td>
+                        <td class="mobile-hidden">
+                          16</td>
+                      </tr>
+                      <tr>
+                        <td class="mobile-hidden">
+                          1399</td>
+                        <td class="subject">
+                          <a href="./자료실상세화면.html" class="">
+                            2022년 인천여성 일자리 한마당</a>
+                        </td>
+                        <td class="mobile-hidden">
+                          안효숙</td>
+                        <td>
+                          2022-08-25</td>
+                        <td class="mobile-hidden">
+                          123</td>
+                      </tr>
+                      <tr>
+                        <td class="mobile-hidden">
+                          1400</td>
+                        <td class="subject">
+                          <a href="./자료실상세화면.html" class="">
+                            IFEZ 인구통계현황( 2022년 8월말 기준) </a>
+                        </td>
+                        <td class="mobile-hidden">
+                          선민희</td>
+                        <td>
+                          2022-09-13</td>
+                        <td class="mobile-hidden">
+                          16</td>
+                      </tr>
+                      <tr>
+                        <td class="mobile-hidden">
+                          1399</td>
+                        <td class="subject">
+                          <a href="./자료실상세화면.html" class="">
+                            2022년 인천여성 일자리 한마당</a>
+                        </td>
+                        <td class="mobile-hidden">
+                          안효숙</td>
+                        <td>
+                          2022-08-25</td>
+                        <td class="mobile-hidden">
+                          123</td>
+                      </tr>
+                      <!-- 일반 게시물 끝 -->
+
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="paging">
+              <a href="#" class="first">처음</a>
+              <a href="#" class="prev">이전</a>
+              <span>1</span>
+              <a href="#">2</a>
+              <a href="#">3</a>
+              <a href="#">4</a>
+              <a href="#">5</a>
+              <a href="#">6</a>
+              <a href="#">7</a>
+              <a href="#">8</a>
+              <a href="#">9</a>
+              <a href="#" class="next">다음</a>
+              <a href="#" class="last">마지막</a>
+            </div>
           </div>
         </div>
       </div>
