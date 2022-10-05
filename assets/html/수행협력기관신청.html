@@ -129,7 +129,10 @@
                   <tr>
                     <th rowspan="7" scope="row">신청기관</th>
                     <th scope="row">기관명</th>
-                    <td><input type="text"></td>
+                    <td class="flex gap5">
+                      <input type="text">
+                      <a href="#organ-search" type="button" class="btn btn-sm bg-main cd-popup-trigger">기관검색</a>
+                    </td>
                     <th scope="row">대표자</th>
                     <td><input type="text" title="직위"></td>
                   </tr>
@@ -137,6 +140,7 @@
                     <th scope="row">사업자등록번호</th>
                     <td><input type="text"></td>
                     <th scope="row">설립연월일</th>
+
                     <td><input type="text"></td>
                   </tr>
                   <tr>
@@ -234,7 +238,7 @@
               <div class="btn-set flex jc-end">
                 <!-- TODO cd-popup-trigger 클릭시 팝업 -->
                 <li>
-                  <a href="#" class="reset cd-popup-trigger">+ 행추가</a>
+                  <a href="#personnel" class="reset cd-popup-trigger">+ 행추가</a>
                 </li>
                 <li>
                   <a href="#" class="reset bg-red">- 행삭제</a>
@@ -340,14 +344,146 @@
   </main>
   <!-- 메인이 들어가는 부분 eee -->
 
-
-  <!-- 참여인력 정보입력(팝업) -->
-  <div class="cd-popup">
+  <!-- 기관검색 (팝업) -->
+  <div class="cd-popup" id="organ-search">
     <div class="cd-popup-container">
       <div class="had-tit">
-        참여인력 정보입력
+        기관검색
+      </div>
+      <div class="contents">
+        <!-- 팝업내용 -->
+        <div class="tbl-type12">
+          <form id="frm" name="frm" method="post">
+            <table summary="">
+              <caption>과제정보 검색</caption>
+              <colgroup>
+                <col width="20%">
+                <col width="30%">
+                <col width="20%">
+                <col width="30%">
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th scope="row">사업자번호</th>
+                  <td><input type="text"></td>
+                  <th scope="row">기관명</th>
+                  <td><input type="text">
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <button type="submit" id="btnSearch2" class="hide">검색</button>
+          </form>
+        </div>
+        <div class="btn-set mt20 txt-r">
+          <a href="#" id="btnSearch" class="submit3"><span>조회</span></a>
+        </div>
+        <div class="board_top mt50">
+          <span>74499</span> 건이 검색되었습니다.
+        </div>
+        <div class="scroll-tbl-wrap">
+          <div>
+            <div class="tbl-type14 tr-first-tac">
+              <table summary="">
+                <colgroup>
+                  <col width="1%">
+                  <col width="3%">
+                  <col width="3%">
+                  <col width="15%">
+                  <col width="3%">
+                  <col width="15%">
+                  <col width="3%">
+                  <col width="15%">
+                  <col width="3%">
+                  <col width="40%">
+                </colgroup>
+                <caption>기관검색</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">
+                      <div class="form-chkbox">
+                        <label class="form-chkbox__control control--checkbox">
+                          <input type="checkbox">
+                          <div class="form-chkbox__indicator"></div>
+                        </label>
+                      </div>
+                    </th>
+                    <th>순번</th>
+                    <th>기관명</th>
+                    <th>사업자번호</th>
+                    <th>대표자명</th>
+                    <th>설립년월</th>
+                    <th>사업분야</th>
+                    <th>전화번호</th>
+                    <th>전체직원수</th>
+                    <th>주소</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="form-chkbox">
+                        <label class="form-chkbox__control control--checkbox">
+                          <input type="checkbox">
+                          <div class="form-chkbox__indicator"></div>
+                        </label>
+                      </div>
+                    </td>
+                    <td>1</td>
+                    <td>기관명</td>
+                    <td>110-31-23134</td>
+                    <td>
+                      홍길동
+                    </td>
+                    <td>2020-03-13</td>
+                    <td>사업분야</td>
+                    <td>010-2323-1313</td>
+                    <td>132</td>
+                    <td>인천 서구 마전동 팰리스타워 7동 707호인천 서구 마전동 팰리스타워 7동 707호</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="paging">
+          <a href="#" class="first">처음</a>
+          <a href="#" class="prev">이전</a>
+          <span>1</span>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">4</a>
+          <a href="#">5</a>
+          <a href="#">6</a>
+          <a href="#">7</a>
+          <a href="#">8</a>
+          <a href="#">9</a>
+          <a href="#" class="next">다음</a>
+          <a href="#" class="last">마지막</a>
+        </div>
+        <!-- 팝업내용 eee -->
       </div>
 
+      <ul class="cd-buttons">
+        <li>
+          <a href="#0" class="cd-close bg-aaa">취소</a>
+        </li>
+        <li>
+          <a href="#0" class="bg-main">저장</a>
+        </li>
+      </ul>
+      <a href="#0" class="cd-popup-close img-replace"></a>
+    </div>
+    <!-- cd-popup-container -->
+  </div>
+  <!-- 기관검색 (팝업) eee -->
+
+  <!-- 참여인력 정보 팝업 -->
+  <div class="cd-popup" id="personnel">
+    <div class="cd-popup-container">
+      <div class="had-tit">
+        참여인력 정보
+      </div>
       <div class="contents">
         <!-- 팝업내용 -->
         <div class="tbl-type12 long-type">
@@ -427,10 +563,12 @@
               </tr>
               <tr>
                 <th rowspan="3" scope="row">소속기관</th>
-                <th scope="row">기관명</th>
+                <th scope="row">기관명 </th>
                 <td><input type="text" title="기관명"></td>
                 <th scope="row">대표자</th>
-                <td><input type="text" title="직위"></td>
+                <td>
+                  <input type="text" title="직위">
+                </td>
               </tr>
               <tr>
                 <th scope="row">주소</th>
@@ -669,14 +807,42 @@
           <a href="#0" class="cd-close bg-aaa">취소</a>
         </li>
         <li>
-          <a href="#0" class="cd-close bg-main">저장</a>
+          <a href="#0" class="bg-main">저장</a>
         </li>
       </ul>
       <a href="#0" class="cd-popup-close img-replace"></a>
     </div>
     <!-- cd-popup-container -->
   </div>
-  <!-- 참여인력 정보입력(팝업) eee -->
+  <!-- 참여인력 정보 팝업 eee -->
+
+  <!-- 팝업 2개 이상일때 스크립트 -->
+  <script>
+    window.onload = function () {
+      const clickBtns = document.querySelectorAll(".cd-popup-trigger");
+
+      clickBtns.forEach((el) => {
+
+        el.addEventListener("click", () => {
+
+          const cdPops = document.querySelectorAll(".cd-popup");
+
+          for (let el of cdPops) {
+            el.classList.remove("is-visible");
+          }
+
+          const target = el.getAttribute("href");
+          const targetLink = document.querySelector(target);
+
+          targetLink.classList.add("is-visible");
+
+        });
+      });
+    }
+
+  </script>
+  <!-- 팝업 2개 이상일때 스크립트 eee -->
+
 </body>
 
 </html>

@@ -40,7 +40,7 @@
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
   <!-- =================== LINK  EEE =================== -->
-    <!-- =================== SCRIPT =================== -->
+  <!-- =================== SCRIPT =================== -->
   <script src="../js/jquery.js"></script>
   <!-- jquery-ui js -->
   <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
@@ -70,11 +70,12 @@
   </script>
   <!-- =================== SCRIPT EEE =================== -->
 </head>
+
 <body>
   <!-- 메인이 들어가는 부분 -->
   <main class="main-wrap" id="STA">
 
-   <!-- header -->
+    <!-- header -->
     <div id="headers"></div>
     <!-- header eee -->
 
@@ -108,8 +109,77 @@
 
       <div class="section2">
         <div class="inner">
-          <div class="preparing">
-            컨텐츠 준비중입니다.
+          <div class="section2__had">
+            <p>표준성과 통계</p>
+          </div>
+          <div class="section2__body">
+            <div class="boardCategory">
+              <ul>
+                <li><a href="/user/stdRsltInfo/stdRsltStats/stdRsltStatsYear" class="active"><span>년도별</span></a></li>
+                <li><a href="/user/stdRsltInfo/stdRsltStats/stdRsltStatsStdizOrgnz"><span>표준화기구별</span></a></li>
+                <li><a href="/user/stdRsltInfo/stdRsltStats/stdRsltStatsSpcltyInstt"><span>전문기관별</span></a></li>
+                <li><a href="/user/stdRsltInfo/stdRsltStats/stdRsltStatsMngtRrcs"><span>주관연구기관별</span></a></li>
+                <li><a href="/user/stdRsltInfo/stdRsltStats/stdRsltStatsMiryfc"><span>부처별</span></a></li>
+                <li><a href="/user/stdRsltInfo/stdRsltStats/stdRsltStatsDmstcIntrlRslt"><span>국내/국제 성과</span></a></li>
+                <li><a href="/user/stdRsltInfo/stdRsltStats/stdRsltStatsTop10"><span>TOP 10</span></a></li>
+              </ul>
+            </div>
+            <div class="grapharea">
+              <div class="graphInfo">
+                <ul>
+                  <li>
+                    <strong>그래프 유형</strong>
+                    <div class="dataType">
+                      <ul>
+                        <li><button type="button" id="btnBar" class="active">막대형</button></li>
+                        <li><button type="button" id="btnPie">파이형</button></li>
+                        <li><button type="button" id="btnLine">라인형</button></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div id="divChart" class="gr-area" _echarts_instance_="ec_1664977297998"
+                style="-webkit-tap-highlight-color: transparent; user-select: none; position: relative;">
+                <div
+                  style="position: relative; width: 938px; height: 469px; padding: 0px; margin: 0px; border-width: 0px; cursor: default;">
+                  <canvas data-zr-dom-id="zr_0" width="938" height="469"
+                    style="position: absolute; left: 0px; top: 0px; width: 938px; height: 469px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas>
+                </div>
+                <div class=""
+                  style="position: absolute; display: block; border-style: solid; white-space: nowrap; z-index: 9999999; will-change: transform; box-shadow: rgba(0, 0, 0, 0.2) 1px 2px 10px; transition: opacity 0.2s cubic-bezier(0.23, 1, 0.32, 1) 0s, visibility 0.2s cubic-bezier(0.23, 1, 0.32, 1) 0s, transform 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0s; background-color: rgb(255, 255, 255); border-width: 1px; border-radius: 4px; color: rgb(102, 102, 102); font: 14px / 21px &quot;Microsoft YaHei&quot;; padding: 10px; top: 0px; left: 0px; transform: translate3d(294px, 81px, 0px); border-color: rgb(255, 255, 255); pointer-events: none;">
+                  <div style="margin: 0px 0 0;line-height:1;">
+                    <div style="margin: 0px 0 0;line-height:1;">
+                      <div style="font-size:14px;color:#666;font-weight:400;line-height:1;">2018</div>
+                      <div style="margin: 10px 0 0;line-height:1;">
+                        <div style="margin: 0px 0 0;line-height:1;">
+                          <div style="margin: 0px 0 0;line-height:1;"><span
+                              style="display:inline-block;margin-right:4px;border-radius:10px;width:10px;height:10px;background-color:#5470c6;"></span><span
+                              style="font-size:14px;color:#666;font-weight:400;margin-left:2px">국내</span><span
+                              style="float:right;margin-left:20px;font-size:14px;color:#666;font-weight:900">6</span>
+                            <div style="clear:both"></div>
+                          </div>
+                          <div style="clear:both"></div>
+                        </div>
+                        <div style="margin: 10px 0 0;line-height:1;">
+                          <div style="margin: 0px 0 0;line-height:1;"><span
+                              style="display:inline-block;margin-right:4px;border-radius:10px;width:10px;height:10px;background-color:#91cc75;"></span><span
+                              style="font-size:14px;color:#666;font-weight:400;margin-left:2px">국제</span><span
+                              style="float:right;margin-left:20px;font-size:14px;color:#666;font-weight:900">10</span>
+                            <div style="clear:both"></div>
+                          </div>
+                          <div style="clear:both"></div>
+                        </div>
+                        <div style="clear:both"></div>
+                      </div>
+                      <div style="clear:both"></div>
+                    </div>
+                    <div style="clear:both"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

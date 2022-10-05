@@ -40,7 +40,7 @@
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
   <!-- =================== LINK  EEE =================== -->
-    <!-- =================== SCRIPT =================== -->
+  <!-- =================== SCRIPT =================== -->
   <script src="../js/jquery.js"></script>
   <!-- jquery-ui js -->
   <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
@@ -70,11 +70,12 @@
   </script>
   <!-- =================== SCRIPT EEE =================== -->
 </head>
+
 <body>
   <!-- 메인이 들어가는 부분 -->
   <main class="main-wrap" id="STA">
 
-   <!-- header -->
+    <!-- header -->
     <div id="headers"></div>
     <!-- header eee -->
 
@@ -137,7 +138,7 @@
                     <td><input type="text" /></td>
                   </tr>
                   <tr>
-                   <th scope="row">설립연월</th>
+                    <th scope="row">설립연월</th>
                     <td>
                       <div class="flex al-center">
                         <input type="text" class="form-input form-date datePicker" placeholder="2022-08-01">
@@ -229,7 +230,7 @@
                     <td>
                       <div class="flex gap5">
                         <input type="text" class="wx250" />
-                        <button type="button" class="btn btn-sm bg-main">과제검색</button>
+                        <button type="button" class="btn btn-sm bg-main cd-popup-trigger">과제검색</button>
                       </div>
                     </td>
                     <th scope="row">연구개발과제명</th>
@@ -476,6 +477,319 @@
 
   </main>
   <!-- 메인이 들어가는 부분 eee -->
+
+  <!-- 과제검색 팝업 -->
+  <div class="cd-popup">
+    <div class="cd-popup-container">
+      <div class="had-tit">
+        과제검색
+      </div>
+
+      <div class="contents">
+        <!-- 팝업내용 -->
+        <div class="tbl-type12">
+          <form id="frm" name="frm" method="post">
+            <table summary="">
+              <caption>과제정보 검색</caption>
+              <colgroup>
+                <col width="20%">
+                <col width="30%">
+                <col width="20%">
+                <col width="30%">
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th scope="row">기준년도</th>
+                  <td><input type="text" id="searchVO.searchStdrYear" name="searchVO.searchStdrYear" title="기준년도"
+                      value="2021"></td>
+                  <th scope="row">과제고유번호</th>
+                  <td><input type="text" id="searchVO.searchPjtId" name="searchVO.searchPjtId" title="과제고유번호" value="">
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">세부과제번호</th>
+                  <td><input type="text" id="searchVO.searchDetailPjtId" name="searchVO.searchDetailPjtId"
+                      title="세부과제번호" value=""></td>
+                  <th scope="row">사업명</th>
+                  <td><input type="text" id="searchVO.searchBsnsNm" name="searchVO.searchBsnsNm" title="사업명" value="">
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">과제명</th>
+                  <td><input type="text" id="searchVO.searchPjtNm" name="searchVO.searchPjtNm" title="과제명" value="">
+                  </td>
+                  <th scope="row">연구책임자</th>
+                  <td><input type="text" id="searchVO.searchRsrchRspnber" name="searchVO.searchRsrchRspnber"
+                      title="연구책임자" value=""></td>
+                </tr>
+                <tr>
+                  <th scope="row">과제관리(전문)기관명</th>
+                  <td><input type="text" id="searchVO.searchTaskManageInsttNm" name="searchVO.searchTaskManageInsttNm"
+                      title="과제관리(전문)기관명" value=""></td>
+                  <th scope="row">과제수행기관명</th>
+                  <td><input type="text" id="searchVO.searchTaskExcInsttNm" name="searchVO.searchTaskExcInsttNm"
+                      title="과제수행기관명" value=""></td>
+                </tr>
+              </tbody>
+            </table>
+            <button type="submit" id="btnSearch2" class="hide">검색</button>
+          </form>
+        </div>
+        <div class="btn-set mt20 txt-r">
+          <a href="#" id="btnInitl" class="reset2">초기화</a>
+          <a href="#" id="btnSearch" class="submit3"><span>검색</span></a>
+        </div>
+        <div class="board_top mt50">
+          <span>74499</span> 건이 검색되었습니다.
+        </div>
+        <div class="scroll-tbl-wrap">
+          <div>
+            <div class="tbl-type14 tr-first-tac">
+              <table summary="">
+                <caption>과제 목록</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">
+                      <div class="form-chkbox">
+                        <label class="form-chkbox__control control--checkbox">
+                          <input type="checkbox">
+                          <div class="form-chkbox__indicator"></div>
+                        </label>
+                      </div>
+                    </th>
+                    <th scope="col">NO</th>
+                    <th scope="col">과제고유번호</th>
+                    <th scope="col">세부과제번호</th>
+                    <th scope="col">과제명</th>
+                    <th scope="col">연구책임자명</th>
+                    <th scope="col">과제관리(전문)기관명</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="form-chkbox">
+                        <label class="form-chkbox__control control--checkbox">
+                          <input type="checkbox">
+                          <div class="form-chkbox__indicator"></div>
+                        </label>
+                      </div>
+                    </td>
+                    <td>74499</td>
+                    <td>1415177200</td>
+                    <td>P0004792</td>
+                    <td>
+                      스마트 건설기계용 융복합부품 평가기술 기반구축
+                    </td>
+                    <td>조용근</td>
+                    <td>한국산업기술진흥원</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="form-chkbox">
+                        <label class="form-chkbox__control control--checkbox">
+                          <input type="checkbox">
+                          <div class="form-chkbox__indicator"></div>
+                        </label>
+                      </div>
+                    </td>
+                    <td>74498</td>
+                    <td>1711147542</td>
+                    <td>2017R1A2B3010176</td>
+                    <td>
+                      고효율
+                        산소환원촉매 개발을 위한 전자구조 제어
+                    </td>
+                    <td>정유성</td>
+                    <td>한국연구재단</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="form-chkbox">
+                        <label class="form-chkbox__control control--checkbox">
+                          <input type="checkbox">
+                          <div class="form-chkbox__indicator"></div>
+                        </label>
+                      </div>
+                    </td>
+                    <td>74497</td>
+                    <td>1711148952</td>
+                    <td>2021M3E8A2100445</td>
+                    <td>
+                      CCTV 등
+                        공공서비스 영상에서의 개인정보 보호를 위한 실시간 마스킹/언마스킹 시스템 개발
+                    </td>
+                    <td>권인소</td>
+                    <td>한국연구재단</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="form-chkbox">
+                        <label class="form-chkbox__control control--checkbox">
+                          <input type="checkbox">
+                          <div class="form-chkbox__indicator"></div>
+                        </label>
+                      </div>
+                    </td>
+                    <td>74496</td>
+                    <td>1395070782</td>
+                    <td>PJ012503012021</td>
+                    <td>
+                      목적형질 강화
+                        내재해 양질 다수성 목초 신품종 개발(1주관)
+                    </td>
+                    <td>이상훈</td>
+                    <td>국립축산과학원</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="form-chkbox">
+                        <label class="form-chkbox__control control--checkbox">
+                          <input type="checkbox">
+                          <div class="form-chkbox__indicator"></div>
+                        </label>
+                      </div>
+                    </td>
+                    <td>74495</td>
+                    <td>1395071382</td>
+                    <td>PJ015558012021</td>
+                    <td>
+                      토양특성정보
+                        생산기술 역량증대를 통한 FAO GSP 대응 강화(1주관)
+                    </td>
+                    <td>전상호</td>
+                    <td>농촌진흥청</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="form-chkbox">
+                        <label class="form-chkbox__control control--checkbox">
+                          <input type="checkbox">
+                          <div class="form-chkbox__indicator"></div>
+                        </label>
+                      </div>
+                    </td>
+                    <td>74494</td>
+                    <td>1345334922</td>
+                    <td>5199990214660</td>
+                    <td>
+                      IT-Bio융합시스템농업교육연구단
+                    </td>
+                    <td>김장호</td>
+                    <td>한국연구재단</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="form-chkbox">
+                        <label class="form-chkbox__control control--checkbox">
+                          <input type="checkbox">
+                          <div class="form-chkbox__indicator"></div>
+                        </label>
+                      </div>
+                    </td>
+                    <td>74493</td>
+                    <td>1395071516</td>
+                    <td>PJ016135012021</td>
+                    <td>
+                      선인장 다육식물
+                        국내외 경쟁력제고 안정생산 및 유통구조 개선 기술개발(1주관)
+                    </td>
+                    <td>심상연</td>
+                    <td>농촌진흥청</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="form-chkbox">
+                        <label class="form-chkbox__control control--checkbox">
+                          <input type="checkbox">
+                          <div class="form-chkbox__indicator"></div>
+                        </label>
+                      </div>
+                    </td>
+                    <td>74492</td>
+                    <td>1485018212</td>
+                    <td>NIER-2021-01-02-057</td>
+                    <td>
+                      환경 현안물질의
+                        수생태 축적성평가를 위한 모니터링 연구 (Ⅰ)
+                    </td>
+                    <td>오정은</td>
+                    <td>국립환경과학원</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="form-chkbox">
+                        <label class="form-chkbox__control control--checkbox">
+                          <input type="checkbox">
+                          <div class="form-chkbox__indicator"></div>
+                        </label>
+                      </div>
+                    </td>
+                    <td>74491</td>
+                    <td>1395071546</td>
+                    <td>PJ016292012021</td>
+                    <td>
+                      UAE 맞춤형
+                        온실냉방 패키지의 물절약형 운영기술 고도화(1주관)
+                    </td>
+                    <td>권진경</td>
+                    <td>농촌진흥청</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="form-chkbox">
+                        <label class="form-chkbox__control control--checkbox">
+                          <input type="checkbox">
+                          <div class="form-chkbox__indicator"></div>
+                        </label>
+                      </div>
+                    </td>
+                    <td>74490</td>
+                    <td>1711150186</td>
+                    <td>21-DPIC-07</td>
+                    <td>
+                      숙련 작업자
+                        고령화 대응을 위한 고정밀 추적 센서 기반 바닥 마감재 시공 로봇 개발
+                    </td>
+                    <td>이승열</td>
+                    <td>대구경북과학기술원</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="paging">
+          <a href="#" class="first">처음</a>
+          <a href="#" class="prev">이전</a>
+          <span>1</span>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">4</a>
+          <a href="#">5</a>
+          <a href="#">6</a>
+          <a href="#">7</a>
+          <a href="#">8</a>
+          <a href="#">9</a>
+          <a href="#" class="next">다음</a>
+          <a href="#" class="last">마지막</a>
+        </div>
+        <!-- 팝업내용 eee -->
+      </div>
+
+      <ul class="cd-buttons">
+        <li>
+          <a href="#0" class="cd-close bg-aaa">취소</a>
+        </li>
+        <li>
+          <a href="#0" class="bg-main">저장</a>
+        </li>
+      </ul>
+      <a href="#0" class="cd-popup-close img-replace"></a>
+    </div>
+    <!-- cd-popup-container -->
+  </div>
+  <!-- 과제검색 팝업 eee -->
 
 </body>
 
