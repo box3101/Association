@@ -10109,6 +10109,10 @@ textarea {
   color: #333;
 }
 
+textarea.h100 {
+  height: 6.25rem;
+}
+
 #ft .footer .ftMenu > ul > li > a,
 #ft .footer .ftMenu > ul > li:last-child > a {
   color: #fff;
