@@ -1560,4 +1560,6 @@ section {
 	.notice{padding-bottom: 20px;}
 	.notice__bg{border-radius: 0px;}
 	.notice__btn-prev::after, .notice__btn-next::after{width: 7px;height: 7px;}
+	.recency .inner .wrap .lef, .recency .inner .wrap .ref{display: flex;flex-direction: column;}
+	.recency .com-tit .com-btn2{position: relative; top:auto;order:2}
 }

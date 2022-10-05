@@ -4939,3 +4939,14 @@ ul.flex .tf-trees__profile:last-of-type::after{
 .section2.w1650{
     width: 103.125rem;
 }
+
+@media (max-width:$b-mo){
+  .com-type01__left{margin-right: 0;}
+	.com-type01__img{width: 100%;}
+	.com-type01__img img{height: auto;}
+  .com-type01__tit{margin-top: 10px;}
+  .com-type01__txt{max-height: 57px;}
+  .com-type01__right{padding-bottom: 60px;}
+  .com-type01__more-btn{display: none;}
+  .content-location + .section2 .section2__had p{text-align: left;}
+}

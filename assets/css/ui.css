@@ -6795,6 +6795,15 @@ section {
     width: 7px;
     height: 7px;
   }
+  .recency .inner .wrap .lef, .recency .inner .wrap .ref {
+    display: flex;
+    flex-direction: column;
+  }
+  .recency .com-tit .com-btn2 {
+    position: relative;
+    top: auto;
+    order: 2;
+  }
 }
 .sub-banner {
   width: 100%;
@@ -11576,6 +11585,33 @@ ul.flex .tf-trees__profile:last-of-type::after {
 
 .section2.w1650 {
   width: 103.125rem;
+}
+
+@media (max-width: 600px) {
+  .com-type01__left {
+    margin-right: 0;
+  }
+  .com-type01__img {
+    width: 100%;
+  }
+  .com-type01__img img {
+    height: auto;
+  }
+  .com-type01__tit {
+    margin-top: 10px;
+  }
+  .com-type01__txt {
+    max-height: 57px;
+  }
+  .com-type01__right {
+    padding-bottom: 60px;
+  }
+  .com-type01__more-btn {
+    display: none;
+  }
+  .content-location + .section2 .section2__had p {
+    text-align: left;
+  }
 }
 
 /*# sourceMappingURL=ui.css.map */
