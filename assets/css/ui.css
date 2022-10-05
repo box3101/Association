@@ -2052,7 +2052,7 @@ td > a {
   left: -1px;
 }
 #navi > li.on > a span {
-  color: #222;
+  color: rgb(0, 141, 255);
   font-weight: bold;
 }
 
