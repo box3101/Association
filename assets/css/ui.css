@@ -9143,7 +9143,7 @@ table select::-ms-expand {
 }
 
 .gr-area {
-  height: auto;
+  height: 31.25rem;
 }
 
 .gr-area > div {
