@@ -159,7 +159,7 @@
                     <th scope="row">주소</th>
                     <td colspan="3">
                       <div class="flex gap5">
-                        <input type="button" class="btn address" value="주소검색" onclick="goPopup();">
+                        <a href="#pop-address" class="btn btn-sm bg-main cd-popup-trigger">주소검색</a>
                         <input type="text" id="roadAddrPart1" placeholder="경기도 군포시 금포로">
                         <input type="text" id="roadAddrPart1" placeholder="123동 201호">
                       </div>
@@ -574,7 +574,7 @@
                 <th scope="row">주소</th>
                 <td colspan="3">
                   <div class="flex gap5">
-                    <input type="button" class="btn address" value="주소검색" onclick="goPopup();">
+                    <a href="#pop-address" class="btn btn-sm bg-main cd-popup-trigger">주소검색</a>
                     <input type="text" id="roadAddrPart1" placeholder="경기도 군포시 금포로">
                     <input type="text" id="roadAddrPart1" placeholder="123동 201호">
                   </div>
@@ -815,6 +815,225 @@
     <!-- cd-popup-container -->
   </div>
   <!-- 참여인력 정보 팝업 eee -->
+
+  <!-- 주소검색 팝업 -->
+  <div class="cd-popup" id="pop-address">
+    <div class="cd-popup-container">
+      <div class="had-tit">
+        도로명 주소 안내
+      </div>
+      <div class="contents">
+        <div class="pop-address">
+          <!-- 검색박스 -->
+          <div class="sch-bar">
+            <div class="input-box">
+              <input type="text" placeholder="길주로">
+              <button type="button" class="input-btn">
+                <img src="../img/ico-search.png" alt="">
+              </button>
+            </div>
+            <div class="wrap">
+              <div class="form-chkbox">
+                <label class="form-chkbox__control control--checkbox mr15">변동된 주소정보 포함
+                  <input type="checkbox">
+                  <div class="form-chkbox__indicator"></div>
+                </label>
+              </div>
+              <p>예시: 도로명(반포대로 58),건물명(독립기념관),지반(삼성동 25)</p>
+            </div>
+          </div>
+          <!-- 검색박스 eee -->
+
+          <!-- 검색결과 -->
+          <div class="sch-result">
+            <div class="top">
+              <div class="wrap">
+                <p>
+                  도로명주소 검색결과 <span>(1949건)</span>
+                </p>
+                <div class="form-radio-wrap">
+                  <div class="form-radio">
+                    <input type="radio" id="c1" name="chk1_02" value="1" checked="">
+                    <label for="c1">
+                      정확도순 &nbsp;&nbsp;
+                    </label>
+                    <input type="radio" id="c2" name="chk1_02" value="2">
+                    <label for="c2">
+                      도로명 포함 &nbsp;&nbsp;
+                    </label>
+                    <input type="radio" id="c3" name="chk1_02" value="3">
+                    <label for="c3">
+                      지번 포함 &nbsp;&nbsp;
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="scroll-tbl-wrap">
+              <div>
+                <div class="tbl-type13 notice">
+                  <table>
+                    <colgroup>
+                      <col style="width:10%;" class="mobile-hidden">
+                      <col style="width:auto;">
+                      <col style="width:10%;" class="mobile-hidden">
+                    </colgroup>
+                    <thead class="mobile-hidden">
+                      <tr>
+                        <th>No</th>
+                        <th>도로명주소</th>
+                        <th>우편번호</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td class="left">
+                          <div class="wrap">
+                            <article class="txt-wrap is-active">
+                              <a href="#" class="tit">경기도 부천시 길주고 1(상동)</a>
+                              <p class="txt">[지번] 경기도 부천시 상동 529-2 영상문화단지</p>
+                            </article>
+                            <!-- 상세보기 클릭시 -->
+                            <article class="txt-wrap">
+                              <a href="#" class="tit">경기도 부천시 길주로 1</a>
+                              <p class="txt">[지번] 경기도 부천시 상동 529-2</p>
+                              <p class="txt"><span class="c-main">[관련지번]</span> 글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트
+                              </p>
+                              <p class="txt"><span class="c-main">[관할주민센터]</span>
+                                글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트</p>
+                              <p class="desc">※ 관할주민센터는 참고정보이며, 실제와 다를 수 있습니다.</p>
+                            </article>
+                            <article class="btn">
+                              <button class="detail-btn bg-main size-sm">상세보기</button>
+                            </article>
+                          </div>
+                        </td>
+                        <td>14505</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td class="left">
+                          <div class="wrap">
+                            <article class="txt-wrap is-active">
+                              <a href="#"
+                                class="tit">글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트</a>
+                              <p class="txt">글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트</p>
+                            </article>
+                            <!-- 상세보기 클릭시 -->
+                            <article class="txt-wrap">
+                              <a href="#" class="tit">경기도 부천시 길주로 1</a>
+                              <p class="txt">[지번] 경기도 부천시 상동 529-2</p>
+                              <p class="txt"><span class="c-main">[관련지번]</span> 글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트
+                              </p>
+                              <p class="txt"><span class="c-main">[관할주민센터]</span>
+                                글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트</p>
+                              <p class="desc">※ 관할주민센터는 참고정보이며, 실제와 다를 수 있습니다.</p>
+                            </article>
+                            <article class="btn">
+                              <button class="detail-btn bg-main size-sm">상세보기</button>
+                            </article>
+                          </div>
+                        </td>
+                        <td>14505</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td class="left">
+                          <div class="wrap">
+                            <article class="txt-wrap is-active">
+                              <a href="#" class="tit">경기도 부천시 길주고 1(상동)</a>
+                              <p class="txt">[지번] 경기도 부천시 상동 529-2 영상문화단지</p>
+                            </article>
+                            <!-- 상세보기 클릭시 -->
+                            <article class="txt-wrap">
+                              <a href="#" class="tit">경기도 부천시 길주로 1</a>
+                              <p class="txt">[지번] 경기도 부천시 상동 529-2</p>
+                              <p class="txt"><span class="c-main">[관련지번]</span> 글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트
+                              </p>
+                              <p class="txt"><span class="c-main">[관할주민센터]</span>
+                                글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트</p>
+                              <p class="desc">※ 관할주민센터는 참고정보이며, 실제와 다를 수 있습니다.</p>
+                            </article>
+                            <article class="btn">
+                              <button class="detail-btn bg-main size-sm">상세보기</button>
+                            </article>
+                          </div>
+                        </td>
+                        <td>14505</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <script>
+                    (function () {
+
+                      const detailBtns = document.querySelectorAll(".detail-btn");
+
+                      for (let el of detailBtns) {
+                        let click;
+
+                        el.addEventListener("click", (e) => {
+                          e.preventDefault();
+
+                          const wrap = el.closest(".wrap");
+                          const txtWraps = wrap.querySelectorAll(".txt-wrap")
+
+                          if (!click) {
+                            el.classList.add("is-active");
+                            el.innerHTML = "닫기"
+
+                            txtWraps.forEach((el, index) => {
+                              txtWraps[0].classList.remove("is-active");
+                              txtWraps[1].classList.add("is-active");
+                            });
+
+                            return click = true;
+                          } else {
+                            el.classList.remove("is-active");
+                            el.innerHTML = "상세보기"
+
+                            txtWraps.forEach((el, index) => {
+                              txtWraps[0].classList.add("is-active");
+                              txtWraps[1].classList.remove("is-active");
+                            });
+
+                            return click = false;
+                          }
+
+                        });
+                      }
+                    })();
+
+                  </script>
+                </div>
+              </div>
+            </div>
+
+            <div class="paging">
+              <a href="#" class="first">처음</a>
+              <a href="#" class="prev">이전</a>
+              <span>1</span>
+              <a href="#">2</a>
+              <a href="#">3</a>
+              <a href="#">4</a>
+              <a href="#">5</a>
+              <a href="#">6</a>
+              <a href="#">7</a>
+              <a href="#">8</a>
+              <a href="#">9</a>
+              <a href="#" class="next">다음</a>
+              <a href="#" class="last">마지막</a>
+            </div>
+          </div>
+          <!-- 검색결과 eee-->
+        </div>
+      </div>
+
+      <a href="#0" class="cd-popup-close img-replace"></a>
+    </div>
+  </div>
+  <!-- 주소검색 팝업 eee-->
 
   <!-- 팝업 2개 이상일때 스크립트 -->
   <script>
