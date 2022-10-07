@@ -40,8 +40,10 @@
               }
             }
           }
-          @include make-before{
-            @extend %make-bar;
+          &.bar{
+            @include make-before{
+              @extend %make-bar;
+            }
           }
           +li{
             padding-left: 0.625rem;
@@ -155,8 +157,8 @@
   z-index: 200000;
   background: #fff;
   display: none;
-
-  img {
+ 
+  >img {
     @media (max-width:$b-mo) {
       width: 26rem;
       position: relative;
@@ -174,7 +176,11 @@
   padding: 0 1.25rem;
 }
 
-.mobile-menu .top .logo {}
+.mobile-menu .top .logo {
+  img{
+    width: 25rem;
+  }
+}
 
 .mobile-menu .top .close {}
 
@@ -218,6 +224,13 @@
   padding: 0;
   background: #294eb6;
   // transition: all 0.4s ease-in-out;
+}
+
+.mobile-menu .util-menu{
+  margin-top: 20px; margin-right: 20px;
+  padding-right: 10px;
+  display: flex; justify-content: flex-end;
+  width: 100%; gap:10px; margin-left: 0;
 }
 
 .mobile-menu .list>li>a.is-active+.sub-menu {

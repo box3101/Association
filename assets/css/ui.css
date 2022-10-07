@@ -3015,7 +3015,7 @@ td > a {
 .header__top .ref .util-menu li a span:hover {
   color: rgb(0, 141, 255);
 }
-.header__top .ref .util-menu li:before {
+.header__top .ref .util-menu li.bar:before {
   content: "";
   display: block;
 }
@@ -3142,7 +3142,7 @@ td > a {
   display: none;
 }
 @media (max-width: 600px) {
-  .mobile-menu img {
+  .mobile-menu > img {
     width: 26rem;
     position: relative;
     top: -3px;
@@ -3156,6 +3156,10 @@ td > a {
   justify-content: space-between;
   border-bottom: 1px solid #c8c8c8;
   padding: 0 1.25rem;
+}
+
+.mobile-menu .top .logo img {
+  width: 25rem;
 }
 
 .mobile-menu .list > li {
@@ -3195,6 +3199,17 @@ td > a {
   height: 0;
   padding: 0;
   background: #294eb6;
+}
+
+.mobile-menu .util-menu {
+  margin-top: 20px;
+  margin-right: 20px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  gap: 10px;
+  margin-left: 0;
 }
 
 .mobile-menu .list > li > a.is-active + .sub-menu {
@@ -3483,7 +3498,7 @@ td > a {
 }
 
 /* =================== BAR 생성 =================== */
-.header__top .ref .util-menu li:before, .footer__top .lef ul li:after {
+.header__top .ref .util-menu li.bar:before, .footer__top .lef ul li:after {
   position: absolute;
   transform: translateY(-50%);
   top: 52%;
@@ -5971,6 +5986,9 @@ td > a {
   .float-btn {
     top: 68%;
     right: 10px;
+  }
+  .float-btn img {
+    width: 4rem;
   }
 }
 .go-top {
