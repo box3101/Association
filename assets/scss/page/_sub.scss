@@ -1401,7 +1401,6 @@ padding: 0;
   background: none;
 }
 .tbl-type12 table {
-  border: 1px solid #cccccc;
   border-top:none;
   background: #fff;
 }
@@ -3276,10 +3275,6 @@ input.address {
   cursor: pointer;
 }
 
-.tbl-type12 tbody th,
-.tbl-type12 tbody td {
-  border-top: 0.0313rem solid #ccc;
-}
 
 .com-step-wrap .com-step .com-top {
   min-height: 5.4375rem;
@@ -4968,4 +4963,8 @@ ul.flex .tf-trees__profile:last-of-type::after{
       }
     }
   }
+}
+
+.mypage .guideBx{
+  margin-top: 40px;
 }
