@@ -231,6 +231,7 @@
   padding-right: 10px;
   display: flex; justify-content: flex-end;
   width: 100%; gap:10px; margin-left: 0;
+  position: relative; z-index: 20;
 }
 
 .mobile-menu .list>li>a.is-active+.sub-menu {

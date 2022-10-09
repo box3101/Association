@@ -3210,6 +3210,8 @@ td > a {
   width: 100%;
   gap: 10px;
   margin-left: 0;
+  position: relative;
+  z-index: 20;
 }
 
 .mobile-menu .list > li > a.is-active + .sub-menu {
@@ -5984,7 +5986,7 @@ td > a {
 }
 @media screen and (max-width: 480px) {
   .float-btn {
-    top: 68%;
+    top: 81%;
     right: 10px;
   }
   .float-btn img {
@@ -11262,6 +11264,11 @@ caption {
   color: #3981d7;
   min-width: 95px;
   font-weight: 500;
+}
+@media all and (max-width: 600px) {
+  .mypage > ul > li .lef p {
+    min-width: auto;
+  }
 }
 .mypage > ul > li .ref {
   opacity: 1;
