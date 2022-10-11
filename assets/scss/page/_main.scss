@@ -11,13 +11,14 @@
 		margin-top: 0.625rem;
 	}
 
-	&.text-left{
+	&.text-left {
 		text-align: left;
 	}
 
-	&.color-white{
-		h2,p{
-			color:#fff!important;
+	&.color-white {
+		h2,
+		p {
+			color: #fff !important;
 		}
 	}
 }
@@ -818,9 +819,8 @@ section {
 	}
 }
 
-
 /*----------  obj-color  ----------*/
-.main-wrap .notice {
+.main-wrap #sub .notice {
 	position: relative;
 	z-index: 2;
 	padding: 4.3125rem 0;
@@ -1169,7 +1169,8 @@ section {
 }
 
 .main-organ {
-	position: relative; z-index: 2;
+	position: relative;
+	z-index: 2;
 	.inner {
 		opacity: 1;
 		.box {
@@ -1227,15 +1228,16 @@ section {
 
 .recency {
 	background: $gra3;
-	position: relative; z-index: 2;
+	position: relative;
+	z-index: 2;
 	padding: 3.5rem 0;
-	.com-tit{
+	.com-tit {
 		position: relative;
-		.com-btn2{
+		.com-btn2 {
 			position: absolute;
 			right: 0;
 			top: 3.075rem;
-			background : linear-gradient(45deg, #74c1ff, #008dff);
+			background: linear-gradient(45deg, #74c1ff, #008dff);
 		}
 	}
 	.inner {
@@ -1248,7 +1250,8 @@ section {
 				flex: 1;
 				width: 48%;
 			}
-			.lef,.ref {
+			.lef,
+			.ref {
 				opacity: 1;
 				ul {
 					background: #fff;
@@ -1262,7 +1265,7 @@ section {
 						padding-bottom: 0.625rem;
 						border-bottom: 0.0625rem solid #eaeaea;
 
-						&:last-of-type{
+						&:last-of-type {
 							border-bottom: none;
 							padding-bottom: 0;
 							margin-bottom: 0;
@@ -1310,13 +1313,13 @@ section {
 					}
 				}
 			}
-			.ref{
-				.com-btn2{
-					background : linear-gradient(45deg, #ffdb76, #ffba00);
+			.ref {
+				.com-btn2 {
+					background: linear-gradient(45deg, #ffdb76, #ffba00);
 				}
-				ul{
+				ul {
 					border: 0.125rem solid #ffba00;
-					li .tit .num-data{
+					li .tit .num-data {
 						background: #ffba00;
 					}
 				}
@@ -1324,7 +1327,6 @@ section {
 		}
 	}
 }
-
 
 @media (max-width: $b-web) {
 	html,
@@ -1409,7 +1411,7 @@ section {
 	.main-info .inner .flex .ref .info {
 		height: auto;
 	}
-	.notice__bg{
+	.notice__bg {
 		width: 100%;
 	}
 }
@@ -1418,16 +1420,31 @@ section {
 	#sub {
 		font-size: 13px;
 	}
-	.notice__flex{
+	.notice__flex {
 		flex-direction: column;
 	}
-	.notice__lef{flex:0 0 100%;height: auto;}
-	.notice__swiper .swiper-slide img{height: auto;}
-	.report .inner{flex-direction: column;}
-	.result .wrap{flex-direction: column;}
-	.recency .inner .wrap{flex-direction: column;}
-	.recency .inner .wrap > div{width: 100%;}
-	.notice__txt2{width: 75%;}
+	.notice__lef {
+		flex: 0 0 100%;
+		height: auto;
+	}
+	.notice__swiper .swiper-slide img {
+		height: auto;
+	}
+	.report .inner {
+		flex-direction: column;
+	}
+	.result .wrap {
+		flex-direction: column;
+	}
+	.recency .inner .wrap {
+		flex-direction: column;
+	}
+	.recency .inner .wrap > div {
+		width: 100%;
+	}
+	.notice__txt2 {
+		width: 75%;
+	}
 }
 @media (max-width: $b-mo) {
 	html,
@@ -1532,34 +1549,110 @@ section {
 	.hot-menu .inner ul li a .img {
 		margin-bottom: 0.25rem;
 	}
-	.search-menu .lef .link-menu li:nth-of-type(1) a,.search-menu .lef .link-menu li:nth-of-type(2) a{height: 6rem;}
-	.search-menu .lef > .tit{font-size: 2.5rem;}
-	.search-menu .lef > .txt{font-size: 1.4rem; margin-top: 10px;}
-	.search-menu .inquiry-box{padding: 1.5rem 1.5rem;}
-	.search-menu .inquiry-box .com-btn1{margin-top: 2.25rem;}
-	.obj-sm,.obj-bd,.obj-big,.obj-sq{display: none;}
-	.notice{margin-top: 0;}
-	.notice__link{gap:1rem;}
-	.notice__txt2{width: 53%;}
-	.notice__more-btn{top: 0.1625rem;}
-	.notice__date{position: relative; top: 1px;}
-	.com-tit , .com-tit h2,p{text-align: center;}
-	.report .inner > div{display: flex;flex-direction: column;}
-	.report .com-btn2, .com-btn2{position: relative;right: 0;top: auto;display: block;    margin: 0 auto;margin-top: 14px;    order: 2;
+	.search-menu .lef .link-menu li:nth-of-type(1) a,
+	.search-menu .lef .link-menu li:nth-of-type(2) a {
+		height: 6rem;
 	}
-	.report__list{margin-top: 14px;}
-	.edu-info .inner .list li a{text-align: center;}
-	.edu-info{padding-bottom: 0;}
-	.main-organ .inner .box{flex-direction: column;    gap: 25px;}
-	.main-organ .inner .box{ align-items: flex-start;    padding-left: 31px;}
-	.recency .inner .wrap .lef ul .info dl, .recency .inner .wrap .ref ul .info dl{
+	.search-menu .lef > .tit {
+		font-size: 2.5rem;
+	}
+	.search-menu .lef > .txt {
+		font-size: 1.4rem;
+		margin-top: 10px;
+	}
+	.search-menu .inquiry-box {
+		padding: 1.5rem 1.5rem;
+	}
+	.search-menu .inquiry-box .com-btn1 {
+		margin-top: 2.25rem;
+	}
+	.obj-sm,
+	.obj-bd,
+	.obj-big,
+	.obj-sq {
+		display: none;
+	}
+	.notice {
+		margin-top: 0;
+	}
+	.notice__link {
+		gap: 1rem;
+	}
+	.notice__txt2 {
+		width: 53%;
+	}
+	.notice__more-btn {
+		top: 0.1625rem;
+	}
+	.notice__date {
+		position: relative;
+		top: 1px;
+	}
+	.com-tit,
+	.com-tit h2,
+	p {
+		text-align: center;
+	}
+	.report .inner > div {
+		display: flex;
+		flex-direction: column;
+	}
+	.report .com-btn2,
+	.com-btn2 {
+		position: relative;
+		right: 0;
+		top: auto;
+		display: block;
+		margin: 0 auto;
+		margin-top: 14px;
+		order: 2;
+	}
+	.report__list {
+		margin-top: 14px;
+	}
+	.edu-info .inner .list li a {
+		text-align: center;
+	}
+	.edu-info {
+		padding-bottom: 0;
+	}
+	.main-organ .inner .box {
+		flex-direction: column;
+		gap: 25px;
+	}
+	.main-organ .inner .box {
+		align-items: flex-start;
+		padding-left: 31px;
+	}
+	.recency .inner .wrap .lef ul .info dl,
+	.recency .inner .wrap .ref ul .info dl {
 		flex: 0 0 37%;
 	}
-	.result__canva img{width: 100%;}
-	.report{padding-top: 20px;}
-	.notice{padding-bottom: 20px;}
-	.notice__bg{border-radius: 0px;}
-	.notice__btn-prev::after, .notice__btn-next::after{width: 7px;height: 7px;}
-	.recency .inner .wrap .lef, .recency .inner .wrap .ref{display: flex;flex-direction: column;}
-	.recency .com-tit .com-btn2{position: relative; top:auto;order:2}
+	.result__canva img {
+		width: 100%;
+	}
+	.report {
+		padding-top: 20px;
+	}
+	.notice {
+		padding-bottom: 20px;
+	}
+	.notice__bg {
+		border-radius: 0px;
+	}
+	.notice__btn-prev::after,
+	.notice__btn-next::after {
+		width: 7px;
+		height: 7px;
+	}
+	.recency .inner .wrap .lef,
+	.recency .inner .wrap .ref {
+		display: flex;
+		flex-direction: column;
+	}
+	.recency .com-tit .com-btn2 {
+		position: relative;
+		top: auto;
+		order: 2;
+	}
 }

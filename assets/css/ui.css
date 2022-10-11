@@ -6066,7 +6066,8 @@ td > a {
 .com-tit.text-left {
   text-align: left;
 }
-.com-tit.color-white h2, .com-tit.color-white p {
+.com-tit.color-white h2,
+.com-tit.color-white p {
   color: #fff !important;
 }
 
@@ -6891,7 +6892,7 @@ section {
 }
 
 /*----------  obj-color  ----------*/
-.main-wrap .notice {
+.main-wrap #sub .notice {
   position: relative;
   z-index: 2;
   padding: 4.3125rem 0;
@@ -7359,10 +7360,12 @@ section {
   flex: 1;
   width: 48%;
 }
-.recency .inner .wrap .lef, .recency .inner .wrap .ref {
+.recency .inner .wrap .lef,
+.recency .inner .wrap .ref {
   opacity: 1;
 }
-.recency .inner .wrap .lef ul, .recency .inner .wrap .ref ul {
+.recency .inner .wrap .lef ul,
+.recency .inner .wrap .ref ul {
   background: #fff;
   margin-top: 1.25rem;
   border: 0.125rem solid #008dff;
@@ -7370,22 +7373,26 @@ section {
   box-shadow: 0.3125rem 0.3125rem 0.9375rem rgba(0, 0, 0, 0.2);
   padding: 1.875rem 1.25rem;
 }
-.recency .inner .wrap .lef ul li, .recency .inner .wrap .ref ul li {
+.recency .inner .wrap .lef ul li,
+.recency .inner .wrap .ref ul li {
   margin-bottom: 1.25rem;
   padding-bottom: 0.625rem;
   border-bottom: 0.0625rem solid #eaeaea;
 }
-.recency .inner .wrap .lef ul li:last-of-type, .recency .inner .wrap .ref ul li:last-of-type {
+.recency .inner .wrap .lef ul li:last-of-type,
+.recency .inner .wrap .ref ul li:last-of-type {
   border-bottom: none;
   padding-bottom: 0;
   margin-bottom: 0;
 }
-.recency .inner .wrap .lef ul li .tit, .recency .inner .wrap .ref ul li .tit {
+.recency .inner .wrap .lef ul li .tit,
+.recency .inner .wrap .ref ul li .tit {
   margin-bottom: 0.6875rem;
   display: flex;
   align-items: center;
 }
-.recency .inner .wrap .lef ul li .tit .num-data, .recency .inner .wrap .ref ul li .tit .num-data {
+.recency .inner .wrap .lef ul li .tit .num-data,
+.recency .inner .wrap .ref ul li .tit .num-data {
   opacity: 1;
   width: 6.75rem;
   height: 1.875rem;
@@ -7396,27 +7403,32 @@ section {
   border-radius: 2.3125rem;
   margin-right: 0.875rem;
 }
-.recency .inner .wrap .lef ul li .one-line, .recency .inner .wrap .ref ul li .one-line {
+.recency .inner .wrap .lef ul li .one-line,
+.recency .inner .wrap .ref ul li .one-line {
   font-size: 1.375rem;
   font-weight: bold;
   width: calc(100% - 8.5rem);
 }
-.recency .inner .wrap .lef ul .info, .recency .inner .wrap .ref ul .info {
+.recency .inner .wrap .lef ul .info,
+.recency .inner .wrap .ref ul .info {
   display: flex;
   flex-wrap: wrap;
 }
-.recency .inner .wrap .lef ul .info dl, .recency .inner .wrap .ref ul .info dl {
+.recency .inner .wrap .lef ul .info dl,
+.recency .inner .wrap .ref ul .info dl {
   display: flex;
   font-size: 1rem;
   color: #666666;
   flex: 0 0 32%;
   margin-bottom: 0.375rem;
 }
-.recency .inner .wrap .lef ul .info dl dt, .recency .inner .wrap .ref ul .info dl dt {
+.recency .inner .wrap .lef ul .info dl dt,
+.recency .inner .wrap .ref ul .info dl dt {
   font-size: 1rem;
   color: #666666;
 }
-.recency .inner .wrap .lef ul .info dl dd, .recency .inner .wrap .ref ul .info dl dd {
+.recency .inner .wrap .lef ul .info dl dd,
+.recency .inner .wrap .ref ul .info dl dd {
   font-size: 1rem;
   color: #666666;
 }
@@ -7650,7 +7662,8 @@ section {
   .hot-menu .inner ul li a .img {
     margin-bottom: 0.25rem;
   }
-  .search-menu .lef .link-menu li:nth-of-type(1) a, .search-menu .lef .link-menu li:nth-of-type(2) a {
+  .search-menu .lef .link-menu li:nth-of-type(1) a,
+.search-menu .lef .link-menu li:nth-of-type(2) a {
     height: 6rem;
   }
   .search-menu .lef > .tit {
@@ -7666,7 +7679,10 @@ section {
   .search-menu .inquiry-box .com-btn1 {
     margin-top: 2.25rem;
   }
-  .obj-sm, .obj-bd, .obj-big, .obj-sq {
+  .obj-sm,
+.obj-bd,
+.obj-big,
+.obj-sq {
     display: none;
   }
   .notice {
@@ -7685,14 +7701,17 @@ section {
     position: relative;
     top: 1px;
   }
-  .com-tit, .com-tit h2, p {
+  .com-tit,
+.com-tit h2,
+p {
     text-align: center;
   }
   .report .inner > div {
     display: flex;
     flex-direction: column;
   }
-  .report .com-btn2, .com-btn2 {
+  .report .com-btn2,
+.com-btn2 {
     position: relative;
     right: 0;
     top: auto;
@@ -7718,7 +7737,8 @@ section {
     align-items: flex-start;
     padding-left: 31px;
   }
-  .recency .inner .wrap .lef ul .info dl, .recency .inner .wrap .ref ul .info dl {
+  .recency .inner .wrap .lef ul .info dl,
+.recency .inner .wrap .ref ul .info dl {
     flex: 0 0 37%;
   }
   .result__canva img {
@@ -7733,11 +7753,13 @@ section {
   .notice__bg {
     border-radius: 0px;
   }
-  .notice__btn-prev::after, .notice__btn-next::after {
+  .notice__btn-prev::after,
+.notice__btn-next::after {
     width: 7px;
     height: 7px;
   }
-  .recency .inner .wrap .lef, .recency .inner .wrap .ref {
+  .recency .inner .wrap .lef,
+.recency .inner .wrap .ref {
     display: flex;
     flex-direction: column;
   }
