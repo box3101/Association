@@ -365,7 +365,7 @@
                         <ul class="ref flex">
                           <li>
                             <a href="#" class="sec-num">
-                              반려 (수정하기)
+                              # (수정하기)
                             </a>
                           </li>
                         </ul>
@@ -442,7 +442,7 @@
                           <td>김제안</td>
                           <td>OO 기관</td>
                           <td>접수</td>
-                          <td><a href="./표준성과상세화면(국내).html">수정하기</a>
+                          <td><a href="#">수정하기</a>
                           </td>
                           <td> </td>
                         </tr>
@@ -473,7 +473,7 @@
                           <td>김제안</td>
                           <td>OO 기관</td>
                           <td>반려</td>
-                          <td><a href="./표준성과상세화면(국내).html">수정하기</a>
+                          <td><a href="#">수정하기</a>
                           </td>
                           <td> </td>
                         </tr>
@@ -556,7 +556,7 @@
                           <td><a href="표준화동향조사 모집신청 조회(팝업).html">ICT 표준 과제</a></td>
                           <td>ASD001</td>
                           <td>반려</td>
-                          <td><a href="표준화동향조사 모집신청.html">수정하기</a>
+                          <td><a href#">수정하기</a>
                           </td>
                           <td></td>
                         </tr>
@@ -650,7 +650,7 @@
                           <td><a href="표준화동향조사 모집신청 조회(팝업).html">ICT 표준 과제</a></td>
                           <td>ASD001</td>
                           <td>반려</td>
-                          <td><a href="표준화동향조사 모집신청.html">수정하기</a>
+                          <td><a href#">수정하기</a>
                           </td>
                           <td></td>
                         </tr>
@@ -724,9 +724,20 @@
               <tbody>
                 <tr>
                   <th scope="row">과제번호</th>
-                  <td><input type="text"></td>
+                  <td><input type="text" value="12141"></td>
                   <th scope="row">과제명</th>
-                  <td><input type="text">
+                  <td><input type="text" value="표준동향조사">
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">수행결과물</th>
+                  <td colspan="3">
+                    <a href="#">
+                      <dd class="ffd">
+                        <!-- 첨부파일 -->
+                        <img src="../img/첨부파일.png" alt="첨부파일">
+                      </dd>
+                    </a>
                   </td>
                 </tr>
               </tbody>
@@ -734,41 +745,16 @@
             <button type="submit" id="btnSearch2" class="hide">검색</button>
           </form>
         </div>
-        <div class="btn-set mt20 txt-r">
-          <a href="#" id="btnSearch" class="submit3"><span>조회</span></a>
-        </div>
 
-        <div class="tbl-type12" style="margin-top: 5rem;">
-          <table summary="">
-            <caption>과제정보 검색</caption>
-            <colgroup>
-              <col width="20%">
-              <col width="30%">
-              <col width="20%">
-              <col width="30%">
-            </colgroup>
-            <tbody>
-              <tr>
-                <th scope="row">첨부파일</th>
-                <td colspan="3">
-                  <a href="#">
-                    <dd class="ffd">
-                      <!-- 첨부파일 -->
-                      <img src="../img/첨부파일.png" alt="첨부파일">
-                    </dd>
-                  </a>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <button type="submit" id="btnSearch2" class="hide">검색</button>
-        </div>
         <!-- 팝업내용 eee -->
       </div>
 
-      <ul class="cd-buttons w100">
+      <ul class="cd-buttons">
         <li>
-          <a href="#0" class="cd-close bg-main">닫기</a>
+          <a href="#0" class="cd-close bg-aaa">취소</a>
+        </li>
+        <li>
+          <a href="#0" class="cd-close bg-main">제출</a>
         </li>
       </ul>
       <a href="#0" class="cd-popup-close img-replace"></a>
