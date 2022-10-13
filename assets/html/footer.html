@@ -19,27 +19,27 @@
         <ul>
           <li>
             <a href="#" onclick='alert("준비중입니다.")'>
-              <img src="../img/ico-fa.png" alt="">
+              <img src="/front/img/ico-fa.png" alt="">
             </a>
           </li>
           <li>
             <a href="#" onclick='alert("준비중입니다.")'>
-              <img src="../img/ico-yu.png" alt="">
+              <img src="/front/img/ico-yu.png" alt="">
             </a>
           </li>
           <li>
             <a href="#" onclick='alert("준비중입니다.")'>
-              <img src="../img/ico-ins.png" alt="">
+              <img src="/front/img/ico-ins.png" alt="">
             </a>
           </li>
           <li>
             <a href="#" onclick='alert("준비중입니다.")'>
-              <img src="../img/ico-bl.png" alt="">
+              <img src="/front/img/ico-bl.png" alt="">
             </a>
           </li>
           <li>
             <a href="#" onclick='alert("준비중입니다.")'>
-              <img src="../img/ico-na.png" alt="">
+              <img src="/front/img/ico-na.png" alt="">
             </a>
           </li>
         </ul>
@@ -50,7 +50,7 @@
     <div class="inner">
       <div class="lef">
         <div class="f-logo">
-          <img src="../img/fot-logo.png" alt="">
+          <img src="/front/img/fot-logo.png" alt="">
         </div>
         <address>
           주소 : 06160 서울시강남구 테헤란로 69길 5 (삼성동,DT센터) 대표전화 :1670-6009 <br>
@@ -104,20 +104,20 @@
       });
     }
 
-     //GO TOP
-  function goTop() {
-    $(window).scroll(function () {
-      if ($(this).scrollTop() > 300) {
-        $('.go-top').addClass("is-show");
-      } else {
-        $('.go-top').removeClass("is-show");
-      }
-    });
-    $('.go-top').click(function () {
-      $('html, body').animate({ scrollTop: 0 }, 400);
-      return false;
-    });
-  }
+    //GO TOP
+    function goTop() {
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 300) {
+          $('.go-top').addClass("is-show");
+        } else {
+          $('.go-top').removeClass("is-show");
+        }
+      });
+      $('.go-top').click(function () {
+        $('html, body').animate({ scrollTop: 0 }, 400);
+        return false;
+      });
+    }
 
     myScroll();
     goTop();
