@@ -3034,6 +3034,16 @@ body.nopage .wrapper {
 	padding: 0.625rem;
 	border: 1px solid rgb(237, 247, 255);
 	margin-top: 0;
+
+	.title {
+		padding-left: 1rem;
+		margin-top: 0.225rem;
+		font-size: 1.875rem;
+		font-weight: 500;
+		span {
+			color: $main;
+		}
+	}
 }
 
 .new-box-style1 > strong {
@@ -3261,6 +3271,7 @@ h3::after {
 
 .btn-set a.submit3 {
 	background: rgba(0, 141, 255, 1);
+	border: rgb(0, 141, 255);
 }
 
 .tbl-type12 tbody th {
@@ -5147,6 +5158,10 @@ ul.flex .tf-trees__profile:last-of-type::after {
 						}
 					}
 				}
+				.btn-set {
+					display: flex;
+					align-items: center;
+				}
 				.txt-wrap {
 					background: #fff;
 					border-radius: 0 0 0 1.4375rem;
@@ -5171,6 +5186,17 @@ ul.flex .tf-trees__profile:last-of-type::after {
 						line-height: 1.4;
 						word-break: break-all;
 					}
+				}
+			}
+			.btn-set {
+				margin-top: 0;
+				padding: 0.9375rem 1.4625rem;
+				display: flex;
+				align-items: center;
+				gap: 0.625rem;
+				a {
+					color: #fff;
+					font-size: 0.9rem;
 				}
 			}
 		}

@@ -3026,7 +3026,7 @@ td > a {
 }
 .header__top .ref .util-menu li a img {
   position: relative;
-  top: 1px;
+  width: 1.2rem;
 }
 .header__top .ref .util-menu li a span {
   display: inline-block;
@@ -3354,7 +3354,9 @@ td > a {
   .open-mb-nav {
     width: 1.7rem;
   }
-  .header__top .ref, .header__menu, #gnb {
+  .header__top .ref,
+.header__menu,
+#gnb {
     display: none;
   }
 }
@@ -10768,6 +10770,15 @@ body.nopage .wrapper {
   border: 1px solid rgb(237, 247, 255);
   margin-top: 0;
 }
+.new-box-style1 .title {
+  padding-left: 1rem;
+  margin-top: 0.225rem;
+  font-size: 1.875rem;
+  font-weight: 500;
+}
+.new-box-style1 .title span {
+  color: rgb(0, 141, 255);
+}
 
 .new-box-style1 > strong {
   position: relative;
@@ -10997,6 +11008,7 @@ h3::after {
 
 .btn-set a.submit3 {
   background: rgb(0, 141, 255);
+  border: rgb(0, 141, 255);
 }
 
 .tbl-type12 tbody th {
@@ -12733,6 +12745,10 @@ ul.flex .tf-trees__profile:last-of-type::after {
 .eduInfoList ul li a .pic:hover img {
   transform: scale(1.2);
 }
+.eduInfoList ul li a .btn-set {
+  display: flex;
+  align-items: center;
+}
 .eduInfoList ul li a .txt-wrap {
   background: #fff;
   border-radius: 0 0 0 1.4375rem;
@@ -12759,6 +12775,17 @@ ul.flex .tf-trees__profile:last-of-type::after {
   height: 2.75rem;
   line-height: 1.4;
   word-break: break-all;
+}
+.eduInfoList ul li .btn-set {
+  margin-top: 0;
+  padding: 0.9375rem 1.4625rem;
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+.eduInfoList ul li .btn-set a {
+  color: #fff;
+  font-size: 0.9rem;
 }
 
 /*# sourceMappingURL=ui.css.map */
