@@ -3234,6 +3234,9 @@ td > a {
   position: relative;
   z-index: 20;
 }
+.mobile-menu .util-menu li a img {
+  width: 1rem;
+}
 
 .mobile-menu .list > li > a.is-active + .sub-menu {
   opacity: 1;
@@ -12730,6 +12733,12 @@ ul.flex .tf-trees__profile:last-of-type::after {
 .eduInfoList ul li {
   border-radius: 0 0 0 1.5625rem;
   border: 0.0625rem solid #c3bebe;
+}
+.eduInfoList ul li .pic {
+  overflow: hidden;
+}
+.eduInfoList ul li .pic img {
+  width: 100%;
 }
 .eduInfoList ul li a {
   width: 100%;

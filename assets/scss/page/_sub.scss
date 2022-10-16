@@ -5143,6 +5143,13 @@ ul.flex .tf-trees__profile:last-of-type::after {
 		li {
 			border-radius: 0 0 0 1.5625rem;
 			border: 0.0625rem solid #c3bebe;
+			.pic {
+				overflow: hidden;
+				img {
+					width: 100%;
+					// min-height: 20rem;
+				}
+			}
 			a {
 				width: 100%;
 				.pic {
