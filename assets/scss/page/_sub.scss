@@ -4898,10 +4898,17 @@ div.info.task {
 .tf-trees__profile {
 	position: relative;
 	width: 40%;
-	border-radius: 0.3125rem;
 	margin: 0 auto;
-	margin-bottom: 1.875rem;
+	margin-bottom: 3.875rem;
 	background: #fff;
+
+	&.first {
+		width: 30%;
+		border-radius: 0 !important;
+		.tf-trees__tit {
+			border-radius: 0;
+		}
+	}
 
 	@include media(1024px) {
 		width: 90%;
@@ -4935,7 +4942,7 @@ div.info.task {
 	display: block;
 	background: #b5b5b5;
 	width: 0.0625rem;
-	height: 0.9375rem;
+	height: 2.9375rem;
 	position: absolute;
 	top: auto;
 	left: 50%;
@@ -4951,11 +4958,11 @@ ul.flex .tf-trees__profile:last-of-type::after {
 	font-weight: bold;
 	text-align: center;
 	color: #fff;
-	border-radius: 0.3125rem 0.3125rem 0 0;
-	background: $main !important;
+	border-radius: 10px 10px 0 0;
+	background: #1e5a83 !important;
 }
 .tf-trees__tit.tit2 {
-	background: #aaa !important;
+	background: linear-gradient(135deg, #92a8ff 0%, #61a8ff 100%) !important;
 }
 .c-red {
 	color: darkred;
@@ -4972,6 +4979,9 @@ ul.flex .tf-trees__profile:last-of-type::after {
 	justify-content: center;
 	padding: 0.625rem 0.625rem;
 	font-size: 1.125rem;
+	border-radius: 0 0 10px 10px;
+	min-height: 4.375rem;
+	align-items: center;
 }
 .tf-trees__class-right,
 .tf-trees__part-right {
@@ -5136,6 +5146,9 @@ ul.flex .tf-trees__profile:last-of-type::after {
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
 		gap: 0.9375rem;
+		@include media(900px) {
+			grid-template-columns: repeat(3, 1fr);
+		}
 
 		@include media(37.5rem) {
 			grid-template-columns: repeat(2, 1fr);
@@ -5150,8 +5163,17 @@ ul.flex .tf-trees__profile:last-of-type::after {
 					// min-height: 20rem;
 				}
 			}
+			p {
+				text-align: center;
+				font-size: 1.2625rem;
+				font-weight: bold;
+				margin-bottom: 1.25rem;
+			}
 			a {
 				width: 100%;
+				@include media(1200px) {
+					padding: 0;
+				}
 				.pic {
 					overflow: hidden;
 					img {
@@ -5208,4 +5230,77 @@ ul.flex .tf-trees__profile:last-of-type::after {
 			}
 		}
 	}
+}
+
+.com-card2 {
+	.had {
+		padding-bottom: 0.625rem;
+
+		p {
+			font-size: 1.25rem;
+			font-weight: 500;
+
+			span {
+				font-size: 1rem;
+				font-weight: 400;
+			}
+		}
+	}
+}
+
+.com-card2-wrap {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -10px;
+	> li {
+		width: 33.3%;
+		padding: 10px;
+
+		@include media(1200px) {
+			width: 100%;
+		}
+	}
+}
+.com-card2 {
+	opacity: 1;
+	padding: 1.5375rem 2.1875rem;
+	border: 1px solid #ccc;
+	border: 1px solid #ccc;
+	position: relative;
+	.had {
+		opacity: 1;
+		.txt {
+			opacity: 1;
+			font-size: 1.25rem;
+			font-weight: 500;
+			margin-top: 0.5rem;
+			margin-bottom: 0.8125rem;
+			min-height: 3.25rem;
+		}
+	}
+	.info {
+		opacity: 1;
+		padding-top: 0.625rem;
+		border-top: 1px solid #ccc;
+	}
+	.date {
+		margin-top: 2.1875rem;
+		li {
+			opacity: 1;
+			font-size: 1.0625rem;
+			color: #333;
+		}
+		li + li {
+			margin-left: 20px;
+			position: relative;
+			@include make-after {
+				@extend %make-bar;
+				left: -0.5rem;
+				background: #aaa !important;
+				top: 47% !important;
+			}
+		}
+	}
+
+	@extend %effect-1;
 }

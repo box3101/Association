@@ -3526,7 +3526,7 @@ td > a {
 }
 
 /* =================== BAR 생성 =================== */
-.header__top .ref .util-menu li.bar:before, .footer__top .lef ul li:after {
+.com-card2 .date li + li:after, .header__top .ref .util-menu li.bar:before, .footer__top .lef ul li:after {
   position: absolute;
   transform: translateY(-50%);
   top: 52%;
@@ -3537,10 +3537,10 @@ td > a {
 }
 
 /* =================== 마우스 호버 이벤트 =================== */
-.reference .list .ref ul li {
+.com-card2, .reference .list .ref ul li {
   position: relative;
 }
-.reference .list .ref ul li:before, .reference .list .ref ul li:after {
+.com-card2:before, .reference .list .ref ul li:before, .com-card2:after, .reference .list .ref ul li:after {
   position: absolute;
   content: "";
   display: block;
@@ -3556,12 +3556,12 @@ td > a {
   box-sizing: border-box;
   z-index: -1;
 }
-.reference .list .ref ul li:before {
+.com-card2:before, .reference .list .ref ul li:before {
   border-width: 3px 0 3px 0;
   box-sizing: border-box;
   transform: scaleX(0);
 }
-.reference .list .ref ul li:after {
+.com-card2:after, .reference .list .ref ul li:after {
   border-width: 0 3px 0 3px;
   box-sizing: border-box;
   transform: scaleY(0);
@@ -12474,10 +12474,16 @@ div.info.task div.flex.flex-w50 div.ref dl dd div.txt br {
 .tf-trees__profile {
   position: relative;
   width: 40%;
-  border-radius: 0.3125rem;
   margin: 0 auto;
-  margin-bottom: 1.875rem;
+  margin-bottom: 3.875rem;
   background: #fff;
+}
+.tf-trees__profile.first {
+  width: 30%;
+  border-radius: 0 !important;
+}
+.tf-trees__profile.first .tf-trees__tit {
+  border-radius: 0;
 }
 @media all and (max-width: 1024px) {
   .tf-trees__profile {
@@ -12517,7 +12523,7 @@ div.info.task div.flex.flex-w50 div.ref dl dd div.txt br {
   display: block;
   background: #b5b5b5;
   width: 0.0625rem;
-  height: 0.9375rem;
+  height: 2.9375rem;
   position: absolute;
   top: auto;
   left: 50%;
@@ -12535,12 +12541,12 @@ ul.flex .tf-trees__profile:last-of-type::after {
   font-weight: bold;
   text-align: center;
   color: #fff;
-  border-radius: 0.3125rem 0.3125rem 0 0;
-  background: rgb(0, 141, 255) !important;
+  border-radius: 10px 10px 0 0;
+  background: #1e5a83 !important;
 }
 
 .tf-trees__tit.tit2 {
-  background: #aaa !important;
+  background: linear-gradient(135deg, #92a8ff 0%, #61a8ff 100%) !important;
 }
 
 .c-red {
@@ -12560,6 +12566,9 @@ ul.flex .tf-trees__profile:last-of-type::after {
   justify-content: center;
   padding: 0.625rem 0.625rem;
   font-size: 1.125rem;
+  border-radius: 0 0 10px 10px;
+  min-height: 4.375rem;
+  align-items: center;
 }
 
 .tf-trees__class-right,
@@ -12725,6 +12734,11 @@ ul.flex .tf-trees__profile:last-of-type::after {
   grid-template-columns: repeat(4, 1fr);
   gap: 0.9375rem;
 }
+@media all and (max-width: 900px) {
+  .eduInfoList ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 @media all and (max-width: 37.5rem) {
   .eduInfoList ul {
     grid-template-columns: repeat(2, 1fr);
@@ -12740,8 +12754,19 @@ ul.flex .tf-trees__profile:last-of-type::after {
 .eduInfoList ul li .pic img {
   width: 100%;
 }
+.eduInfoList ul li p {
+  text-align: center;
+  font-size: 1.2625rem;
+  font-weight: bold;
+  margin-bottom: 1.25rem;
+}
 .eduInfoList ul li a {
   width: 100%;
+}
+@media all and (max-width: 1200px) {
+  .eduInfoList ul li a {
+    padding: 0;
+  }
 }
 .eduInfoList ul li a .pic {
   overflow: hidden;
@@ -12795,6 +12820,76 @@ ul.flex .tf-trees__profile:last-of-type::after {
 .eduInfoList ul li .btn-set a {
   color: #fff;
   font-size: 0.9rem;
+}
+
+.com-card2 .had {
+  padding-bottom: 0.625rem;
+}
+.com-card2 .had p {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.com-card2 .had p span {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.com-card2-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+.com-card2-wrap > li {
+  width: 33.3%;
+  padding: 10px;
+}
+@media all and (max-width: 1200px) {
+  .com-card2-wrap > li {
+    width: 100%;
+  }
+}
+
+.com-card2 {
+  opacity: 1;
+  padding: 1.5375rem 2.1875rem;
+  border: 1px solid #ccc;
+  border: 1px solid #ccc;
+  position: relative;
+}
+.com-card2 .had {
+  opacity: 1;
+}
+.com-card2 .had .txt {
+  opacity: 1;
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+  margin-bottom: 0.8125rem;
+  min-height: 3.25rem;
+}
+.com-card2 .info {
+  opacity: 1;
+  padding-top: 0.625rem;
+  border-top: 1px solid #ccc;
+}
+.com-card2 .date {
+  margin-top: 2.1875rem;
+}
+.com-card2 .date li {
+  opacity: 1;
+  font-size: 1.0625rem;
+  color: #333;
+}
+.com-card2 .date li + li {
+  margin-left: 20px;
+  position: relative;
+}
+.com-card2 .date li + li:after {
+  content: "";
+  display: block;
+  left: -0.5rem;
+  background: #aaa !important;
+  top: 47% !important;
 }
 
 /*# sourceMappingURL=ui.css.map */
