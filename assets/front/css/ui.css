@@ -13,6 +13,7 @@
  * Date: 2020-09-29T14:46:09.037Z
  */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+@import url("https://webfontworld.github.io/SCoreDream/SCoreDream.css");
 .datepicker-container {
   background-color: #fff;
   direction: ltr;
@@ -899,7 +900,51 @@ button.swiper-pagination-bullet {
 }
 
 /* Reset */
-html, body, h1, h2, h3, h4, h5, h6, div, p, blockquote, pre, code, address, ul, ol, li, nav, section, article, header, footer, main, aside, dl, dt, dd, table, thead, tbody, tfoot, label, caption, th, td, form, fieldset, legend, hr, input, button, textarea, object, figure, figcaption {
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+p,
+blockquote,
+pre,
+code,
+address,
+ul,
+ol,
+li,
+nav,
+section,
+article,
+header,
+footer,
+main,
+aside,
+dl,
+dt,
+dd,
+table,
+thead,
+tbody,
+tfoot,
+label,
+caption,
+th,
+td,
+form,
+fieldset,
+legend,
+hr,
+input,
+button,
+textarea,
+object,
+figure,
+figcaption {
   margin: 0;
   padding: 0;
   font-family: "SCoreDream", sans-serif;
@@ -907,11 +952,19 @@ html, body, h1, h2, h3, h4, h5, h6, div, p, blockquote, pre, code, address, ul, 
   letter-spacing: -0.5px;
 }
 
-body, input, select, textarea, button, img, fieldset {
+body,
+input,
+select,
+textarea,
+button,
+img,
+fieldset {
   border: none;
 }
 
-ul, ol, li {
+ul,
+ol,
+li {
   list-style: none;
 }
 
@@ -921,16 +974,28 @@ table {
   border-collapse: collapse;
 }
 
-address, cite, code, em, i {
+address,
+cite,
+code,
+em,
+i {
   font-style: normal;
   font-weight: normal;
 }
 
-label, img, input, select, textarea, button, a {
+label,
+img,
+input,
+select,
+textarea,
+button,
+a {
   vertical-align: middle;
 }
 
-u, ins, a {
+u,
+ins,
+a {
   text-decoration: none;
 }
 
@@ -991,11 +1056,14 @@ body.hidden {
   touch-action: none;
 }
 
-a, button {
+a,
+button {
   color: #2d2d2d;
 }
 
-caption > div, legend, .hide {
+caption > div,
+legend,
+.hide {
   overflow: hidden;
   display: block;
   position: absolute;
@@ -1022,7 +1090,9 @@ caption > div, legend, .hide {
   top: 0;
 }
 
-.hidden, .blind, .hd-element {
+.hidden,
+.blind,
+.hd-element {
   display: block;
   overflow: hidden;
   position: absolute;
@@ -10790,7 +10860,6 @@ body.nopage .wrapper {
 h3 {
   padding-left: 1.25rem;
   width: 100%;
-  background: url(../img/blt-h4.png) no-repeat;
   background-position: left center;
   padding-top: 0;
   padding: 0.25rem 0;
@@ -11687,7 +11756,6 @@ section.admin-dashboard article.admin-dashboard__box p.admin-dashboard__tit:befo
   margin-right: 15px;
   width: 26px;
   height: 22px;
-  background-image: url("../img/blt-h4.png");
 }
 section.admin-dashboard article.admin-dashboard__box .admin-dashboard__wrap {
   margin-top: 15px;
@@ -11763,7 +11831,6 @@ section.admin-dashboard article.admin-dashboard__box .admin-dashboard__canva-wra
   margin-right: 15px;
   width: 26px;
   height: 22px;
-  background-image: url(../img/blt-h4.png);
 }
 
 .pop-receive .pop-receive__info .pop-receive__box .flex-w50 {
