@@ -1258,7 +1258,8 @@ section {
 					margin-top: 1.25rem;
 					border: 0.125rem solid #008dff;
 					border-radius: 1.25rem;
-					box-shadow: 0.3125rem 0.3125rem 0.9375rem rgb(0 0 0 / 20%);
+					// box-shadow: 0.3125rem 0.3125rem 0.9375rem rgb(0 0 0 / 20%);
+					box-shadow: 0.3125rem 0.3125rem 0.9375rem rgba(0,0,0,0.2);
 					padding: 1.875rem 1.25rem;
 					li {
 						margin-bottom: 1.25rem;

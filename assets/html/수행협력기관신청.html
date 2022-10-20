@@ -218,12 +218,27 @@
                   <tr>
                     <th colspan="2" scope="row">첨부파일</th>
                     <td colspan="3">
-                      <a href="#">
-                        <dd class="ffd">
-                          <!-- 첨부파일 -->
-                          <img src="../front/img/첨부파일.png" alt="첨부파일">
-                        </dd>
-                      </a>
+                      <dd class="ffd">
+                        <!-- 첨부파일 -->
+                        <div id="divAtchFile1" class="sgFileUploader" style="width: 100%;">
+                          <input id="atchFileId" name="atchFileId" maxlength="20" type="hidden" value="">
+                          <div class="fileBox has-advanced-upload">
+                            <div class="divInputFile"><label for="file_atchFile"><strong>Choose files</strong><span
+                                  class="boxDragndrop"> or drag it here</span>.</label><input class="inputFile"
+                                type="file" id="file_atchFile" multiple=""></div>
+                          </div>
+                          <div class="divStatus"><span><label>Files : </label><label
+                                id="fileCnt_atchFile">0</label><label> / 3</label></span><span class="ml10"><label>Total
+                                Size : </label><label id="totalSize_atchFile">0</label><label>
+                                / 5,242,880 bytes</label></span></div>
+                          <div class="divFileList mt5">
+                            <ul class="fileList"></ul>
+                          </div>
+                          <div class="divNewFileList mt10">
+                            <ul class="newFileList"></ul>
+                          </div>
+                        </div>
+                      </dd>
                     </td>
                   </tr>
                 </tbody>
@@ -820,7 +835,24 @@
                 <td colspan="3"><a href="#">
                     <dd class="ffd">
                       <!-- 첨부파일 -->
-                      <img src="../front/img/첨부파일.png" alt="첨부파일">
+                      <div id="divAtchFile1" class="sgFileUploader" style="width: 100%;">
+                        <input id="atchFileId" name="atchFileId" maxlength="20" type="hidden" value="">
+                        <div class="fileBox has-advanced-upload">
+                          <div class="divInputFile"><label for="file_atchFile"><strong>Choose files</strong><span
+                                class="boxDragndrop"> or drag it here</span>.</label><input class="inputFile"
+                              type="file" id="file_atchFile" multiple=""></div>
+                        </div>
+                        <div class="divStatus"><span><label>Files : </label><label
+                              id="fileCnt_atchFile">0</label><label> / 3</label></span><span class="ml10"><label>Total
+                              Size : </label><label id="totalSize_atchFile">0</label><label> / 5,242,880
+                              bytes</label></span></div>
+                        <div class="divFileList mt5">
+                          <ul class="fileList"></ul>
+                        </div>
+                        <div class="divNewFileList mt10">
+                          <ul class="newFileList"></ul>
+                        </div>
+                      </div>
                     </dd>
                   </a></td>
               </tr>

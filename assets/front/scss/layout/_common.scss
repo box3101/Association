@@ -7,7 +7,8 @@
   color: #61a8ff !important;
   font-size: 1.125rem !important;
   font-weight: 500 !important;
-  box-shadow: 0.1875rem 0.3125rem 1.25rem rgb(0 0 0 / 30%) !important;
+  // box-shadow: 0.1875rem 0.3125rem 1.25rem rgb(0 0 0 / 30%) !important;
+  box-shadow: 0.1875rem 0.3125rem 1.25rem rgba(0,0,0,0.3)!important;
   transition: all 0.5s !important;
   &:hover{
     transform: translateY(-0.625rem);
