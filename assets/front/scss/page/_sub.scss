@@ -45,7 +45,7 @@
 }
 
 .section2 {
-	&.p0{
+	&.p0 {
 		padding: 0;
 		height: 100vh;
 	}
@@ -2713,8 +2713,6 @@ table {
 	line-height: 1.125rem;
 }
 
-
-
 .btn-lg {
 	display: inline-block;
 	padding: 14.8px 50px;
@@ -5079,7 +5077,7 @@ ul.flex .tf-trees__profile:last-of-type::after {
 					border-radius: 0 0 0 1.4375rem;
 					box-sizing: border-box;
 					padding: 1.25rem;
-					box-shadow: 0.25rem 0.25rem 0.25rem rgba(12,24,58,13%); 
+					box-shadow: 0.25rem 0.25rem 0.25rem rgba(12, 24, 58, 13%);
 					.tit {
 						width: 13vw;
 						font-size: 1.25rem;
@@ -5188,22 +5186,65 @@ ul.flex .tf-trees__profile:last-of-type::after {
 	@extend %effect-1;
 }
 
-.tbl-type12.long-type a:hover{
+.tbl-type12.long-type a:hover {
 	text-decoration: none;
 }
 
 /* sgFileUploader */
-.sgFileUploader {padding: 10px 0 0 0;min-width: 100%;}
-.sgFileUploader .boxDragndrop {display:none;}
-.sgFileUploader .inputFile {display:none;}
-.sgFileUploader .fileBox {width: 100%;font-size:1em;color:#aaa;background-color:#f6f6f6;position:relative;padding:30px 15px;}
-.sgFileUploader .fileBox.has-advanced-upload {outline:1px dashed #aaaaaa;}
-.sgFileUploader .fileBox.has-advanced-upload .boxDragndrop {display:inline;}
-.sgFileUploader .fileBox.is-dragover {background-color:#E8FAFF;}
-.sgFileUploader .divInputFile label {cursor:pointer;width:100%;display:block;text-align:center;}
-.sgFileUploader .divStatus, .sgFileUploader .divFileList, .sgFileUploader .divNewFileList {font-size:14px;margin:10px 0 0 0;min-width: 100%;}
-.sgFileUploader .fileList a label {cursor:pointer}
-.sgFileUploader .close {cursor:pointer; border:none; background: url(../images/common/btn-close.png) no-repeat; display: inline-block; width: 18px; height: 18px; vertical-align: middle; margin-left: 10px; text-indent: -9999px;}
+.sgFileUploader {
+	padding: 10px 0 0 0;
+	min-width: 100%;
+}
+.sgFileUploader .boxDragndrop {
+	display: none;
+}
+.sgFileUploader .inputFile {
+	display: none;
+}
+.sgFileUploader .fileBox {
+	width: 100%;
+	font-size: 1em;
+	color: #aaa;
+	background-color: #f6f6f6;
+	position: relative;
+	padding: 30px 15px;
+}
+.sgFileUploader .fileBox.has-advanced-upload {
+	outline: 1px dashed #aaaaaa;
+}
+.sgFileUploader .fileBox.has-advanced-upload .boxDragndrop {
+	display: inline;
+}
+.sgFileUploader .fileBox.is-dragover {
+	background-color: #e8faff;
+}
+.sgFileUploader .divInputFile label {
+	cursor: pointer;
+	width: 100%;
+	display: block;
+	text-align: center;
+}
+.sgFileUploader .divStatus,
+.sgFileUploader .divFileList,
+.sgFileUploader .divNewFileList {
+	font-size: 14px;
+	margin: 10px 0 0 0;
+	min-width: 100%;
+}
+.sgFileUploader .fileList a label {
+	cursor: pointer;
+}
+.sgFileUploader .close {
+	cursor: pointer;
+	border: none;
+	background: url(../images/common/btn-close.png) no-repeat;
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	vertical-align: middle;
+	margin-left: 10px;
+	text-indent: -9999px;
+}
 
 /* 에러페이지 css */
 body.nopage {
@@ -5278,13 +5319,14 @@ body.nopage .wrapper {
 	width: 37.5rem;
 	max-width: 90%;
 	margin: 2.5rem auto 0 auto;
+	display: flex;
+	align-items: center;
 }
 
 .nopage-wrap .nopage-btn-wrap .btn-go-page {
 	display: block;
 	position: relative;
-	float: left;
-	width: 100%;
+	flex: 1;
 	height: 3.875rem;
 	background-color: #fff;
 	border: 1px solid #fff;
@@ -5294,7 +5336,7 @@ body.nopage .wrapper {
 	font-size: 1.25rem;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
-	background: #008dff !important;
+	background: #aaa;
 }
 
 .nopage-wrap .nopage-btn-wrap .btn-go-page:nth-child(2n) {
@@ -5304,7 +5346,6 @@ body.nopage .wrapper {
 .nopage-wrap .btn-wrap .btn-lg span {
 	color: #fff !important;
 }
-
 
 .nopage-wrap .nopage-btn-wrap .btn-go-page > span {
 	display: inline-block;
