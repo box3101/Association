@@ -5352,3 +5352,86 @@ body.nopage .wrapper {
 	vertical-align: middle;
 	line-height: 1;
 }
+
+.mainLayorPopupWrap {
+	position: absolute;
+	top: 1.875rem;
+	left: 1.875rem;
+	min-width: 30%;
+	z-index: 10;
+	display: flex;
+	gap: 10px;
+
+	.mainLayorPopup {
+		padding: 0;
+
+		@include media(900px) {
+			max-width: 95%;
+			margin-bottom: 10px;
+		}
+	}
+
+	@include media(900px) {
+		flex-wrap: wrap;
+	}
+
+	.content {
+		border: 0.0625rem solid #aaa;
+		background: #fff;
+		p {
+			padding: 3.125rem;
+			font-size: 1.0625rem;
+			color: #333;
+		}
+		img {
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+
+	.check {
+		width: 100%;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		padding: 0.3125rem 0.625rem;
+		background: #fff;
+		border: 0.0625rem solid #aaa;
+		margin-top: -1px;
+
+		.close-pop {
+			position: relative;
+			top: 0.0625rem;
+			display: block;
+			font-weight: 500;
+			font-size: 1rem;
+		}
+	}
+}
+
+.mainPop {
+	.content {
+		padding: 20px;
+	}
+}
+.about {
+	.content {
+		display: none;
+	}
+	.btn-container {
+		margin-bottom: 20px;
+		border-bottom: 1px solid #333;
+	}
+	.tab-btn {
+		background: #aaa;
+		padding: 20px 45px;
+		top: 0 !important;
+	}
+
+	.tab-btn.active {
+		background: $main;
+	}
+	.content.active {
+		display: block;
+	}
+}

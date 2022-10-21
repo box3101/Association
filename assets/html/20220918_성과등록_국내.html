@@ -72,126 +72,383 @@
 </head>
 
 <body>
-  <!-- 메인이 들어가는 부분 -->
-  <main class="main-wrap" id="STA">
 
-    <!-- sub-content -->
-    <div id="sub" class="sub-contents">
+  <!-- sub-content -->
+  <div id="sub" class="sub-contents">
+    <div class="inner">
+      <div class="about">
+        <div class="btn-container">
+          <button class="tab-btn active" data-id="domestic">국내표준</button>
+          <button class="tab-btn" data-id="global">국제표준</button>
+        </div>
+        <div class="about-content">
+          <div class="content active" id="domestic">
+            <div class="inner">
+              <div class="section2__had">
+                <p>
+                  성과등록(국내표준)
+                </p>
+              </div>
+              <div class="section2__body">
+                <div class="tbl-type12 long-type">
 
-      <div class="section2">
-        <div class="inner">
-          <div class="section2__had">
-            <p>
-              성과등록(국내표준)
-            </p>
-          </div>
-          <div class="section2__body">
-            <div class="tbl-type12 long-type">
+                  <form id="popupFrm" name="popupFrm">
+                    <input type="hidden">
 
-              <form id="popupFrm" name="popupFrm">
-                <input type="hidden">
+                    <table summary="">
+                      <caption>정보 작성</caption>
+                      <colgroup>
+                        <col width="20%">
+                        <col width="80%">
+                      </colgroup>
 
-                <table summary="">
-                  <caption>정보 작성</caption>
-                  <colgroup>
-                    <col width="20%">
-                    <col width="80%">
-                  </colgroup>
-
-                  <tbody>
-                    <tr>
-                      <th scope="row">표준명</th>
-                      <td><input type="text" id="stdNm" name="stdNm" title="표준명"></td>
-                    </tr>
-                    <tr>
-                      <th scope="row">표준화기구명</th>
-                      <td>
-                        <select id="dmstcStdizUtnsilCode" name="dmstcStdizUtnsilCode" title="표준화기구명">
-                          <option value="">선택</option>
-                          <option value="">국립전파연구원</option>
-                          <option value="">국가기술표준원</option>
-                          <option value="">한국정보통신기술협회</option>
-                          <option value="">기타</option>
-                        </select>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">표준번호</th>
-                      <td><input type="text" id="stdNo" name="stdNo" title="표준번호"></td>
-                    </tr>
-                    <tr>
-                      <th scope="row">제안기관</th>
-                      <td><input type="text" id="propseEngn" name="propseEngn" title="제안기관"></td>
-                    </tr>
-                    <tr>
-                      <th scope="row">제안자</th>
-                      <td><input type="text" id="propsr" name="propsr" title="제안자"></td>
-                    </tr>
-                    <tr>
-                      <th scope="row">채택(승인) 날짜</th>
-                      <td>
-                        <div class="flex al-center">
-                          <input type="text" class="form-input form-date datePicker" placeholder="2022-08-01">
-                          &nbsp;~&nbsp;
-                          <input type="text" class="form-input form-date datePicker" placeholder="2022-08-01">
-                        </div>
-                      </td>
-                    </tr>
-                    <th scope="row">제/개정 구분</th>
-                    <td>
-                      <div class="form-radio-wrap">
-                        <div class="form-radio">
-                          <input type="radio" id="f1" name="chk1_02" value="1" checked="">
-                          <label for="f1">
-                            제정 &nbsp;&nbsp;
-                          </label>
-                          <input type="radio" id="e1" name="chk1_02" value="1">
-                          <label for="e1">
-                            개정 &nbsp;&nbsp;
-                          </label>
-                        </div>
-                      </div>
-                    </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">기여율</th>
-                      <td><input type="text" id="cntrbtRt" name="cntrbtRt" title="기여율"></td>
-                    </tr>
-                    <tr>
-                      <th scope="row">표준기술 요약</th>
-                      <td><textarea rows="5" cols="140%" title="표준기술 요약"></textarea> </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">증빙자료 링크</th>
-                      <td colspan="3"><textarea rows="2" cols="140%" title="증빙자료 링크2"></textarea></td>
-                    </tr>
-                    <tr>
-                      <th scope="row">첨부파일</th>
-                      <td>
-                        <a href="#">
-                          <dd class="ffd">
-                            <!-- 첨부파일 -->
-                            <img src="../front/img/첨부파일.png" alt="첨부파일">
-                          </dd>
-                        </a>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </form>
+                      <tbody>
+                        <tr>
+                          <th scope="row">표준명</th>
+                          <td><input type="text" id="stdNm" name="stdNm" title="표준명"></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">표준화기구명</th>
+                          <td>
+                            <select id="dmstcStdizUtnsilCode" name="dmstcStdizUtnsilCode" title="표준화기구명">
+                              <option value="">선택</option>
+                              <option value="">국립전파연구원</option>
+                              <option value="">국가기술표준원</option>
+                              <option value="">한국정보통신기술협회</option>
+                              <option value="">기타</option>
+                            </select>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">표준번호</th>
+                          <td><input type="text" id="stdNo" name="stdNo" title="표준번호"></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">제안기관</th>
+                          <td><input type="text" id="propseEngn" name="propseEngn" title="제안기관"></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">제안자</th>
+                          <td><input type="text" id="propsr" name="propsr" title="제안자"></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">채택(승인) 날짜</th>
+                          <td>
+                            <div class="flex al-center">
+                              <input type="text" class="form-input form-date datePicker" placeholder="2022-08-01">
+                              &nbsp;~&nbsp;
+                              <input type="text" class="form-input form-date datePicker" placeholder="2022-08-01">
+                            </div>
+                          </td>
+                        </tr>
+                        <th scope="row">제/개정 구분</th>
+                        <td>
+                          <div class="form-radio-wrap">
+                            <div class="form-radio">
+                              <input type="radio" id="f1" name="chk1_02" value="1" checked="">
+                              <label for="f1">
+                                제정 &nbsp;&nbsp;
+                              </label>
+                              <input type="radio" id="e1" name="chk1_02" value="1">
+                              <label for="e1">
+                                개정 &nbsp;&nbsp;
+                              </label>
+                            </div>
+                          </div>
+                        </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">기여율</th>
+                          <td><input type="text" id="cntrbtRt" name="cntrbtRt" title="기여율"></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">표준기술 요약</th>
+                          <td><textarea rows="5" cols="140%" title="표준기술 요약"></textarea> </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">증빙자료 링크</th>
+                          <td colspan="3"><textarea rows="2" cols="140%" title="증빙자료 링크2"></textarea></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">첨부파일</th>
+                          <td>
+                            <a href="#">
+                              <dd class="ffd">
+                                <!-- 첨부파일 -->
+                                <img src="../front/img/첨부파일.png" alt="첨부파일">
+                              </dd>
+                            </a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </form>
+                </div>
+                <div class="btn-set mt20 txt-r">
+                  <a href="#" class="reset2">취소</a>
+                  <a href="#" class="submit3">저장</a>
+                </div>
+              </div>
             </div>
-            <div class="btn-set mt20 txt-r">
-              <a href="#" class="reset2">취소</a>
-              <a href="#" class="submit3">저장</a>
+          </div>
+          <div class="content" id="global">
+            <div class="inner">
+              <div class="section2__had">
+                <p>
+                  성과등록(국제표준)
+                </p>
+              </div>
+              <div class="section2__body">
+                <div class="tbl-type12 long-type">
+
+                  <form id="popupFrm" name="popupFrm">
+                    <input type="hidden" id="pjtId" name="pjtId" value="">
+
+                    <table summary="">
+                      <caption>정보 작성</caption>
+                      <colgroup>
+                        <col width="15%">
+                        <col width="20%">
+                        <col width="30%">
+                        <col width="20%">
+                        <col width="30%">
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <th rowspan="5" scope="row">표준화성과 기본정보</th>
+                          <th scope="row">표준화기구명</th>
+                          <td>
+                            <select id="intrlStdizUtnsilCode" name="intrlStdizUtnsilCode" title="표준화기구명">
+                              <option value="">선택</option>
+                              <option value="ISUC0001">ISO</option>
+                              <option value="ISUC0002">IEC</option>
+                              <option value="ISUC0001">ISO/IEC</option>
+                              <option value="ISUC0003">JTC 1</option>
+                              <option value="ISUC0004">ITU-R</option>
+                              <option value="ISUC0004">ITU-T</option>
+                              <option value="ISUC0004">ITU-D</option>
+                              <option value="ISUC0005">3GPP</option>
+                              <option value="ISUC0007">IEEE</option>
+                              <option value="ISUC0008">IETF</option>
+                              <option value="ISUC0009">ASTM</option>
+                              <option value="ISUC0009">ASME</option>
+                              <option value="ISUC9999">SEMI</option>
+                              <option value="ISUC9999">기타</option>
+                            </select>
+                            <input type="text" id="intrlStdizUtnsilEtc" name="intrlStdizUtnsilEtc" title="표준화 기구 기타"
+                              class="wx200 hide">
+                          </td>
+                          <th scope="row">표준화분과명</th>
+                          <td><input type="text" id="propseNo" name="propseNo" title="표준화분과명"></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">표준번호</th>
+                          <td><input type="text" id="propseNo" name="propseNo" title="표준번호"></td>
+                          <th scope="row">제/개정 구분</th>
+                          <td>
+                            <input type="radio" id="estbshReformSeCode1" name="estbshReformSeCode"
+                              value="ERSC0001"><label for="estbshReformSeCode1" class="mr10">제정</label>
+                            <input type="radio" id="estbshReformSeCode2" name="estbshReformSeCode"
+                              value="ERSC0002"><label for="estbshReformSeCode2">개정</label>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">제안 표준명[영문]</th>
+                          <td><input type="text" id="propseStdNmEng" name="propseStdNmEng" title="제안 표준명[영문]"></td>
+                          <th scope="row">제안 표준명[국문]</th>
+                          <td><input type="text" id="propseStdNmKorean" name="propseStdNmKorean" title="제안 표준명[국문]">
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">표준특허 추진 여부</th>
+                          <td colspan="3">
+                            <div class="flex gap5 al-center">
+                              <div class="form-chkbox">
+                                <label class="form-chkbox__control control--checkbox"> 표준특허 추진여부
+                                  <input type="checkbox">
+                                  <div class="form-chkbox__indicator"></div>
+                                </label>
+                              </div>
+                              <div class="is-active flex gap5 al-center" style="flex:1;">
+                                <span>표준특허명 </span>
+                                <input style="font-size:15px;" type="text" title="" placeholder="추진여부 체크시 활성화">
+                              </div>
+                            </div>
+                          </td>
+                        <tr>
+                          <th scope="row">표준성과 (표준성과의 개발단계)</th>
+                          <td colspan="3">
+                            <div class="flex gap5">
+                              <select id="intrlStdizUtnsilCode" name="intrlStdizUtnsilCode" title="표준화기구명">
+                                <option value="">선택</option>
+                                <option value="ISUC0001">ISO/IEC/JTC1</option>
+                                <option value="ISUC0004">ITU</option>
+                                <option value="ISUC0009">사실</option>
+                              </select>
+                              <select id="intrlStdizMntkwaCode" name="intrlStdizMntkwaCode" title="표준화분과명">
+                                <option value="">선택</option>
+                                <option value="ISMC0001">(ISO/JTC1)AWI</option>
+                                <option value="ISMC0002">(IEC)ANW</option>
+                                <option value="ISMC0003">(ISO/JTC1)DIS</option>
+                                <option value="ISMC0004">(IEC)CDV</option>
+                                <option value="ISMC0003">기타</option>
+                                <option value="ISMC0004">IS</option>
+                              </select>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="5"></td>
+                        </tr>
+                        <tr>
+                          <th rowspan="5" scope="row">표준제안정보</th>
+                          <th scope="row">표준제안 문서번호</th>
+                          <td><input type="text" id="propseDe" name="propseDe" title="표준제안 문서번호"></td>
+                          <th scope="row">표준제안 날짜</th>
+                          <td>
+                            <div class="flex al-center">
+                              <input type="text" class="form-input form-date datePicker" placeholder="2022-08-01">
+                              &nbsp;~&nbsp;
+                              <input type="text" class="form-input form-date datePicker" placeholder="2022-08-01">
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">표준제안문서 제목명</th>
+                          <td colspan="3"><input type="text" id=" " name=" " title=""></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">표준기술 요약</th>
+                          <td colspan="3"><textarea rows="5" cols="140%" title="표준기술 요약"></textarea> </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">증빙자료 링크1</th>
+                          <td colspan="3"><textarea rows="2" cols="140%" title="증빙자료 링크1"
+                              placeholder="증빙자료 URL 입력(복수 가능)"></textarea> </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">증빙자료 첨부1</th>
+                          <td colspan="3">
+                            <a href="#">
+                              <dd class="ffd">
+                                <!-- 첨부파일 -->
+                                <img src="../front/img/첨부파일.png" alt="첨부파일">
+                              </dd>
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="5"></td>
+                        </tr>
+                        <tr>
+                          <th rowspan="4" scope="row">표준제안정보</th>
+                          <th scope="row">표준채택(승인) 문서 번호</th>
+                          <td><input type="text" id="choiceNo" name="choiceNo" title="채택(승인)번호"></td>
+                          <th scope="row">표준채택(승인) 문서 제목명</th>
+                          <td><input type="text" id=" " name=" " title=""></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">표준채택(승인) 날짜</th>
+                          <td>
+                            <div class="flex al-center">
+                              <input type="text" class="form-input form-date datePicker" placeholder="2022-08-01">
+                              &nbsp;~&nbsp;
+                              <input type="text" class="form-input form-date datePicker" placeholder="2022-08-01">
+                            </div>
+                          </td>
+                          <th scope="row">표준화 회의명</th>
+                          <td><input type="text" id="stdMtgNm" name="stdMtgNm" title="표준 회의명">
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">증빙자료 링크2</th>
+                          <td colspan="3"><textarea rows="2" cols="140%" title="증빙자료 링크2"
+                              placeholder="증빙자료 URL 입력(복수 가능)"></textarea></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">증빙자료 첨부2</th>
+                          <td colspan="3">
+                            <a href="#">
+                              <dd class="ffd">
+                                <!-- 첨부파일 -->
+                                <img src="../front/img/첨부파일.png" alt="첨부파일">
+                              </dd>
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="5"></td>
+                        </tr>
+                        <tr>
+                          <th rowspan="3" scope="row">제안자 정보</th>
+                          <th scope="row">제안기관</th>
+                          <td><input type="text" id="propseEngn" name="propseEngn" title="제안기관"></td>
+                          <th scope="row">제안자</th>
+                          <td><input type="text" id="propsr" name="propsr" title="제안자">
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">프로젝트 리더/에디터 여부</th>
+                          <td colspan="3">
+                            <div class="flex gap5 al-center">
+                              <div>
+                                <input type="radio" id="prjctLeadrEditrAtCode1" name="prjctLeadrEditrAtCode"
+                                  value="PLEAC001" class="mr5"><label for="prjctLeadrEditrAtCode1"
+                                  class="mr10">예</label>
+                                <input type="radio" id="prjctLeadrEditrAtCode2" name="prjctLeadrEditrAtCode"
+                                  value="PLEAC002" class="mr5"><label for="prjctLeadrEditrAtCode2">아니오
+                                  &nbsp;&nbsp; 리터/에디터 성명 &nbsp;</label>
+                              </div>
+                              <div class="is-active flex gap5 al-center" style="flex:1;">
+                                <input type="text" id="propsr" name="propsr" title="리더명" class="wx200"
+                                  placeholder="제안자가 리더가 아닐때 활성화">
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">기여율</th>
+                          <td colspan="3"><input type="text" id="cntrbtRt" name="cntrbtRt" title="기여율"></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </form>
+                </div>
+                <div class="btn-set mt20 txt-r">
+                  <a href="#" class="reset2">취소</a>
+                  <a href="#" class="submit3">저장</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+        <!-- sub-content eee -->
       </div>
     </div>
-    <!-- sub-content eee -->
+  </div>
 
-  </main>
-  <!-- 메인이 들어가는 부분 eee -->
+  <script>
+    const btns = document.querySelectorAll(".tab-btn");
+    const about = document.querySelector('.about');
+    const articles = document.querySelectorAll(".content");
+
+    about.addEventListener("click", (e) => {
+      const id = e.target.dataset.id;
+      if (id) {
+        btns.forEach((el) => {
+          el.classList.remove("active");
+          e.target.classList.add("active");
+        });
+
+        articles.forEach((el) => {
+          el.classList.remove("active");
+        });
+
+        const element = document.getElementById(id);
+        element.classList.add("active");
+      }
+    });
+  </script>
 
 </body>
 

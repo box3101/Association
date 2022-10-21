@@ -13019,4 +13019,81 @@ body.nopage .wrapper {
   line-height: 1;
 }
 
+.mainLayorPopupWrap {
+  position: absolute;
+  top: 1.875rem;
+  left: 1.875rem;
+  min-width: 30%;
+  z-index: 10;
+  display: flex;
+  gap: 10px;
+}
+.mainLayorPopupWrap .mainLayorPopup {
+  padding: 0;
+}
+@media all and (max-width: 900px) {
+  .mainLayorPopupWrap .mainLayorPopup {
+    max-width: 95%;
+    margin-bottom: 10px;
+  }
+}
+@media all and (max-width: 900px) {
+  .mainLayorPopupWrap {
+    flex-wrap: wrap;
+  }
+}
+.mainLayorPopupWrap .content {
+  border: 0.0625rem solid #aaa;
+  background: #fff;
+}
+.mainLayorPopupWrap .content p {
+  padding: 3.125rem;
+  font-size: 1.0625rem;
+  color: #333;
+}
+.mainLayorPopupWrap .content img {
+  width: 100%;
+  object-fit: cover;
+}
+.mainLayorPopupWrap .check {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0.3125rem 0.625rem;
+  background: #fff;
+  border: 0.0625rem solid #aaa;
+  margin-top: -1px;
+}
+.mainLayorPopupWrap .check .close-pop {
+  position: relative;
+  top: 0.0625rem;
+  display: block;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.mainPop .content {
+  padding: 20px;
+}
+
+.about .content {
+  display: none;
+}
+.about .btn-container {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #333;
+}
+.about .tab-btn {
+  background: #aaa;
+  padding: 20px 45px;
+  top: 0 !important;
+}
+.about .tab-btn.active {
+  background: rgb(0, 141, 255);
+}
+.about .content.active {
+  display: block;
+}
+
 /*# sourceMappingURL=ui.css.map */
