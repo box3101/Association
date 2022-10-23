@@ -11390,9 +11390,6 @@ button.w120 {
   font-size: 1.2rem;
 }
 
-.news ul {
-  border-top: 2px solid #707070;
-}
 .news ul li {
   border-bottom: 1px solid #ebebeb;
   padding: 0.9375rem 0;
@@ -13021,7 +13018,7 @@ body.nopage .wrapper {
 
 .mainLayorPopup {
   position: absolute;
-  z-index: 2;
+  z-index: 10;
   padding: 0;
 }
 .mainLayorPopup .content {
