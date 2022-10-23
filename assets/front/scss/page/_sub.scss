@@ -5353,27 +5353,10 @@ body.nopage .wrapper {
 	line-height: 1;
 }
 
-.mainLayorPopupWrap {
+.mainLayorPopup {
 	position: absolute;
-	top: 1.875rem;
-	left: 1.875rem;
-	min-width: 30%;
-	z-index: 10;
-	display: flex;
-	gap: 10px;
-
-	.mainLayorPopup {
-		padding: 0;
-
-		@include media(900px) {
-			max-width: 95%;
-			margin-bottom: 10px;
-		}
-	}
-
-	@include media(900px) {
-		flex-wrap: wrap;
-	}
+	z-index: 2;
+	padding: 0;
 
 	.content {
 		border: 0.0625rem solid #aaa;
@@ -5412,6 +5395,9 @@ body.nopage .wrapper {
 .mainPop {
 	.content {
 		padding: 20px;
+	}
+	.check {
+		border-bottom: none;
 	}
 }
 .about {

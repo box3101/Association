@@ -747,47 +747,45 @@
 
 
   <!-- 메인화면 팝업-레이어 -->
-  <aside class="mainLayorPopupWrap">
-    <section class="mainLayorPopup">
-      <div class="content">
-        <!-- 여기에 내용이 들어갑니다 -->
-        <img src="https://www.incheon.go.kr/comm/getImage?srvcId=BANNER&upperNo=2374&fileTy=PCIMG&fileNo=1" alt="">
+  <section class="mainLayorPopup" style="top:20px;left:20px;width:500px;height: 500px;">
+    <div class="content">
+      <!-- 여기에 내용이 들어갑니다 -->
+      <img src="https://www.incheon.go.kr/comm/getImage?srvcId=BANNER&upperNo=2374&fileTy=PCIMG&fileNo=1" alt="">
+    </div>
+    <div class="check">
+      <div class="form-chkbox">
+        <label class="form-chkbox__control control--checkbox mr15">다시보지않음
+          <input type="checkbox">
+          <div class="form-chkbox__indicator"></div>
+        </label>
       </div>
-      <div class="check">
-        <div class="form-chkbox">
-          <label class="form-chkbox__control control--checkbox mr15">다시보지않음
-            <input type="checkbox">
-            <div class="form-chkbox__indicator"></div>
-          </label>
-        </div>
-        <a href="#" class="close-pop">
-          [닫기]
-        </a>
-      </div>
-    </section>
+      <a href="#" class="close-pop">
+        [닫기]
+      </a>
+    </div>
+  </section>
 
-    <section class="mainLayorPopup">
-      <div class="content">
-        <!-- 여기에 내용이 들어갑니다 -->
-        <img
-          src="https://www.incheon.go.kr/comm/getImage?srvcId=BBSTY10&upperNo=2097477&fileTy=THUMBNAIL&fileNo=1&thumbTy=L"
-          alt="">
+  <section class="mainLayorPopup" style="top:20px;left:600px;width:500px;height:500px;">
+    <div class="content">
+      <!-- 여기에 내용이 들어갑니다 -->
+      <img
+        src="https://www.incheon.go.kr/comm/getImage?srvcId=BBSTY10&upperNo=2097477&fileTy=THUMBNAIL&fileNo=1&thumbTy=L"
+        alt="">
+    </div>
+    <div class="check">
+      <div class="form-chkbox">
+        <label class="form-chkbox__control control--checkbox mr15">다시보지않음
+          <input type="checkbox">
+          <div class="form-chkbox__indicator"></div>
+        </label>
       </div>
-      <div class="check">
-        <div class="form-chkbox">
-          <label class="form-chkbox__control control--checkbox mr15">다시보지않음
-            <input type="checkbox">
-            <div class="form-chkbox__indicator"></div>
-          </label>
-        </div>
-        <a href="#" class="close-pop">
-          [닫기]
-        </a>
-      </div>
-    </section>
+      <a href="#" class="close-pop">
+        [닫기]
+      </a>
+    </div>
+  </section>
 
 
-  </aside>
 
   <script>
     const mainPops = document.querySelectorAll(".mainLayorPopup");
@@ -799,13 +797,11 @@
       close.addEventListener("click", () => {
         el.style.display = "none"
       });
-
     });
   </script>
   <!-- 메인화면 팝업-레이어 eee -->
 
   <!-- 메인화면 팝업-윈도우 -->
-
   <script>
     function mainPop() {
       window.open("main-popup.html", "pop", "width=700,height=500,history=no,resizable=no,status=no,scrollbars=yes,menubar=no")

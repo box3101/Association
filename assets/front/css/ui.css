@@ -13019,43 +13019,25 @@ body.nopage .wrapper {
   line-height: 1;
 }
 
-.mainLayorPopupWrap {
+.mainLayorPopup {
   position: absolute;
-  top: 1.875rem;
-  left: 1.875rem;
-  min-width: 30%;
-  z-index: 10;
-  display: flex;
-  gap: 10px;
-}
-.mainLayorPopupWrap .mainLayorPopup {
+  z-index: 2;
   padding: 0;
 }
-@media all and (max-width: 900px) {
-  .mainLayorPopupWrap .mainLayorPopup {
-    max-width: 95%;
-    margin-bottom: 10px;
-  }
-}
-@media all and (max-width: 900px) {
-  .mainLayorPopupWrap {
-    flex-wrap: wrap;
-  }
-}
-.mainLayorPopupWrap .content {
+.mainLayorPopup .content {
   border: 0.0625rem solid #aaa;
   background: #fff;
 }
-.mainLayorPopupWrap .content p {
+.mainLayorPopup .content p {
   padding: 3.125rem;
   font-size: 1.0625rem;
   color: #333;
 }
-.mainLayorPopupWrap .content img {
+.mainLayorPopup .content img {
   width: 100%;
   object-fit: cover;
 }
-.mainLayorPopupWrap .check {
+.mainLayorPopup .check {
   width: 100%;
   display: flex;
   justify-content: flex-end;
@@ -13065,7 +13047,7 @@ body.nopage .wrapper {
   border: 0.0625rem solid #aaa;
   margin-top: -1px;
 }
-.mainLayorPopupWrap .check .close-pop {
+.mainLayorPopup .check .close-pop {
   position: relative;
   top: 0.0625rem;
   display: block;
@@ -13075,6 +13057,9 @@ body.nopage .wrapper {
 
 .mainPop .content {
   padding: 20px;
+}
+.mainPop .check {
+  border-bottom: none;
 }
 
 .about .content {
