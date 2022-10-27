@@ -1034,6 +1034,7 @@ section {
 	opacity: 1;
 	font-size: 1.25rem;
 	flex: 3;
+	min-height: 3.25rem;
 }
 .report__arr {
 	opacity: 1;
@@ -1050,7 +1051,7 @@ section {
 	display: flex;
 	justify-content: space-between;
 	gap: 0.9375rem;
-	align-items: center;
+	align-items: flex-start;
 	@extend %box-shadow2;
 	transition: all 0.5s;
 	&:hover {

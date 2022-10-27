@@ -7199,6 +7199,7 @@ section {
   opacity: 1;
   font-size: 1.25rem;
   flex: 3;
+  min-height: 3.25rem;
 }
 
 .report__arr {
@@ -7217,7 +7218,7 @@ section {
   display: flex;
   justify-content: space-between;
   gap: 0.9375rem;
-  align-items: center;
+  align-items: flex-start;
   transition: all 0.5s;
 }
 .report__link:hover {
