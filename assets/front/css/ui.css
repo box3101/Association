@@ -2501,7 +2501,10 @@ td > a {
   justify-content: space-between;
 }
 
-.flex-w25, .flex-w33, .flex-w50, .flex-w16 {
+.flex-w25,
+.flex-w33,
+.flex-w50,
+.flex-w16 {
   flex-wrap: wrap;
 }
 
@@ -2736,7 +2739,7 @@ td > a {
 }
 
 .pl0 {
-  padding-left: 0rem;
+  padding-left: 0rem !important;
 }
 
 .pl5 {
@@ -7496,21 +7499,31 @@ section {
 }
 .recency .inner .wrap .lef ul .info dl,
 .recency .inner .wrap .ref ul .info dl {
-  display: flex;
   font-size: 1rem;
   color: #666666;
-  flex: 0 0 32%;
   margin-bottom: 0.375rem;
+  width: 48%;
+  display: flex;
+}
+.recency .inner .wrap .lef ul .info dl.w100,
+.recency .inner .wrap .ref ul .info dl.w100 {
+  flex: 0 0 100%;
 }
 .recency .inner .wrap .lef ul .info dl dt,
 .recency .inner .wrap .ref ul .info dl dt {
+  display: inline-block;
   font-size: 1rem;
   color: #666666;
 }
 .recency .inner .wrap .lef ul .info dl dd,
 .recency .inner .wrap .ref ul .info dl dd {
+  display: inline-block;
   font-size: 1rem;
   color: #666666;
+  width: 69%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: keep-all;
 }
 .recency .inner .wrap .ref .com-btn2 {
   background: linear-gradient(45deg, #ffdb76, #ffba00);
@@ -7819,7 +7832,7 @@ p {
   }
   .recency .inner .wrap .lef ul .info dl,
 .recency .inner .wrap .ref ul .info dl {
-    flex: 0 0 37%;
+    flex: 0 0 100%;
   }
   .result__canva img {
     width: 100%;
@@ -11059,6 +11072,42 @@ p.desc.right {
   text-align: right;
 }
 
+img.w30 {
+  width: 1.875rem;
+  position: relative;
+  top: -1px;
+}
+
+.bot-wrap {
+  margin-top: 6.25rem;
+}
+.bot-wrap .mt100 {
+  margin-top: 0.625rem;
+}
+.bot-wrap a:hover {
+  color: rgb(0, 141, 255);
+}
+
+.btn.regist {
+  width: 7.5rem !important;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1rem;
+}
+
+img.w320 {
+  width: 20rem;
+  height: 11.3125rem;
+}
+
+img.w260 {
+  width: 15rem;
+  height: 11.3125rem;
+}
+
 .scroll-tbl {
   width: 1280px;
   overflow-x: scroll;
@@ -13081,6 +13130,22 @@ body.nopage .wrapper {
 }
 .about .content.active {
   display: block;
+}
+
+.tbl-type12 {
+  border-collapse: initial;
+}
+
+.tbl-type12 table {
+  border-collapse: initial;
+}
+
+.tbl-type12 {
+  border-right: 1px solid #ccc;
+}
+
+.tbl-type12 tbody td {
+  border-right: 0px;
 }
 
 /*# sourceMappingURL=ui.css.map */

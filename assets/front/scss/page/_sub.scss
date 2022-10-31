@@ -3244,6 +3244,43 @@ p.desc.right {
 	text-align: right;
 }
 
+img.w30 {
+	width: 1.875rem;
+	position: relative;
+	top: -1px;
+}
+
+.bot-wrap {
+	margin-top: 6.25rem;
+	.mt100 {
+		margin-top: 0.625rem;
+	}
+	a:hover {
+		color: $main;
+	}
+}
+
+.btn.regist {
+	width: 7.5rem !important;
+	color: #fff;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 1rem;
+}
+
+img.w320 {
+	width: 20rem;
+	height: 11.3125rem;
+	// object-fit: cover;
+}
+img.w260 {
+	width: 15rem;
+	height: 11.3125rem;
+	// object-fit: cover;
+}
+
 .scroll-tbl {
 	width: 1280px;
 	overflow-x: scroll;
@@ -5420,4 +5457,16 @@ body.nopage .wrapper {
 	.content.active {
 		display: block;
 	}
+}
+.tbl-type12 {
+	border-collapse: initial;
+}
+.tbl-type12 table {
+	border-collapse: initial;
+}
+.tbl-type12 {
+	border-right: 1px solid #ccc;
+}
+.tbl-type12 tbody td {
+	border-right: 0px;
 }
