@@ -5470,3 +5470,22 @@ body.nopage .wrapper {
 .tbl-type12 tbody td {
 	border-right: 0px;
 }
+.cont_tbox {
+	background: #f7f9fa;
+	border: 1px solid #e6eaed;
+	padding: 0;
+	box-sizing: border-box;
+	display: table;
+	width: 100%;
+	margin: 0 0 25px 0;
+}
+.cont_tbox p {
+	padding: 30px 30px 30px 124px;
+}
+.ctb_icon0501 {
+	background: url(../img/ico-email.png) no-repeat 35px center;
+}
+.c_point {
+	color: #006bb3;
+	font-weight: 500;
+}
