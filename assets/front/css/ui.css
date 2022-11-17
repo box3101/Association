@@ -12958,7 +12958,7 @@ ul.flex .tf-trees__profile:last-of-type::after {
 .sgFileUploader .close {
   cursor: pointer;
   border: none;
-  background: url(../images/common/btn-close.png) no-repeat;
+  background: url(../img/btn-close.png) no-repeat;
   display: inline-block;
   width: 18px;
   height: 18px;
