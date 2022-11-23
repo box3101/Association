@@ -5489,3 +5489,13 @@ body.nopage .wrapper {
 	color: #006bb3;
 	font-weight: 500;
 }
+
+// 20221118 추가
+th {
+	position: relative;
+}
+span.emp {
+	position: absolute;
+	right: 15px;
+	color: red;
+}
