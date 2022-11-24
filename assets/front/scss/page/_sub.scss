@@ -5510,7 +5510,7 @@ span.emp {
 	padding: 0 46px;
 	border-radius: 4px;
 }
-.guideBx .tit {
+.guideBx.white .tit {
 	font-size: 1.5rem;
 	font-weight: 700;
 	color: #feffff;
@@ -5679,5 +5679,123 @@ span.emp {
 		dd {
 			font-size: 16px;
 		}
+	}
+}
+
+.letOfAppoint {
+	.letOfAppointWrap {
+		width: 718px;
+		position: relative;
+		// background: url(../img/bg-appoint.png) no-repeat;
+		height: 1054px;
+		background-size: contain;
+	}
+	.contentWrap {
+		position: absolute;
+		margin-top: 150px;
+		z-index: 10;
+		width: 490px;
+		left: 50%;
+		transform: translateX(-50%);
+		.topNum {
+			font-size: 16px;
+			font-weight: 500;
+			padding-left: 20px;
+		}
+		.title {
+			margin-top: 40px;
+			font-size: 55px;
+			font-weight: 500;
+			text-align: center;
+		}
+		.txtWrap {
+			margin-top: 50px;
+			dl {
+				margin-bottom: 20px;
+				display: flex;
+				align-items: center;
+				dt {
+					font-size: 20px;
+					font-weight: 500;
+				}
+				dd {
+					font-size: 18px;
+					margin-left: 10px;
+				}
+			}
+		}
+		.txtContent {
+			margin-top: 110px;
+			font-size: 26px;
+			text-align: center;
+			word-break: keep-all;
+		}
+		.date {
+			margin-top: 131px;
+			text-align: center;
+			font-size: 22px;
+		}
+		.president {
+			margin-top: 50px;
+			text-align: center;
+			font-size: 35px;
+			font-weight: bold;
+			span {
+				font-size: 20px;
+				font-weight: 300;
+			}
+		}
+	}
+}
+
+@page {
+	size: 210mm 297mm; /*A4*/
+	margin: 0mm;
+}
+@media print {
+	.letOfAppointWrap button {
+		display: none;
+	}
+
+	html,
+	body {
+		margin: 0;
+		padding: 0;
+		page-break-after: avoid;
+		page-break-before: avoid;
+	}
+	.body,
+	.page {
+		margin-top: -1px;
+	} /*서브픽셀 해결1*/
+
+	.page:first-child {
+		page-break-before: auto;
+		page-break-inside: avoid;
+	}
+	.page {
+		overflow: hidden;
+		position: relative;
+		width: 210mm;
+		height: 297mm; /*서브픽셀 해결1 사용시*/
+		height: calc(297mm - 1px); /*서브픽셀 해결2 - IE는 미지원*/
+		page-break-before: always;
+	}
+	.page > .content {
+		/*img를 .page안에 꽉차게 */
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 100%;
+	}
+	.page > .watermark {
+		position: absolute;
+		top: 45%;
+		left: 25%;
+		width: 50%;
+		height: 10%;
+		z-index: 50;
 	}
 }

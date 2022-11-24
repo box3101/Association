@@ -341,7 +341,7 @@
                       <li class="flex">
                         <ul class="ref flex">
                           <li>
-                            <a href="#" class="sec-num">
+                            <a href="#" class="sec-num" onclick="popup_open();">
                               승인 (확인증 출력)
                             </a>
                           </li>
@@ -352,6 +352,26 @@
                 </div>
               </div>
             </div>
+
+            <!-- 윈도우 팝업 스크립트 -->
+            <script>
+              //screen.width  : 현재 운영체제의 너비
+              //screen.height : 현재 운영체제의 높이
+              w = 700;    //팝업창의 너비
+              h = 900;    //팝업창의 높이
+
+              //중앙위치 구해오기
+              LeftPosition = (window.screen.width - w) / 2;
+              TopPosition = (window.screen.height - h) / 2;
+
+              //팝업 호출
+              function popup_open() {
+                window.open(
+                  "../html/확인증샘플.html",
+                  "target",
+                  "width=" + w + ",height=" + h + ",top=" + TopPosition + ",left=" + LeftPosition + ", scrollbars=no");
+              }
+            </script>
             <div class="ref">
               <div class="guideBx">
                 <h3 class="title mt0"> 수행협력기관</h3>
