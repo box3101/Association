@@ -3291,18 +3291,18 @@ caption {
 }
 
 /* content-location */
-.content-location + .section2 {
-	.section2__had {
-		p {
-			padding-left: 0;
-			font-size: 1.9rem;
+// .content-location + .section2 {
+.section2__had {
+	p {
+		padding-left: 0;
+		font-size: 1.9rem;
 
-			&::after {
-				display: none;
-			}
+		&::after {
+			display: none;
 		}
 	}
 }
+// }
 
 .content-location + .sub > .section2 {
 	.section2__had {
@@ -5498,4 +5498,163 @@ span.emp {
 	position: absolute;
 	right: 15px;
 	color: red;
+}
+
+//20221124 조직도 css 추가
+.section2__body .guideBx {
+	justify-content: center;
+	align-items: center;
+}
+.guideBx .tit-box {
+	background: #1e5a83;
+	padding: 0 46px;
+	border-radius: 4px;
+}
+.guideBx .tit {
+	font-size: 1.5rem;
+	font-weight: 700;
+	color: #feffff;
+	line-height: 60px;
+}
+.flex {
+	display: flex;
+}
+.flex-wp {
+	flex-wrap: wrap;
+}
+.guideBx .line {
+	width: 1044px;
+}
+
+.guideBx .line-none {
+	display: none;
+}
+
+.guideBx .list {
+	gap: 1.33rem;
+	text-align: center;
+}
+
+.guideBx .list .list__item {
+	height: 24rem;
+	border: 2px solid #dedede;
+	border-radius: 20px;
+	flex: 1;
+	position: relative;
+	overflow: hidden;
+}
+
+.list .list__item .tel__wrap {
+	position: absolute;
+	bottom: 12px;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.list .list__item .tel {
+	position: relative;
+}
+
+.guideBx .list .list__item .tel img {
+	position: absolute;
+	left: -25px;
+	top: 5px;
+}
+
+.guideBx .list .list__item .tel p {
+	color: #006ed5;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 30px;
+	text-align: center;
+}
+
+.guideBx .bg-gra {
+	background: linear-gradient(
+		135deg,
+		rgba(97, 168, 255, 1) 0%,
+		rgba(146, 168, 255, 1) 100%
+	);
+	width: 100%;
+}
+
+.guideBx .list .txt__wrap {
+	padding: 0 1.6rem;
+}
+
+.guideBx .list .list__item .txt {
+	font-size: 1.2rem;
+	line-height: 2rem;
+	color: #2d2d2d;
+	font-weight: 400;
+}
+
+@media screen and (max-width: 1140px) {
+	.guideBx .line {
+		display: none;
+	}
+	.guideBx .list {
+		display: block;
+	}
+	.guideBx {
+		.tit-box {
+			margin-bottom: 25px;
+			position: relative;
+		}
+		.line01::after {
+			content: url(../img/ico-line01.png);
+			position: absolute;
+			top: 100%;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+		.list {
+			position: relative;
+		}
+		.list__item {
+			margin-bottom: 34px;
+		}
+		.line02::after {
+			content: url(../img/ico-line02.png);
+			position: absolute;
+			top: 100%;
+			left: 50%;
+			transform: translateX(-50%);
+			z-index: 9;
+		}
+	}
+}
+
+.subTitleWrap {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 20px;
+	.name {
+		color: #fff;
+	}
+	.tel {
+		display: flex;
+		align-items: center;
+		p {
+			color: #fff;
+			margin-left: 5px;
+		}
+	}
+}
+.txtWrapBox {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.tel__wrap.flexColumn {
+	flex-direction: column;
+	margin-top: 30px;
+}
+.guideBx .list .list__item {
+	height: auto;
+}
+.list .list__item .tel__wrap {
+	position: relative;
 }
