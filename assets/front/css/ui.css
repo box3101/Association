@@ -13349,4 +13349,26 @@ span.emp {
   position: relative;
 }
 
+.help {
+  cursor: pointer;
+}
+.help img {
+  position: relative;
+  top: -2px;
+}
+
+.helpContent dl {
+  margin-bottom: 20px;
+}
+.helpContent dl dt {
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #aaa;
+  margin-bottom: 10px;
+}
+.helpContent dl dd {
+  font-size: 16px;
+}
+
 /*# sourceMappingURL=ui.css.map */
