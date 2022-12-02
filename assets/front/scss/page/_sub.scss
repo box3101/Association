@@ -5799,3 +5799,22 @@ span.emp {
 		z-index: 50;
 	}
 }
+
+.agreeWrap {
+	margin-top: 1.25rem;
+	.title {
+		font-size: 1.45rem;
+		margin-bottom: 1.25rem;
+		font-weight: bold;
+		padding-bottom: 0.625rem;
+		border-bottom: 0.0625rem solid #ccc;
+	}
+	.info {
+		padding: 1.25rem;
+		border: 0.0625rem solid #ccc;
+		p.txt {
+			padding: 0.3125rem 0;
+			font-size: 1rem;
+		}
+	}
+}
