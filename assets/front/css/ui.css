@@ -13238,8 +13238,6 @@ span.emp {
 }
 
 .list .list__item .tel__wrap {
-  position: absolute;
-  bottom: 12px;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -13315,30 +13313,41 @@ span.emp {
 .subTitleWrap {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-bottom: 20px;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+  background: #fff;
+  margin-left: -47px;
+  margin-right: -47px;
+  margin-bottom: 0;
+  border: 1px solid #eaeaea;
+  padding: 1.25rem;
 }
 .subTitleWrap .name {
-  color: #fff;
+  color: #000;
+  font-weight: 500;
+  margin-right: 1.25rem;
+  font-size: 1.25rem;
 }
 .subTitleWrap .tel {
   display: flex;
   align-items: center;
 }
 .subTitleWrap .tel p {
-  color: #fff;
-  margin-left: 5px;
+  color: #333;
+  font-weight: 500;
+  margin-left: 0.3125rem;
+  font-size: 1.25rem;
 }
 
 .txtWrapBox {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: calc(100% - 60px);
 }
 
 .tel__wrap.flexColumn {
   flex-direction: column;
-  margin-top: 30px;
 }
 
 .guideBx .list .list__item {
@@ -13346,7 +13355,36 @@ span.emp {
 }
 
 .list .list__item .tel__wrap {
+  padding-top: 0.9375rem;
+  padding-bottom: 0.9375rem;
+  margin-top: 2.5rem;
+  min-height: 8.0375rem;
   position: relative;
+  align-self: flex-start;
+  display: flex;
+  justify-content: flex-start;
+  background: #f4f4f4;
+}
+@media all and (max-width: 600px) {
+  .list .list__item .tel__wrap {
+    min-height: auto;
+  }
+}
+
+.list .list__item .tel__wrap > div {
+  padding: 0 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.list .list__item .tel__wrap > div .name,
+.list .list__item .tel__wrap > div .tel {
+  font-size: 0.8625rem;
+  font-weight: 500;
+}
+.list .list__item .tel__wrap > div .name p,
+.list .list__item .tel__wrap > div .tel p {
+  font-size: 0.8625rem;
 }
 
 .help {
