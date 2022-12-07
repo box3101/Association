@@ -13540,4 +13540,8 @@ span.emp {
   font-size: 1rem;
 }
 
+.isDisabled {
+  background: rgba(0, 0, 0, 0.06);
+}
+
 /*# sourceMappingURL=ui.css.map */
