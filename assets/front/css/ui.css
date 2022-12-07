@@ -13540,7 +13540,7 @@ span.emp {
   font-size: 1rem;
 }
 
-.isDisabled {
+.isReadonly {
   background: rgba(0, 0, 0, 0.06);
 }
 
