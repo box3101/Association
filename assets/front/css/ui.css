@@ -8925,7 +8925,6 @@ table select::-ms-expand {
 
 .tbl-type14 tbody td {
   padding: 0.75rem 0.3125rem;
-  min-width: 5.625rem;
   text-align: center;
   font-size: 1.1rem;
   color: #333;
@@ -12750,7 +12749,7 @@ ul.flex .tf-trees__profile:last-of-type::after {
 }
 @media all and (max-width: 37.5rem) {
   .eduInfoList ul {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 .eduInfoList ul li {
@@ -12759,9 +12758,11 @@ ul.flex .tf-trees__profile:last-of-type::after {
 }
 .eduInfoList ul li .pic {
   overflow: hidden;
+  border-bottom: 1px solid #aaa;
 }
 .eduInfoList ul li .pic img {
   width: 100%;
+  height: 174px;
 }
 .eduInfoList ul li p {
   text-align: center;
@@ -13542,6 +13543,36 @@ span.emp {
 
 .isReadonly {
   background: rgba(0, 0, 0, 0.06);
+}
+
+.tbl-type14 table {
+  table-layout: fixed;
+}
+
+.tbl-type14 td.left {
+  text-align: left;
+  padding-left: 1.5rem;
+}
+
+.tbl-type14 tbody td a {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  line-height: 1;
+  vertical-align: middle;
+}
+.tbl-type14 tbody td a span {
+  display: inline-block;
+  overflow: hidden;
+  max-width: calc(100% - 62px);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  line-height: 1;
+  vertical-align: middle;
 }
 
 /*# sourceMappingURL=ui.css.map */

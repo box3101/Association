@@ -1062,7 +1062,7 @@ table {
 
 .tbl-type14 tbody td {
 	padding: 0.75rem 0.3125rem;
-	min-width: 5.625rem;
+	// min-width: 5.625rem;
 	text-align: center;
 	font-size: 1.1rem;
 	color: #333;
@@ -1070,7 +1070,6 @@ table {
 	border-left: 1px solid #ccc;
 	border-top: 1px solid #bbbbbb;
 }
-
 .tbl-type14 tbody td:first-child .form-chkbox,
 .tbl-type14 thead tr th:first-child .form-chkbox {
 	display: flex;
@@ -5069,16 +5068,18 @@ ul.flex .tf-trees__profile:last-of-type::after {
 		}
 
 		@include media(37.5rem) {
-			grid-template-columns: repeat(2, 1fr);
+			grid-template-columns: repeat(1, 1fr);
 		}
 		li {
 			border-radius: 0 0 0 1.5625rem;
 			border: 0.0625rem solid #c3bebe;
 			.pic {
 				overflow: hidden;
+				border-bottom: 1px solid #aaa;
 				img {
 					width: 100%;
 					// min-height: 20rem;
+					height: 174px;
 				}
 			}
 			p {
@@ -5853,4 +5854,38 @@ span.emp {
 }
 .isReadonly {
 	background: rgba(0, 0, 0, 0.06);
+}
+
+// 20221208추가
+// px고정 colguoup으로 간격 설정해주세요.
+.tbl-type14 table {
+	table-layout: fixed;
+}
+
+// 왼쪽 정렬일때 td에 class left 넣어주세요.
+.tbl-type14 td.left {
+	text-align: left;
+	padding-left: 1.5rem;
+}
+
+// 글자가 넘칠시 글자 자르기
+.tbl-type14 tbody td a {
+	display: block;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	max-width: 100%;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	line-height: 1;
+	vertical-align: middle;
+	span {
+		display: inline-block;
+		overflow: hidden;
+		max-width: calc(100% - 62px);
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		line-height: 1;
+		vertical-align: middle;
+	}
 }
