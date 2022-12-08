@@ -5003,7 +5003,10 @@ ul.flex .tf-trees__profile:last-of-type::after {
 		}
 		table {
 			td.left {
-				text-align: left;
+				text-align: left !important;
+				a {
+					text-align: left !important;
+				}
 			}
 			.wrap {
 				display: flex;
@@ -5858,18 +5861,24 @@ span.emp {
 
 // 20221208추가
 // px고정 colguoup으로 간격 설정해주세요.
-.tbl-type14 table {
+.tbl-type14 table,
+.tbl-type13 table {
 	table-layout: fixed;
 }
 
 // 왼쪽 정렬일때 td에 class left 넣어주세요.
-.tbl-type14 td.left {
-	text-align: left;
+.tbl-type14 td.left,
+.tbl-type13 td.left {
+	text-align: left !important;
 	padding-left: 1.5rem;
+	a {
+		text-align: left !important;
+	}
 }
 
 // 글자가 넘칠시 글자 자르기
-.tbl-type14 tbody td a {
+.tbl-type14 tbody td a,
+.tbl-type13 tbody td a {
 	display: block;
 	position: relative;
 	overflow: hidden;
@@ -5879,6 +5888,7 @@ span.emp {
 	text-overflow: ellipsis;
 	line-height: 1;
 	vertical-align: middle;
+	text-align: center;
 	span {
 		display: inline-block;
 		overflow: hidden;

@@ -2429,7 +2429,6 @@ td > a {
   color: #333 !important;
   display: block;
   text-align: left;
-  padding-left: 2rem;
 }
 
 @media (max-width: 1200px) {
@@ -12685,7 +12684,10 @@ ul.flex .tf-trees__profile:last-of-type::after {
   }
 }
 .pop-address .sch-result table td.left {
-  text-align: left;
+  text-align: left !important;
+}
+.pop-address .sch-result table td.left a {
+  text-align: left !important;
 }
 .pop-address .sch-result table .wrap {
   display: flex;
@@ -13545,16 +13547,23 @@ span.emp {
   background: rgba(0, 0, 0, 0.06);
 }
 
-.tbl-type14 table {
+.tbl-type14 table,
+.tbl-type13 table {
   table-layout: fixed;
 }
 
-.tbl-type14 td.left {
-  text-align: left;
+.tbl-type14 td.left,
+.tbl-type13 td.left {
+  text-align: left !important;
   padding-left: 1.5rem;
 }
+.tbl-type14 td.left a,
+.tbl-type13 td.left a {
+  text-align: left !important;
+}
 
-.tbl-type14 tbody td a {
+.tbl-type14 tbody td a,
+.tbl-type13 tbody td a {
   display: block;
   position: relative;
   overflow: hidden;
@@ -13564,8 +13573,10 @@ span.emp {
   text-overflow: ellipsis;
   line-height: 1;
   vertical-align: middle;
+  text-align: center;
 }
-.tbl-type14 tbody td a span {
+.tbl-type14 tbody td a span,
+.tbl-type13 tbody td a span {
   display: inline-block;
   overflow: hidden;
   max-width: calc(100% - 62px);
