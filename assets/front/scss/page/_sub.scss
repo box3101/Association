@@ -5899,3 +5899,15 @@ span.emp {
 		vertical-align: middle;
 	}
 }
+.tbl-type13 td.online,
+.tbl-type14 td.online {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	max-width: 100%;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	line-height: 1;
+	vertical-align: middle;
+	text-align: center;
+}
