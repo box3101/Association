@@ -5090,9 +5090,17 @@ ul.flex .tf-trees__profile:last-of-type::after {
 				font-size: 1.2625rem;
 				font-weight: bold;
 				margin-bottom: 1.25rem;
+				max-width: 20.375rem;
+				padding: 0 10px;
+				@include media(1200px) {
+					max-width: auto;
+					margin: 0 auto;
+					margin-bottom: 10px;
+				}
 			}
 			a {
 				width: 100%;
+				padding: 0;
 				@include media(1200px) {
 					padding: 0;
 				}
