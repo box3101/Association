@@ -285,13 +285,13 @@ section {
 			.img {
 				margin-right: 0.3125rem;
 				img {
-					width: 5.625rem;
+					max-width: 5.1875rem;
 				}
 			}
 			li:nth-of-type(1) {
 				a {
-					font-size: 2rem;
-					font-weight: bold;
+					font-size: 1.5rem;
+					font-weight: 500;
 					color: #fff;
 					background: #294fb7;
 					display: inline-block;
@@ -315,7 +315,7 @@ section {
 			}
 			li:nth-of-type(2) {
 				a {
-					font-size: 2rem;
+					font-size: 1.5rem;
 					font-weight: bold;
 					color: #fff;
 					background: #fff;
@@ -325,9 +325,40 @@ section {
 					align-items: center;
 					justify-content: center;
 					border-radius: 0.9375rem;
-					border: 0.1875rem solid #f47727;
+					border: 4px solid #0062a2;
 					box-sizing: border-box;
 					transition: all 0.5s;
+					.txt {
+						color: #333;
+						position: relative;
+						top: 0.1875rem;
+					}
+
+					&:hover {
+						transform: translateY(-10px);
+					}
+				}
+			}
+			li:nth-of-type(3) {
+				a {
+					font-size: 1.5rem;
+					font-weight: bold;
+					color: #fff;
+					background: #fff;
+					display: inline-block;
+					height: 8.75rem;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					border-radius: 0.9375rem;
+					border: 4px solid #f47727;
+					box-sizing: border-box;
+					transition: all 0.5s;
+
+					@include media(600px) {
+						height: 6rem;
+					}
+
 					.txt {
 						color: #333;
 						position: relative;
@@ -406,6 +437,11 @@ section {
 				top: 0;
 				transition: all 0.4s ease-in-out;
 				border-radius: 0.9375rem;
+
+				@include media(600px) {
+					padding: 0;
+				}
+
 				&:nth-of-type(2) {
 				}
 				&:nth-of-type(3) {
@@ -416,8 +452,8 @@ section {
 					font-size: 2rem;
 					color: #000;
 					line-height: 1.3;
-					min-height: 72px;
-					max-height: 72px;
+					min-height: 4.5rem;
+					max-height: 4.5rem;
 					overflow: hidden;
 					text-overflow: ellipsis;
 					word-wrap: normal;

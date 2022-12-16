@@ -6426,11 +6426,11 @@ section {
   margin-right: 0.3125rem;
 }
 .search-menu .lef .link-menu .img img {
-  width: 5.625rem;
+  max-width: 5.1875rem;
 }
 .search-menu .lef .link-menu li:nth-of-type(1) a {
-  font-size: 2rem;
-  font-weight: bold;
+  font-size: 1.5rem;
+  font-weight: 500;
   color: #fff;
   background: #294fb7;
   display: inline-block;
@@ -6450,7 +6450,7 @@ section {
   top: 0.3125rem;
 }
 .search-menu .lef .link-menu li:nth-of-type(2) a {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   color: #fff;
   background: #fff;
@@ -6460,7 +6460,7 @@ section {
   align-items: center;
   justify-content: center;
   border-radius: 0.9375rem;
-  border: 0.1875rem solid #f47727;
+  border: 4px solid #0062a2;
   box-sizing: border-box;
   transition: all 0.5s;
 }
@@ -6470,6 +6470,34 @@ section {
   top: 0.1875rem;
 }
 .search-menu .lef .link-menu li:nth-of-type(2) a:hover {
+  transform: translateY(-10px);
+}
+.search-menu .lef .link-menu li:nth-of-type(3) a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  background: #fff;
+  display: inline-block;
+  height: 8.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.9375rem;
+  border: 4px solid #f47727;
+  box-sizing: border-box;
+  transition: all 0.5s;
+}
+@media all and (max-width: 600px) {
+  .search-menu .lef .link-menu li:nth-of-type(3) a {
+    height: 6rem;
+  }
+}
+.search-menu .lef .link-menu li:nth-of-type(3) a .txt {
+  color: #333;
+  position: relative;
+  top: 0.1875rem;
+}
+.search-menu .lef .link-menu li:nth-of-type(3) a:hover {
   transform: translateY(-10px);
 }
 .search-menu .ref {
@@ -6538,13 +6566,18 @@ section {
   border-radius: 0.9375rem;
   display: inline-block;
 }
+@media all and (max-width: 600px) {
+  .edu-info .inner .list li {
+    padding: 0;
+  }
+}
 .edu-info .inner .list li p.tit {
   font-weight: bold;
   font-size: 2rem;
   color: #000;
   line-height: 1.3;
-  min-height: 72px;
-  max-height: 72px;
+  min-height: 4.5rem;
+  max-height: 4.5rem;
   overflow: hidden;
   text-overflow: ellipsis;
   word-wrap: normal;
