@@ -1382,6 +1382,10 @@ section {
 	}
 }
 
+.targetLink {
+	display: block;
+}
+
 @media (max-width: $b-web) {
 	html,
 	#sub {

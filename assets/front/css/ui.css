@@ -7565,6 +7565,10 @@ section {
   background: #ffba00;
 }
 
+.targetLink {
+  display: block;
+}
+
 @media (max-width: 1200px) {
   html,
   #sub {
