@@ -18,7 +18,7 @@ $(function () {
     htmlInclude();
     // goTop();
     slides();
-    myScroll();
+    // myScroll();
     // gnb();
     // subPanel();
     cdPopup();
@@ -121,7 +121,7 @@ $(function () {
   // wow.js
   function wow() {
     wow = new WOW({
-      mobile : false,
+      mobile: false,
     });
     wow.init();
     $(".open-mb-nav").on("click", function () {
@@ -207,54 +207,64 @@ $(function () {
 
     });
 
-    // noticeSlides
+    // 20221226 noticeSlides 슬라이드 js 수정
     $(function () {
-      var noticeSlide = new Swiper("#noticeSlide", {
-        // direction: "horizontal", //슬라이딩 방향 
-        spaceBetween: 0,  //슬라이드간 사이간격
-        slidesPerView: 'auto', //하나의 화면당 보일 패널의 갯수
-        grabCursor: true, //스와이프시 마우스 커서모양 변경
-        loop: true, //슬라이딩 순환여부를 결정한다.
-        speed: 2000,
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-          //true : 자동롤링중에 스와이핑을 하면 롤링이 중지
-          //false : 자동롤링중에 스와이핑이 되더라도 롤링은 계속유지 
-        },
-        pagination: {
-          //페이징 버튼
-          el: ".notice__pagenation",
-          clickable: true, //클릭이 가능하도록 조정
-          type : "fraction",
-        },
-        navigation: {
-          //좌우 버튼 옵션
-          nextEl: ".notice__btn-next",
-          prevEl: ".notice__btn-prev",
-        },
-        // mousewheel: true,
-        keyboard: {
-          enabled: true,
-        }
-      });
+      const noticeSlides = document.querySelector("#noticeSlide");
+      const $$swiperAll = noticeSlides.querySelectorAll(".swiper-slide");
+      const noticeBtnNext = noticeSlides.querySelector(".notice__btn-next")
+      const noticeBtnPrev = noticeSlides.querySelector(".notice__btn-prev")
 
-      //변수설정 
-      //롤링시작, 롤링정지 버튼을 변수로 저장한다.
-      const btnStart = $(".btn-start");
-      const btnStop = $('.btn-stop');
+      noticeBtnNext.style.display = "none";
+      noticeBtnPrev.style.display = "none";
 
-      //페이지 로딩시 자동롤리이 정지되게 코딩
-      // noticeSlide.autoplay.stop();
-      //롤링시작버튼 클릭에만 롤링이 시작되게
+      // 슬라이드 한개 이상일시 실행
+      if ($$swiperAll.length > 1) {
+        var noticeSlide = new Swiper("#noticeSlide", {
+          spaceBetween: 0,
+          slidesPerView: 'auto',
+          grabCursor: true,
+          loop: true,
+          speed: 2000,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            //페이징 버튼
+            el: ".notice__pagenation",
+            clickable: true, //클릭이 가능하도록 조정
+            type: "fraction",
+          },
+          navigation: {
+            //좌우 버튼 옵션
+            nextEl: ".notice__btn-next",
+            prevEl: ".notice__btn-prev",
+          },
+          // mousewheel: true,
+          keyboard: {
+            enabled: true,
+          }
+        });
 
-      btnStart.on("click", function () {
-        noticeSlide.autoplay.start();
-      });
-      //롤링정지버튼을 클릭시에만 롤링이 정지되게
-      btnStop.on("click",function(){
-        noticeSlide.autoplay.stop();
-      });
+        noticeBtnNext.style.display = "block";
+        noticeBtnPrev.style.display = "block";
+
+        //롤링시작, 롤링정지 버튼을 변수로 저장한다.
+        const btnStart = $(".btn-start");
+        const btnStop = $('.btn-stop');
+
+        //페이지 로딩시 자동롤리이 정지되게 코딩
+        // noticeSlide.autoplay.stop();
+        //롤링시작버튼 클릭에만 롤링이 시작되게
+
+        btnStart.on("click", function () {
+          noticeSlide.autoplay.start();
+        });
+        //롤링정지버튼을 클릭시에만 롤링이 정지되게
+        btnStop.on("click", function () {
+          noticeSlide.autoplay.stop();
+        });
+      }
     });
 
 
@@ -262,16 +272,16 @@ $(function () {
   }
 
   //myScroll
-  function myScroll() {
-    $(document).ready(function () {
-      $('.myScroll').myScroll({
-        btns: '#navi>li',
-        speed: 1000,
-        base: -300,
-        active: 'on'
-      });
-    });
-  }
+  // function myScroll() {
+  //   $(document).ready(function () {
+  //     $('.myScroll').myScroll({
+  //       btns: '#navi>li',
+  //       speed: 1000,
+  //       base: -300,
+  //       active: 'on'
+  //     });
+  //   });
+  // }
 
   // GNB메뉴
   function gnb() {
